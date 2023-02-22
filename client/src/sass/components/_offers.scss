@@ -1,0 +1,50 @@
+.offers {
+  grid-column: 1 / -1;
+  grid-row: 6 / 7;
+}
+.offers__container {
+  overflow-x: scroll;
+  display: flex;
+  justify-content: space-between;
+}
+.card {
+  flex: 0 0 270px;
+  border-radius: 12px;
+  position: relative;
+
+  &__link {
+    color: #000;
+  }
+
+  &__img {
+    width: 220px;
+    height: 65%;
+    margin: 0 9.2%;
+    border: 1px solid var(--border-color);
+    border-radius: 12px 12px 0px 0px;
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 210px;
+      height: 60%;
+    }
+  }
+  &__title {
+    position: absolute;
+    top: 13.5em;
+    left: 1.54em;
+    width: 220px;
+    height: 3.8rem;
+    margin: 0 auto;
+    padding: 0.7rem;
+    font-weight: 400;
+    text-align: center;
+    border: 1px solid var(--border-color);
+    border-radius: 0px 0px 12px 12px;
+
+    @media only screen and (max-width: $bp-medium) {
+      top: 19rem;
+      left: 2.5rem;
+      width: 210px;
+    }
+  }
+}

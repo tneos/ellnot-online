@@ -1,0 +1,114 @@
+.my-account {
+  grid-column: 5 / 11;
+  grid-row: 3 / 9;
+
+  &__title {
+    font-size: 3rem;
+    text-align: center;
+    margin: 2rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 2.5rem;
+    }
+  }
+
+  &__div {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+
+    @media only screen and (max-width: $bp-mobile) {
+      flex-direction: column;
+    }
+  }
+
+  &__label {
+    font-size: 1.8rem;
+    font-weight: 300;
+
+    @media only screen and (max-width: $bp-mobile) {
+      margin: 1rem;
+    }
+  }
+
+  &__input {
+    width: 24%;
+    margin: 0 1rem;
+
+    @media only screen and (max-width: $bp-large) {
+      width: 30%;
+    }
+    @media only screen and (max-width: $bp-large) {
+      width: 40%;
+    }
+    @media only screen and (max-width: $bp-mobile) {
+      width: 90%;
+      height: 4rem;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+
+    @media only screen and (max-width: $bp-mobile) {
+      flex-direction: column;
+    }
+  }
+
+  &__update {
+    @include button(#fff, var(--light-dark));
+    background-color: var(--sustainability-color);
+    border: 1px solid var(--sustainability-color);
+
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 1.1rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      width: 40%;
+    }
+    @media only screen and (max-width: $bp-mobile) {
+      width: 60%;
+    }
+  }
+
+  &__delete {
+    @include button(#fff, var(--light-dark));
+    background-color: var(--danger-color);
+    border: 1px solid var(--danger-color);
+
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 1.1rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      width: 40%;
+    }
+    @media only screen and (max-width: $bp-mobile) {
+      width: 60%;
+    }
+  }
+}
+
+.date-of-birth {
+  width: 24%;
+  margin: 0 0.8rem;
+
+  @media only screen and (max-width: $bp-large) {
+    width: 30%;
+  }
+  @media only screen and (max-width: $bp-small) {
+    width: 40%;
+  }
+
+  @media only screen and (max-width: $bp-mobile) {
+    width: 90%;
+  }
+
+  &__input {
+    width: 33%;
+
+    @media only screen and (max-width: $bp-mobile) {
+      height: 4rem;
+    }
+  }
+}

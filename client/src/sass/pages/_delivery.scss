@@ -1,0 +1,151 @@
+.delivery {
+  grid-row: 3 / 9;
+  grid-column: 1 / -1;
+  position: relative;
+  background-image: url("../urls/delivery.jpg");
+  background-position: 0% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media only screen and (max-width: $bp-mobile) {
+    grid-row: 3 / 10;
+    background-position: 0 20%;
+    background-size: contain;
+  }
+
+  @media only screen and (max-width: $bp-mobile) {
+    grid-row: 3 / 10;
+    background-position: 0 65%;
+  }
+
+  &__title {
+    font-size: 5.5rem;
+    color: #fff;
+    text-align: center;
+    margin-top: 22rem;
+    letter-spacing: 2px;
+    font-weight: 300;
+
+    @media only screen and (max-width: $bp-mobile) {
+      font-size: 3rem;
+      margin-top: 50vh;
+    }
+  }
+}
+
+.door,
+.pick-up {
+  width: 40%;
+  background-color: #fff;
+  padding: 0 4%;
+
+  @media only screen and (max-width: $bp-small) {
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid var(--border-color);
+  }
+}
+
+.door {
+  position: absolute;
+  top: 78%;
+  right: 53%;
+
+  @media only screen and (max-width: $bp-small) {
+    top: 60%;
+    right: 2%;
+  }
+
+  &__title {
+    font-weight: 400;
+    margin: 10% 0;
+
+    @media only screen and (max-width: $bp-small) {
+      flex: 1 1 100%;
+      margin: 3% 0;
+    }
+    @media only screen and (max-width: $bp-mobile) {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+.pick-up {
+  position: absolute;
+  top: 78%;
+  right: 8%;
+
+  @media only screen and (max-width: $bp-small) {
+    top: 119%;
+    right: 2%;
+  }
+
+  @media only screen and (max-width: $bp-mobile) {
+    top: 110%;
+    right: 2%;
+  }
+  &__title {
+    font-weight: 400;
+    margin: 10% 0;
+
+    @media only screen and (max-width: $bp-small) {
+      flex: 1 1 100%;
+      margin: 3% 0;
+    }
+    @media only screen and (max-width: $bp-mobile) {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+.section {
+  width: 100%;
+
+  @media only screen and (max-width: $bp-small) {
+    flex: 1 1 33%;
+    margin: 0.5rem;
+  }
+  @media only screen and (max-width: $bp-mobile) {
+    flex: 1 1 30%;
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 5% 0;
+
+    @media only screen and (max-width: $bp-mobile) {
+      font-size: 1.3rem;
+    }
+  }
+
+  &__details {
+    font-weight: 200;
+    font-size: 1.4rem;
+    margin: 3% 0;
+
+    @media only screen and (max-width: $bp-mobile) {
+      font-size: 1rem;
+      margin: 3% 2%;
+    }
+
+    &--little {
+      font-size: 1rem;
+      font-weight: 200;
+      margin: 2% 0;
+
+      @media only screen and (max-width: $bp-mobile) {
+        font-size: 0.8;
+      }
+    }
+  }
+
+  &__span {
+    font-weight: 300;
+
+    @media only screen and (max-width: $bp-mobile) {
+      font-size: 1rem;
+    }
+  }
+}

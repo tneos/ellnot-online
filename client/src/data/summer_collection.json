@@ -1,0 +1,77 @@
+{
+  "category": "summer collection",
+  "summer_items": [
+    {
+      "id": 1,
+      "img": "../img/summer-collection/summer-collection1.jpg",
+      "description": "Summer straw hat with pink ribbon",
+      "price": "£12.50"
+    },
+    {
+      "id": 2,
+      "img": "../img/summer-collection/summer-collection2.jpg",
+      "description": "Bandeau bikini in yellow",
+      "price": "£16.00"
+    },
+    {
+      "id": 3,
+      "img": "../img/summer-collection/summer-collection3.jpg",
+      "description": "Mix and match crop frill bikini top",
+      "price": "£14.00"
+    },
+    {
+      "id": 4,
+      "img": "../img/summer-collection/summer-collection4.jpg",
+      "description": "Low back swimsuit in red",
+      "price": "£26.00"
+    },
+    {
+      "id": 5,
+      "img": "../img/summer-collection/summer-collection5.jpg",
+      "description": "Floral print kimono",
+      "price": "£32.50"
+    },
+    {
+      "id": 6,
+      "img": "../img/summer-collection/summer-collection6.jpg",
+      "description": "South Beach scoop neck swimsuit in leopard print",
+      "price": "£25.00"
+    },
+    {
+      "id": 7,
+      "img": "../img/summer-collection/summer-collection7.jpg",
+      "description": "Long sleeve shirred summer dress in white",
+      "price": "£20.00"
+    },
+    {
+      "id": 8,
+      "img": "../img/summer-collection/summer-collection8.jpg",
+      "description": "Weekday Luna wire bikini with frill detail",
+      "price": "£29.50"
+    },
+    {
+      "id": 9,
+      "img": "../img/summer-collection/summer-collection9.jpg",
+      "description": "Aviator sunglasses with orange lens in black",
+      "price": "£82.00"
+    },
+    {
+      "id": 10,
+      "img": "../img/summer-collection/summer-collection10.jpg",
+      "description": "Fedora hat with size adjuster in black",
+      "price": "£18.00"
+    },
+    {
+      "id": 11,
+      "img": "../img/summer-collection/summer-collection11.jpg",
+      "description": "Wrap around triangle co-ord bikini in red",
+      "price": "£28.50"
+    },
+    {
+      "id": 12,
+      "img": "../img/summer-collection/summer-collection12.jpg",
+      "description": "Accessorize scoop swimsuit in khaki",
+      "price": "£22.00"
+    }
+  ]
+}

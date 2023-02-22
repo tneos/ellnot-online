@@ -1,0 +1,34 @@
+.user {
+  grid-column: 1 / -1;
+  grid-row: 1 / 9;
+
+  @media only screen and (max-width: $bp-mobile) {
+    grid-row: 1 / 12;
+  }
+}
+
+.company-logo {
+  width: 100%;
+  height: 10%;
+  display: table;
+
+  &__title {
+    font-family: "Rosarivo", serif;
+    font-size: 3.8rem;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+.user-main {
+  width: 100%;
+  height: 90%;
+  background-color: var(--submenu-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}

@@ -1,0 +1,50 @@
+.alert {
+  position: absolute;
+  width: 25%;
+  top: 20%;
+  left: 35%;
+  text-align: center;
+  padding: 0.7rem;
+  margin: 1rem 0;
+  opacity: 0.9;
+  background: var(--light-color);
+  color: #333;
+  z-index: 4000;
+
+  @media only screen and (max-width: $bp-mobile) {
+    width: 60%;
+    left: 20%;
+  }
+
+  &__message {
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+}
+
+.alert-primary {
+  background: var(--shop-color);
+  color: #fff;
+}
+.alert-dark {
+  background: var(--submenu-color);
+  color: #333;
+}
+.alert-light {
+  background: var(--dark-color);
+  color: #fff;
+}
+.alert-danger {
+  background: var(--danger-color);
+  color: #fff;
+}
+.alert-success {
+  background: var(--sustainability-color);
+  color: #fff;
+}
+.alert-white {
+  background: #fff;
+  color: #333;
+  border: #ccc solid 1px;
+}

@@ -1,0 +1,121 @@
+.social__info {
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 1.3rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 1.2rem;
+  }
+}
+.section-title {
+  font-weight: 400;
+  font-size: 3.5rem;
+  text-align: center;
+  padding: 2rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 2.8rem;
+  }
+}
+.signup-title {
+  grid-column: 1 / -1;
+  grid-row: 2 / 3;
+  font-weight: 400;
+  font-size: 4.2rem;
+  padding: 2rem;
+  text-align: center;
+}
+.logo__title {
+  display: block;
+  font-family: $font-logo;
+  padding-top: 0.3rem;
+  font-size: 3.8rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  height: 100%;
+  text-decoration: none;
+  color: #000;
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 3.4rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    transform: translateY(2.3vw);
+  }
+
+  @media only screen and (max-width: $bp-vsmall) {
+    transform: translateY(1.5vw);
+  }
+
+  @media only screen and (max-width: $bp-mobile) {
+    padding: 0;
+    font-size: 2rem;
+    height: 90%;
+    text-align: center;
+    color: #fff;
+    transform: translateY(23%);
+  }
+}
+
+.nav-list__item {
+  font-size: 1.3rem;
+  font-family: $font-secondary;
+  font-weight: bold;
+  padding: 2rem 0;
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 1.2rem;
+  }
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 1.05rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 7% 0;
+  }
+
+  @media only screen and (max-width: $bp-vsmall) {
+    margin: 0;
+  }
+
+  @media only screen and (max-width: $bp-mobile) {
+    padding: 1rem 0;
+    font-size: 1rem;
+  }
+}
+
+.item--3 {
+  text-decoration: none;
+  color: #000;
+}
+
+.active-menu {
+  background-color: var(--submenu-color);
+}
+
+.options-text {
+  color: var(--banner-color);
+  text-align: center;
+  padding: 4rem 0;
+  font-style: italic;
+  font-weight: 300;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 3rem 0;
+  }
+}
+
+.copyright {
+  font-weight: lighter;
+  text-align: center;
+
+  @media only screen and (max-width: $bp-mobile) {
+    top: 89%;
+    left: 37%;
+  }
+}
