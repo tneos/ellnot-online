@@ -1,0 +1,33 @@
+.summer {
+  grid-column: 1 / -1;
+  grid-row: 8 / 9;
+
+  display: flex;
+  justify-content: space-around;
+
+  @media only screen and (max-width: $bp-mobile) {
+    flex-direction: column;
+  }
+}
+
+.box-1 {
+  @include box-styling(var(--banner-color), "../urls/summer1.jpg");
+
+  &__link {
+    color: #000;
+  }
+}
+.box-2 {
+  @include box-styling(var(--banner-color), "../urls/summer2.jpg");
+
+  &__link {
+    color: #000;
+  }
+}
+.box-3 {
+  @include box-styling(var(--banner-color), "../urls/summer3.jpg");
+
+  &__link {
+    color: #000;
+  }
+}

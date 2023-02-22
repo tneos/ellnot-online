@@ -1,0 +1,327 @@
+.about-us {
+  grid-row: 6 / 11;
+  grid-column: 2 / 14;
+  width: 80%;
+  margin: 8rem auto;
+
+  @media only screen and (max-width: $bp-large) {
+    grid-column: 1 / 14;
+  }
+  @media only screen and (max-width: $bp-medium) {
+    width: 90%;
+    margin: 2rem auto;
+  }
+
+  @media only screen and (max-width: $bp-mobile) {
+    grid-column: 1 / -1;
+  }
+
+  &__title {
+    grid-row: 4 / 5;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    letter-spacing: 4px;
+    font-size: 4rem;
+
+    &::after {
+      content: "";
+      height: 2px;
+      grid-column: 1 / -1;
+      width: 100%;
+      display: block;
+      margin: 2rem 0;
+      background-color: black;
+    }
+  }
+}
+
+.company {
+  width: 100%;
+  margin-bottom: 8rem;
+}
+
+.fashion {
+  display: flex;
+  justify-content: space-between;
+
+  @media only screen and (max-width: $bp-small) {
+    flex-direction: column-reverse;
+    margin-bottom: 35%;
+    width: 100%;
+  }
+
+  &__description {
+    width: 40%;
+
+    @media only screen and (max-width: $bp-small) {
+      width: 75%;
+      margin: 0 auto;
+    }
+  }
+  &__title {
+    font-size: 3.5rem;
+    font-weight: 400;
+    margin-top: 2rem;
+    margin-bottom: 8rem;
+
+    @media only screen and (max-width: $bp-mobile) {
+      font-size: 3rem;
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__img {
+    width: 55%;
+    height: 70rem;
+
+    @media only screen and (max-width: $bp-small) {
+      width: 90%;
+      margin: 0 auto;
+    }
+    @media only screen and (max-width: $bp-mobile) {
+      height: 70vh;
+    }
+  }
+
+  &__details {
+    width: 95%;
+    opacity: 0.7;
+
+    @media only screen and (max-width: $bp-mobile) {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+.ellnot {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+
+  @media only screen and (max-width: $bp-small) {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  &__description {
+    width: 40%;
+
+    @media only screen and (max-width: $bp-small) {
+      width: 75%;
+      margin: 0 auto;
+    }
+
+    @media only screen and (max-width: $bp-mobile) {
+      width: 100%;
+    }
+  }
+
+  &__img {
+    width: 55%;
+    transform: translateY(-30%);
+    height: 50rem;
+
+    @media only screen and (max-width: $bp-small) {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    @media only screen and (max-width: $bp-mobile) {
+      transform: translateY(0);
+    }
+  }
+
+  &__title {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 3.5rem;
+    font-weight: 400;
+    margin: 8rem auto;
+
+    @media only screen and (max-width: $bp-mobile) {
+      margin-top: 2rem;
+      margin-bottom: 3rem;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  &__details {
+    width: 80%;
+    opacity: 0.7;
+    margin: 5rem auto;
+
+    @media only screen and (max-width: $bp-mobile) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+.sustainability {
+  width: 100%;
+  display: flex;
+  margin-bottom: 40%;
+
+  @media only screen and (max-width: $bp-mobile) {
+    display: block;
+  }
+
+  &__img2 {
+    width: 33%;
+
+    @media only screen and (max-width: $bp-mobile) {
+      width: 100%;
+    }
+  }
+
+  &__img1 {
+    width: 33%;
+    transform: translate(25%, 70%);
+    z-index: 2;
+
+    @media only screen and (max-width: $bp-mobile) {
+      width: 100%;
+      transform: translate(0, 0);
+    }
+  }
+
+  &__section {
+    background-color: var(--sustainability-color);
+    color: #fff;
+    width: 33%;
+    height: 25rem;
+    transform: translate(-25%, 70%);
+    z-index: -1;
+
+    @media only screen and (max-width: $bp-mobile) {
+      width: 100%;
+      transform: translate(0, 0);
+    }
+  }
+
+  &__container {
+    width: 80%;
+    margin: 0 auto;
+
+    @media only screen and (max-width: $bp-mobile) {
+      height: 100%;
+      padding: 4rem;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    font-weight: 400;
+
+    @media only screen and (max-width: $bp-mobile) {
+      margin-top: 0;
+    }
+  }
+  &__description {
+    text-align: center;
+    font-weight: 300;
+
+    @media only screen and (max-width: $bp-mobile) {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+.by-you {
+  width: 100%;
+  position: relative;
+  &__left {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    color: #fff;
+  }
+
+  &__right {
+    position: absolute;
+    top: 20%;
+    right: 0;
+    color: #fff;
+  }
+  &__title {
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 300;
+    padding: 3rem 0;
+  }
+
+  &__content {
+    display: flex;
+  }
+
+  &__card {
+    width: 30%;
+    height: 30rem;
+  }
+
+  &__img {
+    width: 100%;
+    height: 30rem;
+
+    @media only screen and (max-width: $bp-mobile) {
+      width: 100%;
+    }
+  }
+}
+
+// Swiper custom styles
+.swiper {
+  width: 80rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    width: 70rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    width: 50rem;
+  }
+  @media only screen and (max-width: $bp-mobile) {
+    width: 100%;
+  }
+}
+.swiper-slide {
+  @media only screen and (max-width: $bp-mobile) {
+    width: 94%;
+  }
+}
+.swiper-slide-active {
+  width: 90%;
+  @media only screen and (max-width: $bp-mobile) {
+    width: 100vw;
+  }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  filter: saturate(500%) contrast(800%) brightness(500%) invert(80%) sepia(50%) hue-rotate(120deg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+}
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-button-prev {
+  background-image: url("../urls/left-arrow.png");
+}
+.swiper-button-next {
+  background-image: url("../urls/next.png");
+}
+.swiper-button-prev::after {
+  display: none;
+}
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #fff;
+}

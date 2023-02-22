@@ -1,0 +1,3 @@
+.students {
+  @include students-regulars(var(--banner4-color));
+}

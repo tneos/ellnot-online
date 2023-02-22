@@ -1,0 +1,112 @@
+.sales {
+  grid-row: 4 / 5;
+  grid-column: 2 / 14;
+
+  @media only screen and (max-width: $bp-medium) {
+    grid-column: 1 / -1;
+  }
+
+  &__container {
+    background-color: var(--banner-color);
+    display: flex;
+    width: 96%;
+    height: 100%;
+    margin: 0 auto;
+    border-radius: 5px;
+
+    @media only screen and (max-width: $bp-vsmall) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__text {
+    flex: 0 0 40%;
+    margin: 2rem 4rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      margin: 3rem;
+    }
+
+    @media only screen and (max-width: $bp-vsmall) {
+      margin: 1.5rem 3rem;
+    }
+  }
+  &__title,
+  &__offer,
+  &__all {
+    color: #fff;
+
+    @media only screen and (max-width: $bp-vsmall) {
+      text-align: center;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+  &__title {
+    font-size: 3.5rem;
+    font-weight: 350;
+    letter-spacing: 1px;
+    line-height: 120%;
+
+    @media only screen and (max-width: $bp-largest) {
+      font-size: 2.8rem;
+    }
+  }
+  &__offer {
+    font-size: 2rem;
+    font-weight: 350;
+    line-height: 300%;
+
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 1.8rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 1.7rem;
+    }
+  }
+
+  &__all {
+    font-size: 1.3rem;
+    text-decoration: underline;
+    letter-spacing: 2px;
+    text-underline-offset: 5px;
+
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 1rem;
+    }
+  }
+
+  &__options {
+    flex: 0 0 55%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+
+    @media only screen and (max-width: $bp-largest) {
+      flex: 0 0 50%;
+    }
+
+    @media only screen and (max-width: $bp-vsmall) {
+      flex: 100%;
+      padding: 1.5rem;
+    }
+  }
+  &__options--1,
+  &__options--2,
+  &__options--3 {
+    height: 12rem;
+    width: 12rem;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: auto;
+
+    @media only screen and (max-width: $bp-medium) {
+      height: 9rem;
+      width: 9rem;
+    }
+  }
+}

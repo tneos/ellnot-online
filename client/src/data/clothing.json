@@ -1,0 +1,500 @@
+{
+  "category": "Clothing",
+  "jeans": [
+    {
+      "id": 1,
+      "img": "../img/jeans/jeans1.jpg",
+      "description": "Cassie straight embroidered jeans",
+      "price": "£32.00"
+    },
+    {
+      "id": 2,
+      "img": "../img/jeans/jeans2.jpg",
+      "description": "Riley Girlfriend Jeans",
+      "price": "£54.99"
+    },
+    {
+      "id": 3,
+      "img": "../img/jeans/jeans3.jpg",
+      "description": "Plus blue ripped skinny jeans",
+      "price": "£42.00"
+    },
+    {
+      "id": 4,
+      "img": "../img/jeans/jeans4.jpg",
+      "description": "Slim Denim Dungarees",
+      "price": "£32.50"
+    },
+    {
+      "id": 5,
+      "img": "../img/jeans/jeans5.jpg",
+      "description": "Plus high waisted ripped jeans",
+      "price": "£46.98"
+    },
+    {
+      "id": 6,
+      "img": "../img/jeans/jeans6.jpg",
+      "description": "Vintage skinny mid rise jeans",
+      "price": "£42.00"
+    },
+    {
+      "id": 7,
+      "img": "../img/jeans/jeans7.jpg",
+      "description": "Low rise bump sculpt skinny jeans",
+      "price": "£59.00"
+    },
+    {
+      "id": 8,
+      "img": "../img/jeans/jeans8.jpg",
+      "description": "Blue very high waisted slim fit jeans",
+      "price": "£48.00"
+    },
+    {
+      "id": 9,
+      "img": "../img/jeans/jeans9.jpg",
+      "description": "Wide Leg Utility Jeans",
+      "price": "£38.99"
+    }
+  ],
+  "tops": [
+    {
+      "id": 1,
+      "img": "../img/tops/tops1.jpg",
+      "description": "Blue stripped bardot top",
+      "price": "£54.50"
+    },
+    {
+      "id": 2,
+      "img": "../img/tops/tops2.jpg",
+      "description": "Black vest top",
+      "price": "£16.95"
+    },
+    {
+      "id": 3,
+      "img": "../img/tops/tops3.jpg",
+      "description": "Black sleeveless  summer top",
+      "price": "£25.00"
+    },
+    {
+      "id": 4,
+      "img": "../img/tops/tops4.jpg",
+      "description": "White floral frill blouse",
+      "price": "£32.00"
+    },
+    {
+      "id": 5,
+      "img": "../img/tops/tops5.jpg",
+      "description": "Red floral crop top",
+      "price": "£14.50"
+    },
+    {
+      "id": 6,
+      "img": "../img/tops/tops6.jpg",
+      "description": "Victory sign ladies t-shirt",
+      "price": "£16.50"
+    },
+    {
+      "id": 7,
+      "img": "../img/tops/tops7.jpg",
+      "description": "Rock band ladies t-shirt",
+      "price": "£19.50"
+    },
+    {
+      "id": 8,
+      "img": "../img/tops/tops8.jpg",
+      "description": "Lime cut out top",
+      "price": "£26.95"
+    },
+    {
+      "id": 9,
+      "img": "../img/tops/tops9.jpg",
+      "description": "Cropped short sleeved top",
+      "price": "£32.45"
+    }
+  ],
+  "dresses": [
+    {
+      "id": 1,
+      "img": "../img/dresses/dresses1.jpg",
+      "description": "Floral bandeau long dress",
+      "price": "88.00"
+    },
+    {
+      "id": 2,
+      "img": "../img/dresses/dresses2.jpg",
+      "description": "Cream shirred mini dress",
+      "price": "£61.50"
+    },
+    {
+      "id": 3,
+      "img": "../img/dresses/dresses3.jpg",
+      "description": "Mini wrap white dress",
+      "price": "£81.50"
+    },
+    {
+      "id": 4,
+      "img": "../img/dresses/dresses4.jpg",
+      "description": "Floral bardot dress",
+      "price": "£94.00"
+    },
+    {
+      "id": 5,
+      "img": "../img/dresses/dresses5.jpg",
+      "description": "Red floral bardot maxi dress",
+      "price": "£69.50"
+    },
+    {
+      "id": 6,
+      "img": "../img/dresses/dresses6.jpg",
+      "description": "Light blue broderie mini dress",
+      "price": "£44.95"
+    },
+    {
+      "id": 7,
+      "img": "../img/dresses/dresses7.jpg",
+      "description": "Blue bardot maxi dress",
+      "price": "£112.00"
+    },
+    {
+      "id": 8,
+      "img": "../img/dresses/dresses8.jpg",
+      "description": "High low midi dress",
+      "price": "£51.50"
+    },
+    {
+      "id": 9,
+      "img": "../img/dresses/dresses9.jpg",
+      "description": "Casual blue midi dress",
+      "price": "£44.90"
+    }
+  ],
+  "lingerie": [
+    {
+      "id": 1,
+      "img": "../img/lingerie/lingerie1.jpg",
+      "description": "Lace white bra",
+      "price": "£23.00"
+    },
+    {
+      "id": 2,
+      "img": "../img/lingerie/lingerie2.jpg",
+      "description": "Cotton lingerie set",
+      "price": "£31.50"
+    },
+    {
+      "id": 3,
+      "img": "../img/lingerie/lingerie3.jpg",
+      "description": "Calvin Klein cotton set",
+      "price": "£46.50"
+    },
+    {
+      "id": 4,
+      "img": "../img/lingerie/lingerie4.jpg",
+      "description": "Lace black bra",
+      "price": "£16.00"
+    },
+    {
+      "id": 5,
+      "img": "../img/lingerie/lingerie5.jpg",
+      "description": "Fuller bust lace underwire set",
+      "price": "£28.95"
+    },
+    {
+      "id": 6,
+      "img": "../img/lingerie/lingerie6.jpg",
+      "description": "Premium black Brazilian",
+      "price": "£39.50"
+    },
+    {
+      "id": 7,
+      "img": "../img/lingerie/lingerie7.jpg",
+      "description": "Black lace Brazilian set",
+      "price": "£34.00"
+    },
+    {
+      "id": 8,
+      "img": "../img/lingerie/lingerie8.jpg",
+      "description": "Basic lace longline bra ",
+      "price": "£18.90"
+    },
+    {
+      "id": 9,
+      "img": "../img/lingerie/lingerie9.jpg",
+      "description": "Dark blue lace bodysuit",
+      "price": "£52.00"
+    },
+    {
+      "id": 10,
+      "img": "../img/lingerie/lingerie10.jpg",
+      "description": "Brazilian white brief and white sports bra",
+      "price": "£27.50"
+    },
+    {
+      "id": 11,
+      "img": "../img/lingerie/lingerie11.jpg",
+      "description": "Nylon blend lingerie set in white",
+      "price": "£34.50"
+    },
+    {
+      "id": 12,
+      "img": "../img/lingerie/lingerie12.jpg",
+      "description": "Hunkemoller Meghan lace non padded demi bra with brazilian brief in dark sea green",
+      "price": "£24.90"
+    }
+  ],
+  "skirts": [
+    {
+      "id": 1,
+      "img": "../img/skirts/skirts1.jpg",
+      "description": "Striped dark blue midi skirt",
+      "price": "£42.00"
+    },
+    {
+      "id": 2,
+      "img": "../img/skirts/skirts2.jpg",
+      "description": "Midi skirt in grey check print",
+      "price": "£46.90"
+    },
+    {
+      "id": 3,
+      "img": "../img/skirts/skirts3.jpg",
+      "description": "Denim mini skirt in light blue",
+      "price": "£26.00"
+    },
+    {
+      "id": 4,
+      "img": "../img/skirts/skirts4.jpg",
+      "description": "Pleated midi skirt in beige",
+      "price": "£24.90"
+    },
+    {
+      "id": 5,
+      "img": "../img/skirts/skirts5.jpg",
+      "description": "Pleated mini skirt in sandy brown",
+      "price": "£19.50"
+    },
+    {
+      "id": 6,
+      "img": "../img/skirts/skirts6.jpg",
+      "description": "Midi skirt in grey and white zebra print",
+      "price": "£27.00"
+    },
+    {
+      "id": 7,
+      "img": "../img/skirts/skirts7.jpg",
+      "description": "Ruffle midi skirt in mustard",
+      "price": "£18.00"
+    },
+    {
+      "id": 8,
+      "img": "../img/skirts/skirts8.jpg",
+      "description": "Slinky midi dress in dark red",
+      "price": "£39.50"
+    },
+    {
+      "id": 9,
+      "img": "../img/skirts/skirts9.jpg",
+      "description": "Vintage mini skirt in beige check",
+      "price": "£22.00"
+    }
+  ],
+  "shorts": [
+    {
+      "id": 1,
+      "img": "../img/shorts/shorts1.jpg",
+      "description": "Beach shorts in orange red",
+      "price": "£18.95"
+    },
+    {
+      "id": 2,
+      "img": "../img/shorts/shorts2.jpg",
+      "description": "Boyfriend denim short in bleach blue",
+      "price": "£19.90"
+    },
+    {
+      "id": 3,
+      "img": "../img/shorts/shorts3.jpg",
+      "description": "Tie waist shorts in lightseagreen",
+      "price": "£24.00"
+    },
+    {
+      "id": 4,
+      "img": "../img/shorts/shorts4.jpg",
+      "description": "Vintage high waisted camouflage shorts",
+      "price": "£27.00"
+    },
+    {
+      "id": 5,
+      "img": "../img/shorts/shorts5.jpg",
+      "description": "Denim high rise shorts in black",
+      "price": "£18.50"
+    },
+    {
+      "id": 6,
+      "img": "../img/shorts/shorts6.jpg",
+      "description": "Mini denim hotpant shorts in vintage blue wash",
+      "price": "£21.50"
+    },
+    {
+      "id": 7,
+      "img": "../img/shorts/shorts7.jpg",
+      "description": "Hot pants in red",
+      "price": "£16.50"
+    },
+    {
+      "id": 8,
+      "img": "../img/shorts/shorts8.jpg",
+      "description": "Sport shorts in grey",
+      "price": "£14.50"
+    },
+    {
+      "id": 9,
+      "img": "../img/shorts/shorts9.jpg",
+      "description": "Mini shorts with raw hem in bleached wash",
+      "price": "£21.00"
+    }
+  ],
+
+  "cardigans": [
+    {
+      "id": 1,
+      "img": "../img/cardigans/cardigans1.jpg",
+      "description": "Crew neck jumper in white",
+      "price": "£32.00"
+    },
+    {
+      "id": 2,
+      "img": "../img/cardigans/cardigans2.jpg",
+      "description": "Lightweight maxi cardigan in beige",
+      "price": "£42.00"
+    },
+    {
+      "id": 3,
+      "img": "../img/cardigans/cardigans3.jpg",
+      "description": "Ribbed cardigan in brown",
+      "price": "£25.00"
+    },
+    {
+      "id": 4,
+      "img": "../img/cardigans/cardigans4.jpg",
+      "description": "Boxy crew neck jumper in beige",
+      "price": "£23.90"
+    },
+    {
+      "id": 5,
+      "img": "../img/cardigans/cardigans5.jpg",
+      "description": "Ribbed cardigan in grey marl",
+      "price": "£20.00"
+    },
+    {
+      "id": 6,
+      "img": "../img/cardigans/cardigans6.jpg",
+      "description": "Chunky cardigan in charcoal",
+      "price": "£36.00"
+    },
+    {
+      "id": 7,
+      "img": "../img/cardigans/cardigans7.jpg",
+      "description": "Fluffy jumper in cream",
+      "price": "£30.00"
+    },
+    {
+      "id": 8,
+      "img": "../img/cardigans/cardigans8.jpg",
+      "description": "Fluffy cardigan in red",
+      "price": "£24.00"
+    },
+    {
+      "id": 9,
+      "img": "../img/cardigans/cardigans9.jpg",
+      "description": "Fringe hem grey jumper with pink pattern",
+      "price": "£21.00"
+    }
+  ],
+  "sales": [
+    {
+      "id": 1,
+      "img": "../img/sales/sales1.jpg",
+      "description": "Heart embellished high heels",
+      "discounted": "35.90",
+      "price": "£42.00"
+    },
+    {
+      "id": 2,
+      "img": "../img/sales/sales2.jpg",
+      "description": "Mid heels in yellow",
+      "discounted": "25.00",
+      "price": "£19.50"
+    },
+    {
+      "id": 3,
+      "img": "../img/sales/sales3.jpg",
+      "description": "Midi ribbed floral summer dress",
+      "discounted": "38.50",
+      "price": "£32.00"
+    },
+    {
+      "id": 4,
+      "img": "../img/sales/sales4.jpg",
+      "description": "Bow embellished high heels",
+      "discounted": "57.90",
+      "price": "£49.00"
+    },
+    {
+      "id": 5,
+      "img": "../img/sales/sales5.jpg",
+      "description": "Aviator sunglasses in gold amber",
+      "discounted": "40.00",
+      "price": "£46.98"
+    },
+    {
+      "id": 6,
+      "img": "../img/sales/sales6.jpg",
+      "description": "Petite slouchy mom short in brown",
+      "discounted": "20.90",
+      "price": "£26.00"
+    },
+    {
+      "id": 7,
+      "img": "../img/sales/sales7.jpg",
+      "description": "Jumper with scoop neck in grey",
+      "discounted": "18.50",
+      "price": "£24.50"
+    },
+    {
+      "id": 8,
+      "img": "../img/sales/sales8.jpg",
+      "description": "Split midi skirt in caramel",
+      "discounted": "38.00",
+      "price": "£44.90"
+    },
+    {
+      "id": 9,
+      "img": "../img/sales/sales9.jpg",
+      "description": "Short sleeve day dress in pink",
+      "discounted": "32.90",
+      "price": "£38.99"
+    },
+    {
+      "id": 10,
+      "img": "../img/sales/sales10.jpg",
+      "description": "Animal illustration summer shorts in pink",
+      "discounted": "8.80",
+      "price": "£12.00"
+    },
+    {
+      "id": 11,
+      "img": "../img/sales/sales11.jpg",
+      "description": "Light knit cardigan in blue",
+      "discounted": "38.80",
+      "price": "£48.00"
+    },
+    {
+      "id": 12,
+      "img": "../img/sales/sales12.jpg",
+      "description": "Bridesmaid cami dress in pink",
+      "discounted": "32.90",
+      "price": "£38.99"
+    }
+  ]
+}

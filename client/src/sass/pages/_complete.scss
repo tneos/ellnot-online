@@ -1,0 +1,65 @@
+.confirmation {
+  width: 100%;
+  grid-column: 1 / -1;
+  grid-row: 2 / 5;
+
+  &__container {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+  }
+
+  &__title {
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: center;
+    padding: 5%;
+  }
+
+  &__details {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  &__group {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+  }
+
+  &__label {
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  &__data {
+    font-size: 1.2rem;
+    font-weight: 200;
+    text-align: center;
+  }
+
+  &__btn {
+    display: block;
+    width: 50%;
+    height: 3rem;
+    color: #fff;
+    background-color: var(--sustainability-color);
+    margin: 3rem auto;
+    border-radius: 5px;
+    border: solid 1px var(--sustainability-color);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  &__icon {
+    background-image: url("../urls/tick.png");
+    display: inline-block;
+    height: 4rem;
+    width: 4rem;
+    background-size: 4rem;
+    transform: translate(2rem, 2rem);
+  }
+}

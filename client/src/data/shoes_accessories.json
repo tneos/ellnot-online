@@ -1,0 +1,469 @@
+{
+  "category": "shoes-accessories",
+  "accessories": [
+    {
+      "id": 1,
+      "img": "../img/accessories/accessories1.jpg",
+      "description": "Gold plated 3 pack",
+      "price": "£14.00"
+    },
+    {
+      "id": 2,
+      "img": "../img/accessories/accessories2.jpg",
+      "description": "Gold plated star earrings",
+      "price": "£8.00"
+    },
+    {
+      "id": 3,
+      "img": "../img/accessories/accessories3.jpg",
+      "description": "Blair oval 90s sunglasses",
+      "price": "£10.00"
+    },
+    {
+      "id": 4,
+      "img": "../img/accessories/accessories4.jpg",
+      "description": "Quartz stone pendant bracelets",
+      "price": "£12.00"
+    },
+    {
+      "id": 5,
+      "img": "../img/accessories/accessories5.jpg",
+      "description": "Tassel drop earrings",
+      "price": "£6.50"
+    },
+    {
+      "id": 6,
+      "img": "../img/accessories/accessories6.jpg",
+      "description": "Stone and silver chain set",
+      "price": "£16.00"
+    },
+    {
+      "id": 7,
+      "img": "../img/accessories/accessories7.jpg",
+      "description": "Leaf design and healing stone set of three",
+      "price": "£6.00"
+    },
+    {
+      "id": 8,
+      "img": "../img/accessories/accessories8.jpg",
+      "description": "Set of platinum and gold plated necklace",
+      "price": "£5.00"
+    },
+    {
+      "id": 9,
+      "img": "../img/accessories/accessories9.jpg",
+      "description": "Asian party wear necklace",
+      "price": "£18.50"
+    }
+  ],
+  "boots": [
+    {
+      "id": 1,
+      "img": "../img/boots/boots1.jpg",
+      "description": "Suede knee high boots",
+      "price": "42.00"
+    },
+    {
+      "id": 2,
+      "img": "../img/boots/boots2.jpg",
+      "description": "Brown leather snake print boots",
+      "price": "£62.50"
+    },
+    {
+      "id": 3,
+      "img": "../img/boots/boots3.jpg",
+      "description": "Silver glitter heeled ankle boots",
+      "price": "£55.00"
+    },
+    {
+      "id": 4,
+      "img": "../img/boots/boots4.jpg",
+      "description": "Silver glitter knee high boots",
+      "price": "£80.00"
+    },
+    {
+      "id": 5,
+      "img": "../img/boots/boots5.jpg",
+      "description": "Snake print two options",
+      "price": "£46.98"
+    },
+    {
+      "id": 6,
+      "img": "../img/boots/boots6.jpg",
+      "description": "Black rubber heeled ankle boots",
+      "price": "£46.00"
+    },
+    {
+      "id": 7,
+      "img": "../img/boots/boots7.jpg",
+      "description": "Yellow biker boots",
+      "price": "£36.50"
+    },
+    {
+      "id": 8,
+      "img": "../img/boots/boots8.jpg",
+      "description": "Black leather heeled ankle boots",
+      "price": "£40.00"
+    },
+    {
+      "id": 9,
+      "img": "../img/boots/boots9.jpg",
+      "description": "Brown leather ankle boots",
+      "price": "£34.50"
+    }
+  ],
+  "handbags": [
+    {
+      "id": 1,
+      "img": "../img/handbags/handbags1.jpg",
+      "description": "Floral print bag",
+      "price": "£44.00"
+    },
+    {
+      "id": 2,
+      "img": "../img/handbags/handbags2.jpg",
+      "description": "Large Dior shoulder bag",
+      "price": "£135.00"
+    },
+    {
+      "id": 3,
+      "img": "../img/handbags/handbags3.jpg",
+      "description": "Braided leather bag",
+      "price": "£52.50"
+    },
+    {
+      "id": 4,
+      "img": "../img/handbags/handbags4.jpg",
+      "description": "Green tote bag",
+      "price": "£32.00"
+    },
+    {
+      "id": 5,
+      "img": "../img/handbags/handbags5.jpg",
+      "description": "Braided leather shopper bag",
+      "price": "£55.00"
+    },
+    {
+      "id": 6,
+      "img": "../img/handbags/handbags6.jpg",
+      "description": "Black leather backpack",
+      "price": "£28.50"
+    },
+    {
+      "id": 7,
+      "img": "../img/handbags/handbags7.jpg",
+      "description": "Monogram cross body bag",
+      "price": "£80.00"
+    },
+    {
+      "id": 8,
+      "img": "../img/handbags/handbags8.jpg",
+      "description": "Mini backpack with zip front",
+      "price": "£30.00"
+    },
+    {
+      "id": 9,
+      "img": "../img/handbags/handbags9.jpg",
+      "description": "Brown cross body bag",
+      "price": "£38.90"
+    }
+  ],
+  "heels": [
+    {
+      "id": 1,
+      "img": "../img/heels/heels1.jpg",
+      "description": "Pointed high heel shoes in black",
+      "price": "£26.00"
+    },
+    {
+      "id": 2,
+      "img": "../img/heels/heels2.jpg",
+      "description": "Mid heeled shoes in silver",
+      "price": "£24.90"
+    },
+    {
+      "id": 3,
+      "img": "../img/heels/heels3.jpg",
+      "description": "Barely there sandals in green",
+      "price": "£28.00"
+    },
+    {
+      "id": 4,
+      "img": "../img/heels/heels4.jpg",
+      "description": "Cross strap heeled sandals in black",
+      "price": "£29.99"
+    },
+    {
+      "id": 5,
+      "img": "../img/heels/heels5.jpg",
+      "description": "Paris cut out high heeled shoes in red",
+      "price": "£34.00"
+    },
+    {
+      "id": 6,
+      "img": "../img/heels/heels6.jpg",
+      "description": "High heels with embellished straps",
+      "price": "£28.50"
+    },
+    {
+      "id": 7,
+      "img": "../img/heels/heels7.jpg",
+      "description": "Pointed heel court shoes in white",
+      "price": "£25.00"
+    },
+    {
+      "id": 8,
+      "img": "../img/heels/heels8.jpg",
+      "description": "High heel sandals with bow detail",
+      "price": "£38.90"
+    },
+    {
+      "id": 9,
+      "img": "../img/heels/heels9.jpg",
+      "description": "Laced up stilleto heeled boots",
+      "price": "£44.00"
+    },
+    {
+      "id": 10,
+      "img": "../img/heels/heels10.jpg",
+      "description": "Mid heels in beige with bow detail",
+      "price": "£12.00"
+    },
+    {
+      "id": 11,
+      "img": "../img/heels/heels11.jpg",
+      "description": "Peep toe heels in yellow with bow detail",
+      "price": "£48.00"
+    },
+    {
+      "id": 12,
+      "img": "../img/heels/heels12.jpg",
+      "description": "Pointed high heeled court shoes in silver",
+      "price": "£38.99"
+    }
+  ],
+  "hats": [
+    {
+      "id": 1,
+      "img": "../img/hats/hats1.jpg",
+      "description": "Canvas bucket hat in white",
+      "price": "£20.00"
+    },
+    {
+      "id": 2,
+      "img": "../img/hats/hats2.jpg",
+      "description": "South beach wide brim hat in beige",
+      "price": "£18.00"
+    },
+    {
+      "id": 3,
+      "img": "../img/hats/hats3.jpg",
+      "description": "Natural straw boater hat with size adjuster",
+      "price": "£15.90"
+    },
+    {
+      "id": 4,
+      "img": "../img/hats/hats4.jpg",
+      "description": "Other stories hat in natural straw",
+      "price": "£16.50"
+    },
+    {
+      "id": 5,
+      "img": "../img/hats/hats5.jpg",
+      "description": "Adjustable straw hat with frayed edge",
+      "price": "£12.50"
+    },
+    {
+      "id": 6,
+      "img": "../img/hats/hats6.jpg",
+      "description": "Wide brim hat in black",
+      "price": "£34.00"
+    },
+    {
+      "id": 7,
+      "img": "../img/hats/hats7.jpg",
+      "description": "Straw bucket hat in beige",
+      "price": "£12.00"
+    },
+    {
+      "id": 8,
+      "img": "../img/hats/hats8.jpg",
+      "description": "Raw edge floppy straw hat",
+      "price": "£17.00"
+    },
+    {
+      "id": 9,
+      "img": "../img/hats/hats9.jpg",
+      "description": "Straw hat with size adjuster in yellow",
+      "price": "£16.50"
+    }
+  ],
+  "belts": [
+    {
+      "id": 1,
+      "img": "../img/belts/belts1.jpg",
+      "description": "Black waist jeans belt with gold square buckle",
+      "price": "£8.00"
+    },
+    {
+      "id": 2,
+      "img": "../img/belts/belts2.jpg",
+      "description": "Leather silver buckle waist and hip jeans belt in black",
+      "price": "£6.00"
+    },
+    {
+      "id": 3,
+      "img": "../img/belts/belts3.jpg",
+      "description": "Waist and hip belt in pink",
+      "price": "£9.00"
+    },
+    {
+      "id": 4,
+      "img": "../img/belts/belts4.jpg",
+      "description": "Free People rosebery genuine leather belt in black",
+      "price": "£10.00"
+    },
+    {
+      "id": 5,
+      "img": "../img/belts/belts5.jpg",
+      "description": "Waist and hip belt with rattan bealt in black",
+      "price": "£34.00"
+    },
+    {
+      "id": 6,
+      "img": "../img/belts/belts6.jpg",
+      "description": "Calfskin belt with DG logo",
+      "price": "£8.00"
+    },
+    {
+      "id": 7,
+      "img": "../img/belts/belts7.jpg",
+      "description": "Brown leather waist belt with silver square buckle",
+      "price": "£7.00"
+    },
+    {
+      "id": 8,
+      "img": "../img/belts/belts8.jpg",
+      "description": "Suede waist and hip jeans belt in black",
+      "price": "£4.50"
+    },
+    {
+      "id": 9,
+      "img": "../img/belts/belts9.jpg",
+      "description": "Webbing belt in black",
+      "price": "£38.99"
+    }
+  ],
+  "candles": [
+    {
+      "id": 1,
+      "img": "../img/candles/candles1.jpg",
+      "description": "Nutmeg, orange, cinnamon winter spice candle",
+      "price": "£34.00"
+    },
+    {
+      "id": 2,
+      "img": "../img/candles/candles2.jpg",
+      "description": "White lily scented candle",
+      "price": "£28.99"
+    },
+    {
+      "id": 3,
+      "img": "../img/candles/candles3.jpg",
+      "description": "Neom Organics Luxury 3 Wick scented candle",
+      "price": "£45.00"
+    },
+    {
+      "id": 4,
+      "img": "../img/candles/candles4.jpg",
+      "description": "Freesia and Pear scented candle",
+      "price": "£16.00"
+    },
+    {
+      "id": 5,
+      "img": "../img/candles/candles5.jpg",
+      "description": "Botanical Scented candles set of 3",
+      "price": "£26.90"
+    },
+    {
+      "id": 6,
+      "img": "../img/candles/candles6.jpg",
+      "description": "Paul Wence Luxury scented candle",
+      "price": "£42.00"
+    },
+    {
+      "id": 7,
+      "img": "../img/candles/candles7.jpg",
+      "description": "Soy Wax set of 2",
+      "price": "£48.00"
+    },
+    {
+      "id": 8,
+      "img": "../img/candles/candles8.jpg",
+      "description": "Lavender & Fresh Bamboo soy wax set",
+      "price": "£29.00"
+    },
+    {
+      "id": 9,
+      "img": "../img/candles/candles9.jpg",
+      "description": "Fig scented candle",
+      "price": "£13.50"
+    }
+  ],
+  "sunglasses": [
+    {
+      "id": 1,
+      "img": "../img/sunglasses/sunglasses1.jpg",
+      "description": "Oversized Lacoste sunglasses",
+      "price": "£74.00"
+    },
+    {
+      "id": 2,
+      "img": "../img/sunglasses/sunglasses2.jpg",
+      "description": "Longchamp pink sunglasses",
+      "price": "£18.00"
+    },
+    {
+      "id": 3,
+      "img": "../img/sunglasses/sunglasses3.jpg",
+      "description": "Ted Baker oversized glamorous sunglasses",
+      "price": "£20.00"
+    },
+    {
+      "id": 4,
+      "img": "../img/sunglasses/sunglasses4.jpg",
+      "description": "Michael Cors Manhasset sunglasses",
+      "price": "£30.00"
+    },
+    {
+      "id": 5,
+      "img": "../img/sunglasses/sunglasses5.jpg",
+      "description": "Vivienne Westwood sunglasses",
+      "price": "£15.00"
+    },
+    {
+      "id": 6,
+      "img": "../img/sunglasses/sunglasses6.jpg",
+      "description": "London Mole sunglasses",
+      "price": "£20.00"
+    },
+    {
+      "id": 7,
+      "img": "../img/sunglasses/sunglasses7.jpg",
+      "description": "Karen Millen Dark Tortoiseshell brown sunglasses",
+      "price": "£65.00"
+    },
+    {
+      "id": 8,
+      "img": "../img/sunglasses/sunglasses8.jpg",
+      "description": "Osprey London Zanzibar sunglasses",
+      "price": "£78.00"
+    },
+    {
+      "id": 9,
+      "img": "../img/sunglasses/sunglasses9.jpg",
+      "description": "Valentino cat's eye",
+      "price": "£205.00"
+    }
+  ]
+}
