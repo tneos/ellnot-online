@@ -1,0 +1,33 @@
+{
+  "name": "ellnot",
+  "version": "1.0.0",
+  "description": "web-gallery",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "server": "nodemon app.js",
+    "client": "npm start --prefix ../client",
+    "clientinstall": "npm install --prefix ../client",
+    "build": "npm install --prefix ../client && npm run build --prefix ../client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Thomas Neos",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.9",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.18.2",
+    "express-validator": "^6.13.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.12",
+    "react-router-dom": "^6.0.2",
+    "react-scripts": "^4.0.3",
+    "stripe": "^8.215.0",
+    "validator": "^13.7.0"
+  },
+  "devDependencies": {
+    "concurrently": "^6.5.1"
+  }
+}
