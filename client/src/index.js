@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import {BrowserRouter as Router, Routes, Route, BrowserRouter} from "react-router-dom";
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import {createBrowserHistory} from "history";
 
 // Components
 import App from "./App";
@@ -38,6 +39,8 @@ import CheckoutState from "./context/checkout/CheckoutState";
 import {Elements} from "@stripe/react-stripe-js";
 import {loadStripe} from "@stripe/stripe-js";
 
+const history = createBrowserHistory();
+
 if (localStorage.token) {
   setAuthToken(localStorage.token);
 }
@@ -60,7 +63,7 @@ const Main = () => {
             <AuthState>
               <CheckoutState>
                 <Alerts />
-                <Router>
+                <Router history={history}>
                   <Routes>
                     <Route path="/" element={<App />}>
                       <Route
