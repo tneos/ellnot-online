@@ -45,7 +45,7 @@ console.log(process.env.MODE);
 
 // Load React App in production
 
-if (process.env.NODE_ENV === "production") {
+if (process.env.MODE === "production") {
   app.get("/*", (req, res) => res.sendFile(path.join(__dirname, "../client/build/index.html")));
 }
 
