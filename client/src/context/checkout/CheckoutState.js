@@ -53,6 +53,7 @@ const CheckoutState = props => {
               config
             );
       loadUser();
+      console.log(res.data);
       // Create checkout form and charge credit card
       await stripe.redirectToCheckout({
         sessionId: res.data.session.id,

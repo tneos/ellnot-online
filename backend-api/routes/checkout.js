@@ -26,7 +26,7 @@ router.put("/:id", async (req, res) => {
     success_url:
       process.env.MODE === "development"
         ? "http://localhost:3000/payment_confirmation?session_id={CHECKOUT_SESSION_ID}"
-        : "https://ellnot-client.onrender.com/payment_confirmation?session_id={CHECKOUT_SESSION_ID}",
+        : "https://ellnot-backend.onrender.com/payment_confirmation?session_id={CHECKOUT_SESSION_ID}",
     cancel_url:
       process.env.MODE === "development"
         ? "http://localhost:3000"

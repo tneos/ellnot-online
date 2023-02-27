@@ -21,6 +21,7 @@ const Complete = () => {
   let promise;
 
   useEffect(() => {
+    console.log(location.search);
     promise = getTransactionDetails(location.search).then(result => {
       return result;
     });
