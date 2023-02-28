@@ -419,16 +419,31 @@ const Item = () => {
           <div className="details">
             <div className="details__title">
               <h3 className="details__name">{element.description}</h3>
-              {likedItem(favArray, element) ? (
+              {process.env.REACT_APP_ENV !== "production" ? (
+                likedItem(favArray, element) ? (
+                  <img
+                    className="details__icon"
+                    src="http://localhost:3000/img/filled-heart.png"
+                    alt="not liked"
+                  />
+                ) : (
+                  <img
+                    className="details__icon"
+                    src="http://localhost:3000/img/heart.png"
+                    alt="not liked"
+                    onClick={onLike}
+                  />
+                )
+              ) : likedItem(favArray, element) ? (
                 <img
                   className="details__icon"
-                  src="http://localhost:3000/img/filled-heart.png"
+                  src={`${process.env.REACT_APP_CLIENT_URL}/img/filled-heart.png`}
                   alt="not liked"
                 />
               ) : (
                 <img
                   className="details__icon"
-                  src="http://localhost:3000/img/heart.png"
+                  src={`${process.env.REACT_APP_CLIENT_URL}/img/heart.png`}
                   alt="not liked"
                   onClick={onLike}
                 />

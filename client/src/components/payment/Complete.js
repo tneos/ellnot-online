@@ -83,7 +83,7 @@ const Complete = () => {
 
             <div className="confirmation__group">
               <h4 className="confirmation__label">Payment Method</h4>
-              <p className="confirmation__data">Credit card **49</p>
+              <p className="confirmation__data">Credit card **42</p>
             </div>
 
             <button className="confirmation__btn" onClick={onNavigate}>
