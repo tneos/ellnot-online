@@ -62,18 +62,13 @@ function SubMenus() {
     e.preventDefault();
 
     let list, id;
-    console.log(e.target);
 
     // Check if list item or <a> element clicked
     e.target.id ? (id = e.target.id) : (id = e.target.firstChild.id);
 
-    console.log(id);
-
     e.target.className === "sub-nav1__item"
       ? (list = e.target.parentNode)
       : (list = e.target.parentNode.parentNode);
-
-    console.log(list);
 
     // Get all children of list and reset styling for all the rest
     list.childNodes.forEach(element => {
@@ -96,7 +91,6 @@ function SubMenus() {
       screenWidth > 800 &&
       (e.target.className === "sub-nav1__item" || e.target.className === "sub-nav2__item")
     ) {
-      console.log(e.target.firstChild);
       e.target.style.borderBottom = "3px solid #000";
       e.target.firstChild.style.fontWeight = "600";
       e.target.firstChild.style.fontSize = "1.65rem";

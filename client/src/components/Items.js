@@ -15,6 +15,7 @@ const Items = ({item, userId, likedItem}) => {
   const subMenuContext = useContext(SubMenuContext);
 
   let checkIfSale = item.img.slice(7, 12);
+  let favArray = [];
 
   const navigate = useNavigate();
   const {id, img, description, price, discounted} = item;
@@ -36,8 +37,6 @@ const Items = ({item, userId, likedItem}) => {
     display: "inline-block",
     width: "20%",
   };
-
-  let favArray = [];
 
   // Add an item to wishlist
   const onAdd = item => {
