@@ -21,7 +21,6 @@ const Complete = () => {
   let promise;
 
   useEffect(() => {
-    console.log(location.search);
     promise = getTransactionDetails(location.search).then(result => {
       return result;
     });
@@ -33,13 +32,12 @@ const Complete = () => {
 
     customer();
     loadUser();
-    emptyBasket(user._id);
   }, [location.search]);
 
   let navigate = useNavigate();
 
   const onNavigate = () => {
-    // emptyBasket(user._id);
+    emptyBasket(user._id);
     navigate("/");
   };
 
