@@ -19,6 +19,7 @@ const Complete = () => {
   const {user, loadUser} = authContext;
 
   let promise;
+  const waitBeforeShow = 1000;
 
   useEffect(() => {
     promise = getTransactionDetails(location.search).then(result => {
@@ -38,7 +39,10 @@ const Complete = () => {
 
   const onNavigate = () => {
     emptyBasket(user._id);
-    navigate("/");
+    setTimeout(() => {
+      navigate("/");
+    }, waitBeforeShow);
+    //navigate("/");
   };
 
   return (
