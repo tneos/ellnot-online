@@ -32,9 +32,9 @@ export const mapData = (initialData, search, input, find, clear, update) => {
       data.push(...Object.values(obj).slice(2, Object.values(obj).length - 1));
       category.push(Object.values(obj)[1]);
       keys.push(...Object.keys(obj).slice(2, Object.keys(obj).length - 1));
+      console.log(data);
 
       data.map(el => {
-        typeof el === "object" && el.map(obj => console.log(obj.description));
         // Get all selections in one sigle array
         typeof el === "object" &&
           el.map(obj => {
@@ -53,6 +53,7 @@ export const mapData = (initialData, search, input, find, clear, update) => {
             (found = el.filter(obj =>
               obj.description.toLowerCase().includes(input.toLowerCase())
             ));
+          console.log(found);
           found.length > 0 && (foundItems = found);
         }
       });
@@ -97,6 +98,8 @@ export const mapData = (initialData, search, input, find, clear, update) => {
       filterArray.length === 0
         ? filterArray.push(obj)
         : filterArray.indexOf(obj) === -1 && filterArray.push(obj);
+
+      console.log(filterArray);
 
       sameItem = filterArray.indexOf(obj.description);
     });

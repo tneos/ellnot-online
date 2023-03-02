@@ -61,7 +61,6 @@ function Navbar() {
   basketContainer.insertAdjacentHTML("afterbegin", basketItems);
   const favArray = [...favContainer.children];
   const basketArray = [...basketContainer.children];
-  console.log(token, user);
 
   const activeSubMenu1 = () => {
     toggleSub1();
