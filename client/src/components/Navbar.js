@@ -142,13 +142,13 @@ function Navbar() {
   const handleFilter = e => {
     setInput(e.target.value);
     input !== " " ? setDeleteIcon(true) : setDeleteIcon(false);
-    console.log(dataSearch);
     mapData(initialData, dataSearch, e.target.value, findData, clearData, updateData);
   };
 
   // Output item or return a response if none found
   const searchbarOutput = () => {
     let filteredData;
+    console.log(dataSearch);
     if (dataSearch.every(data => data !== "undefined")) {
       filteredData = filterOutput(dataSearch, [appData]);
     }
