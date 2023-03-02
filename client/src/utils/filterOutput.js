@@ -17,10 +17,12 @@ export const filterOutput = (output, data) => {
   });
 
   uniq = [...new Set(output)];
+  console.log(uniq);
 
   if (typeof uniq === "object") return uniq;
   else {
     uniq.map(item => {
+      console.log(item);
       typeof item === "string"
         ? (splittedOutput = item.toLowerCase().split(" "))
         : (splittedOutput = item.description.toLowerCase().split(" "));

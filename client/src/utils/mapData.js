@@ -14,7 +14,7 @@ export const mapData = (initialData, search, input, find, clear, update) => {
   let catIndex;
   let typeFound;
 
-  console.log(initialData, search, input);
+  //console.log(initialData, search, input);
 
   // Save category keys and manipulate array
   search.map(el => {
@@ -32,7 +32,7 @@ export const mapData = (initialData, search, input, find, clear, update) => {
       data.push(...Object.values(obj).slice(2, Object.values(obj).length - 1));
       category.push(Object.values(obj)[1]);
       keys.push(...Object.keys(obj).slice(2, Object.keys(obj).length - 1));
-      console.log(data);
+      // console.log(data);
 
       data.map(el => {
         // Get all selections in one sigle array
@@ -48,22 +48,22 @@ export const mapData = (initialData, search, input, find, clear, update) => {
 
         if (input) {
           typeFound = keys.filter(item => item.toLowerCase().includes(input.toLowerCase()));
-          console.log(typeFound);
+          //console.log(typeFound);
           typeof el === "object" &&
             (found = el.filter(obj =>
               obj.description.toLowerCase().includes(input.toLowerCase())
             ));
-          console.log(found);
+          //console.log(found);
           found.length > 0 && (foundItems = found);
         }
       });
     });
   });
-
+  //console.log(typeFound.length, foundItems);
   // Find the items that match the input
 
   // If type of items found
-  if (typeFound && typeFound.length > 0) {
+  if (typeFound.length > 0) {
     // Find the category that matches the one found and save the index
     initialData.map((dataArray, index) => {
       Object.keys(dataArray[0]).map(key => {
@@ -84,7 +84,7 @@ export const mapData = (initialData, search, input, find, clear, update) => {
 
     // Save all strings found
     typesFound.push(filterString);
-
+    //console.log(typesFound);
     typesFound.map(type => {
       if (searchKeys.every(key => key !== type)) {
         find(type);
@@ -92,14 +92,14 @@ export const mapData = (initialData, search, input, find, clear, update) => {
     });
 
     // If individual items found
-  } else if (typeFound && typeFound.length === 0) {
+  } else if (typeFound.length === 0) {
     foundItems.map(obj => {
       // Add description of item if it doesn't exist
       filterArray.length === 0
         ? filterArray.push(obj)
         : filterArray.indexOf(obj) === -1 && filterArray.push(obj);
 
-      console.log(filterArray);
+      //console.log(filterArray);
 
       sameItem = filterArray.indexOf(obj.description);
     });
@@ -116,6 +116,7 @@ export const mapData = (initialData, search, input, find, clear, update) => {
     // Update state if there is an individual item
     search === "array" &&
       search.map((el, index) => {
+        console.log(el);
         let substrings;
         el === "string" ? (substrings = el.split(" ")) : (substrings = el.description.split(" "));
         items.map(item => item === substrings[0] && update(index + 1));
