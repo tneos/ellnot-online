@@ -3,15 +3,14 @@ export const filterOutput = (output, data) => {
   let splittedOutput;
   let keysArrays = [];
 
-  output.length !== 0 &&
-    output.map(array => {
-      Array.isArray(array) &&
-        Array.isArray(data) &&
-        array.length === data.length &&
-        array.every((val, index) => {
-          if (val === data[index]) return array;
-        });
-    });
+  output.map(array => {
+    Array.isArray(array) &&
+      Array.isArray(data) &&
+      array.length === data.length &&
+      array.every((val, index) => {
+        if (val === data[index]) return array;
+      });
+  });
   console.log(output, data);
 
   data.map(arr => {
