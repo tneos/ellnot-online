@@ -48,7 +48,7 @@ export const mapData = (initialData, search, input, find, clear, update) => {
 
         if (input) {
           typeFound = keys.filter(item => item.toLowerCase().includes(input.toLowerCase()));
-
+          console.log(typeFound);
           typeof el === "object" &&
             (found = el.filter(obj =>
               obj.description.toLowerCase().includes(input.toLowerCase())
