@@ -34,6 +34,7 @@ export const mapData = (initialData, search, input, find, clear, update) => {
       keys.push(...Object.keys(obj).slice(2, Object.keys(obj).length - 1));
 
       data.map(el => {
+        typeof el === "object" && el.map(obj => console.log(obj.description));
         // Get all selections in one sigle array
         typeof el === "object" &&
           el.map(obj => {
