@@ -346,6 +346,7 @@ const Item = () => {
         type === "accessories" ||
         type === "summer-collection"
       ) {
+        console.log(itemToBuy);
         addToBasket(itemToBuy, user._id);
       }
 

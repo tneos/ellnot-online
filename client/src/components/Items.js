@@ -24,6 +24,8 @@ const Items = ({item, userId, likedItem}) => {
   const {setAlert} = alertContext;
   const {deactivateAll} = subMenuContext;
 
+  console.log(img);
+
   // Styling of discounted prices
   const previousPrice = {
     textDecoration: "line-through",

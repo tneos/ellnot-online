@@ -112,6 +112,8 @@ const Wishlist = () => {
     const itemsToBuy = [];
     let filteredString;
 
+    console.log(item.target.parentElement.parentElement.outerHTML);
+
     if (item.target.innerText === "Add to basket") {
       let itemToBuyHTML = item.target.parentElement.parentElement.outerHTML;
       let wrapper = document.createElement("div");

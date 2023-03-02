@@ -38,6 +38,8 @@ const Basket = () => {
 
   basketArray = [...htmlContainer.children];
 
+  console.log(basketArray);
+
   const {basketUnique, countValues, ids, options, optionsUnique} = getDuplicates(basketArray);
 
   // If user logged in link to checkout element

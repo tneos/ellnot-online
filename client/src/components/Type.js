@@ -53,21 +53,14 @@ const Type = () => {
   process.env.REACT_APP_ENV === "production" &&
     appData &&
     favArray.forEach((item, index) => {
-      console.log(item.firstChild.src);
       let favArr = item.firstChild.src.slice(21).split("/");
 
       favArr.splice(0, 1);
       let favArrString = favArr.join("/");
-      console.log(favArrString);
+
       favArray[index].firstChild.src = "../" + favArrString;
       favArrayProd.push(favArray[index]);
     });
-
-  favArray.map(item => console.log(item));
-
-  favArrayProd.map(item => console.log(item));
-  appData && appData.map(item => console.log(item.id, item.img));
-  favArrayProd.map(el => console.log(el.firstChild.src.slice(34)));
 
   if (appData && appData.length) {
     output = (
