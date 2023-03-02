@@ -14,6 +14,8 @@ export const mapData = (initialData, search, input, find, clear, update) => {
   let catIndex;
   let typeFound;
 
+  console.log(initialData, search, input);
+
   // Save category keys and manipulate array
   search.map(el => {
     // If all data in state
