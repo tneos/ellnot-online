@@ -142,7 +142,7 @@ function Navbar() {
   const handleFilter = e => {
     setInput(e.target.value);
     input !== " " ? setDeleteIcon(true) : setDeleteIcon(false);
-
+    console.log(dataSearch);
     mapData(initialData, dataSearch, e.target.value, findData, clearData, updateData);
   };
 
