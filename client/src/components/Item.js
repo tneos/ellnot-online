@@ -186,7 +186,12 @@ const Item = () => {
     description.innerHTML = element.description;
     price.innerHTML = element.price;
 
-    image.src = "http://localhost:3000" + element.img.slice(2);
+    // process.env.REACT_APP_ENV !== "production"
+    //   ? (image.src = "http://localhost:3000" + element.img.slice(2))
+    //   : (image.src = "https://ellnot-shop.onrender.com" + element.img.slice(2));
+
+    image.src = "https://ellnot-shop.onrender.com" + element.img.slice(2);
+
     image.alt = "Item image";
     wrapperItem.appendChild(image);
     wrapperItem.appendChild(button);
@@ -279,6 +284,8 @@ const Item = () => {
   (type === "sales" || type === "summer-collection") &&
     itemDesc.includes("swimsuit") &&
     (type = "swimsuits");
+
+  console.log(itemString, process.env.REACT_APP_ENV);
 
   const onSelectSize = e => {
     let id = e.target.id;
