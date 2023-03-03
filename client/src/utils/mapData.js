@@ -59,7 +59,7 @@ export const mapData = (initialData, search, input, find, clear, update) => {
       });
     });
   });
-  console.log(typeFound.length, foundItems);
+  console.log(typeFound.length, foundItems, initialData);
   // Find the items that match the input
 
   // If type of items found
