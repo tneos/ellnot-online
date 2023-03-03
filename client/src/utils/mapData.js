@@ -14,8 +14,6 @@ export const mapData = (initialData, search, input, find, clear, update) => {
   let catIndex;
   let typeFound;
 
-  //console.log(initialData, search, input);
-
   // Save category keys and manipulate array
   search.map(el => {
     // If all data in state
@@ -31,8 +29,7 @@ export const mapData = (initialData, search, input, find, clear, update) => {
     dataArray.forEach(obj => {
       data.push(...Object.values(obj).slice(2, Object.values(obj).length - 1));
       category.push(Object.values(obj)[1]);
-      keys.push(...Object.keys(obj).slice(2, Object.keys(obj).length - 1));
-      // console.log(data);
+      keys.push(...Object.keys(obj).slice(2, Object.keys(obj).length - 2));
 
       data.map(el => {
         // Get all selections in one sigle array
@@ -48,18 +45,18 @@ export const mapData = (initialData, search, input, find, clear, update) => {
 
         if (input) {
           typeFound = keys.filter(item => item.toLowerCase().includes(input.toLowerCase()));
-          //console.log(typeFound);
+
           typeof el === "object" &&
             (found = el.filter(obj =>
               obj.description.toLowerCase().includes(input.toLowerCase())
             ));
-          //console.log(found);
+
           found.length > 0 && (foundItems = found);
         }
       });
     });
   });
-  console.log(typeFound, foundItems, initialData);
+
   // Find the items that match the input
 
   // If type of items found
@@ -75,12 +72,6 @@ export const mapData = (initialData, search, input, find, clear, update) => {
       array[index] === "summer_items" && array.splice(index, 1, "summer-items");
     });
 
-    console.log(category[catIndex]);
-    typeFound.map(item => {
-      console.log(input);
-      console.log(item.includes(input));
-    });
-
     // Manipulate string
     typeFound.map(
       item =>
@@ -88,13 +79,12 @@ export const mapData = (initialData, search, input, find, clear, update) => {
         item.includes(input.toLowerCase()) &&
         (filter = item + " in " + category[catIndex])
     );
-    console.log(filter);
 
     typeof filter === "string" && (filterString = filter);
 
     // Save all strings found
     typesFound.push(filterString);
-    console.log(typesFound);
+
     typesFound.map(type => {
       if (searchKeys.every(key => key !== type)) {
         find(type);
@@ -109,8 +99,6 @@ export const mapData = (initialData, search, input, find, clear, update) => {
         ? filterArray.push(obj)
         : filterArray.indexOf(obj) === -1 && filterArray.push(obj);
 
-      //console.log(filterArray);
-
       sameItem = filterArray.indexOf(obj.description);
     });
 
@@ -118,16 +106,14 @@ export const mapData = (initialData, search, input, find, clear, update) => {
   } else {
     clear();
   }
-  console.log(typesFound, filterArray, search);
+
   if (typeof filterArray === "object" && typesFound.length === 0) {
     // Find matching objects
     find(filterArray);
 
-    console.log(search, typeof search);
     // Update state if there is an individual item
     search.length > 0 &&
       search.map((el, index) => {
-        //console.log(el.description);
         let substrings;
         typeof el === "string"
           ? (substrings = el.split(" "))

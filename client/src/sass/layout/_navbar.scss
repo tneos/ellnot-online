@@ -83,6 +83,7 @@
     order: 4;
     flex: 60%;
     padding-right: 2rem;
+    height: 4vh;
   }
 
   @media only screen and (max-width: $bp-mobile) {
@@ -93,6 +94,12 @@
   }
   &__item {
     cursor: pointer;
+
+    @media only screen and (max-width: $bp-small) {
+      width: 30%;
+      text-align: center;
+      padding: 2rem 0;
+    }
   }
   &__link {
     text-decoration: none;
