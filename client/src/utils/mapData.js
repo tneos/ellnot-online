@@ -59,7 +59,7 @@ export const mapData = (initialData, search, input, find, clear, update) => {
       });
     });
   });
-  //console.log(typeFound.length, foundItems);
+  console.log(typeFound.length, foundItems);
   // Find the items that match the input
 
   // If type of items found
@@ -84,7 +84,7 @@ export const mapData = (initialData, search, input, find, clear, update) => {
 
     // Save all strings found
     typesFound.push(filterString);
-    //console.log(typesFound);
+    console.log(typesFound);
     typesFound.map(type => {
       if (searchKeys.every(key => key !== type)) {
         find(type);
