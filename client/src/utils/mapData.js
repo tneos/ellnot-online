@@ -108,17 +108,20 @@ export const mapData = (initialData, search, input, find, clear, update) => {
   } else {
     clear();
   }
-
+  console.log(typesFound, filterArray, search);
   if (typeof filterArray === "object" && typesFound.length === 0) {
     // Find matching objects
     find(filterArray);
 
+    console.log(search, typeof search);
     // Update state if there is an individual item
-    search === "array" &&
+    search.length > 0 &&
       search.map((el, index) => {
-        console.log(el);
+        //console.log(el.description);
         let substrings;
-        el === "string" ? (substrings = el.split(" ")) : (substrings = el.description.split(" "));
+        typeof el === "string"
+          ? (substrings = el.split(" "))
+          : (substrings = el.description.split(" "));
         items.map(item => item === substrings[0] && update(index + 1));
       });
   }

@@ -148,7 +148,7 @@ function Navbar() {
   // Output item or return a response if none found
   const searchbarOutput = () => {
     let filteredData;
-    console.log(dataSearch);
+    //console.log(dataSearch);
     if (dataSearch.every(data => data !== "undefined")) {
       filteredData = filterOutput(dataSearch, [appData]);
     }
