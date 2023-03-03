@@ -75,6 +75,8 @@ export const mapData = (initialData, search, input, find, clear, update) => {
       array[index] === "summer_items" && array.splice(index, 1, "summer-items");
     });
 
+    console.log(category[catIndex]);
+
     // Manipulate string
     typeFound.map(
       item => input && item.includes(input) && (filter = item + " in " + category[catIndex])
