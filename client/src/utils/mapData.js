@@ -83,7 +83,10 @@ export const mapData = (initialData, search, input, find, clear, update) => {
 
     // Manipulate string
     typeFound.map(
-      item => input && item.includes(input) && (filter = item + " in " + category[catIndex])
+      item =>
+        input &&
+        item.includes(input.toLowerCase()) &&
+        (filter = item + " in " + category[catIndex])
     );
     console.log(filter);
 
