@@ -92,7 +92,7 @@ body {
       font-size: 3.4rem; } }
   @media only screen and (max-width: 50.063em) {
     .logo__title {
-      transform: translateY(2.3vw); } }
+      transform: translateY(1.3vw); } }
   @media only screen and (max-width: 43.75em) {
     .logo__title {
       transform: translateY(1.5vw); } }
@@ -1019,11 +1019,14 @@ body {
       display: flex;
       justify-content: space-between; }
     .basket .shopping__img {
-      width: 35%;
+      width: 40%;
       height: 35vh; }
       @media only screen and (max-width: 75em) {
         .basket .shopping__img {
           height: 30vh; } }
+      @media only screen and (max-width: 75em) {
+        .basket .shopping__img {
+          height: 19vh; } }
     @media only screen and (max-width: 43.75em) {
       .basket .shopping {
         width: 90%; } }
@@ -1031,7 +1034,7 @@ body {
       .basket .shopping {
         width: 100%; } }
   .basket .description-size {
-    width: 45%;
+    width: 40%;
     position: relative; }
     .basket .description-size__title {
       font-size: 1.4rem;
@@ -1055,6 +1058,9 @@ body {
       bottom: 5%; }
   .basket .price-tag {
     margin-top: 13%; }
+    @media only screen and (max-width: 50.063em) {
+      .basket .price-tag {
+        margin-top: 18%; } }
     @media only screen and (max-width: 39.375em) {
       .basket .price-tag {
         margin-top: 24%; } }
@@ -1068,6 +1074,9 @@ body {
     .basket .price-tag__price {
       font-weight: 400;
       margin-bottom: 7.7rem; }
+      @media only screen and (max-width: 50.063em) {
+        .basket .price-tag__price {
+          margin-bottom: 8.7rem; } }
       @media only screen and (max-width: 43.75em) {
         .basket .price-tag__price {
           font-size: 1.2rem; } }
@@ -2927,7 +2936,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     height: 2rem; }
     @media only screen and (max-width: 50.063em) {
       .search-bar__icon {
-        margin: 1.3rem; } }
+        margin: 2.3rem; } }
 
 .icons {
   width: 20vw;
