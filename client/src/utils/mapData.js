@@ -76,6 +76,10 @@ export const mapData = (initialData, search, input, find, clear, update) => {
     });
 
     console.log(category[catIndex]);
+    typeFound.map(item => {
+      console.log(input);
+      console.log(item.includes(input));
+    });
 
     // Manipulate string
     typeFound.map(
