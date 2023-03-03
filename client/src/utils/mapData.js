@@ -79,6 +79,7 @@ export const mapData = (initialData, search, input, find, clear, update) => {
     typeFound.map(
       item => input && item.includes(input) && (filter = item + " in " + category[catIndex])
     );
+    console.log(filter);
 
     typeof filter === "string" && (filterString = filter);
 
