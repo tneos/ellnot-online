@@ -47,7 +47,7 @@ body {
   height: 100vh; }
   @media only screen and (max-width: 50.063em) {
     #root {
-      grid-template-rows: min-content 30vh repeat(2, min-content) 20vh min-content 20vh min-content 35vh min-content 35vh 75vh; } }
+      grid-template-rows: min-content 30vh repeat(2, min-content) 20vh min-content 20vh min-content 35vh min-content 35vh 35vh; } }
   @media only screen and (max-width: 39.375em) {
     #root {
       grid-template-rows: min-content 30vh repeat(2, min-content) 20vh repeat(3, min-content) 35vh min-content 35vh 75vh; } }
@@ -2660,6 +2660,9 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   @media only screen and (max-width: 56.25em) {
     .social {
       height: 7%; } }
+  @media only screen and (max-width: 56.25em) {
+    .social {
+      height: 4%; } }
   .social__info, .social__icons {
     padding: 1% 0; }
     @media only screen and (max-width: 75em) {
