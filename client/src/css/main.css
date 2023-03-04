@@ -45,7 +45,7 @@ body {
   grid-template-rows: repeat(3, 20vh) min-content 30vh min-content 35vh min-content 25vh min-content 25vh;
   grid-template-columns: minmax(3.6rem, 1fr) repeat(12, minmax(min-content, 11.5rem)) minmax(1.6rem, 1fr);
   height: 100vh; }
-  @media only screen and (max-width: 50.063em) {
+  @media only screen and (max-width: 56.25em) {
     #root {
       grid-template-rows: min-content 30vh repeat(2, min-content) 20vh min-content 20vh min-content 35vh min-content 35vh 35vh; } }
   @media only screen and (max-width: 39.375em) {
@@ -2657,9 +2657,6 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   height: 8%;
   width: 100%;
   z-index: 4000; }
-  @media only screen and (max-width: 56.25em) {
-    .social {
-      height: 7%; } }
   @media only screen and (max-width: 56.25em) {
     .social {
       height: 4%; } }
