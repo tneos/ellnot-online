@@ -76,7 +76,7 @@ const Main = () => {
                       />
                       <Route path="/" element={<Home />} />
                       <Route path="/:category/:type" element={<Type />} />
-                      <Route path="/under-:price" element={<PriceBased />} />
+                      <Route path="/under/:price" element={<PriceBased />} />
                       <Route path="/delivery" element={<Delivery />} />
                       <Route path="/returns" element={<Returns />} />
                       <Route path="/students" element={<Students />} />

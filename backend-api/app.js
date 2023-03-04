@@ -24,9 +24,8 @@ app.use(express.json());
 
 // Define Routes
 app.use("/api/data", require("./routes/data"));
-app.use("/api", require("./routes/collection"));
 app.use(`/api/item`, require("./routes/item"));
-app.use(`/api`, require("./routes/under"));
+app.use("/api/under", require("./routes/under"));
 app.use("/api/users", require("./routes/users"));
 app.use("/api/auth", require("./routes/auth"));
 app.use("/api/email", require("./routes/email"));
@@ -35,6 +34,7 @@ app.use("/api/size", require("./routes/size"));
 app.use("/api/wishlist", require("./routes/wishlist"));
 app.use("/api/checkout", require("./routes/checkout"));
 app.use("/api/payment_confirmation", require("./routes/confirmation"));
+app.use("/api", require("./routes/collection"));
 
 const PORT = process.env.PORT || 5000;
 

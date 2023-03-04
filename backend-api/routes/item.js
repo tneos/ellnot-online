@@ -14,6 +14,7 @@ router.get("/:collection/:category/:id", async (req, res) => {
   let collection = req.params.collection;
   let category = req.params.category;
   let item;
+  console.log(collection);
 
   try {
     if (collection === "clothing") {

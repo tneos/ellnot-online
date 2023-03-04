@@ -6,7 +6,7 @@ const Clothing = require("../models/Clothing");
 // @route   GET api/under-:price
 // @desc    Get data based on price
 // @access  Public
-router.get("/under-:price", async (req, res) => {
+router.get("/:price", async (req, res) => {
   let price = parseFloat(req.params.price);
 
   try {

@@ -171,8 +171,9 @@ const ItemState = props => {
     try {
       const res =
         process.env.REACT_APP_ENV !== "production"
-          ? await axios.get(`/api/under-${price}`)
-          : await axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/under-${price}`);
+          ? await axios.get(`/api/under/${price}`)
+          : await axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/under/${price}`);
+
       let results;
       let arrayOfObjects = [];
 

@@ -23,7 +23,6 @@ const PriceBased = () => {
   const {user, favItems} = authContext;
 
   const {price} = useParams();
-  console.log(price);
 
   let output;
   const waitBeforeShow = 800;
@@ -63,11 +62,32 @@ const PriceBased = () => {
                   key={index}
                   userId={user && user._id}
                   item={item}
+                  // likedItem={
+                  //   likedItem(favArray, item) ? (
+                  //     <img src="http://localhost:3000/img/filled-heart.png" alt="not liked" />
+                  //   ) : (
+                  //     <img src="http://localhost:3000/img/heart.png" alt="not liked" />
+                  //   )
+                  // }
                   likedItem={
                     likedItem(favArray, item) ? (
-                      <img src="http://localhost:3000/img/filled-heart.png" alt="not liked" />
+                      <img
+                        src={
+                          process.env.REACT_APP_ENV !== "production"
+                            ? "http://localhost:3000/img/filled-heart.png"
+                            : `${process.env.REACT_APP_CLIENT_URL}/img/filled-heart.png`
+                        }
+                        alt="not liked"
+                      />
                     ) : (
-                      <img src="http://localhost:3000/img/heart.png" alt="not liked" />
+                      <img
+                        src={
+                          process.env.REACT_APP_ENV !== "production"
+                            ? "http://localhost:3000/img/heart.png"
+                            : `${process.env.REACT_APP_CLIENT_URL}/img/heart.png`
+                        }
+                        alt="not liked"
+                      />
                     )
                   }
                 />
