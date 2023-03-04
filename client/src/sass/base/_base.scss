@@ -55,7 +55,7 @@ body {
     minmax(1.6rem, 1fr);
   height: 100vh;
 
-  @media only screen and (max-width: $bp-medium) {
+  @media only screen and (max-width: $bp-large) {
     grid-template-rows:
       min-content 30vh repeat(2, min-content) 20vh min-content 20vh min-content
       35vh min-content 35vh 35vh;
