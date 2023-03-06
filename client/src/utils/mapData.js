@@ -58,9 +58,10 @@ export const mapData = (initialData, search, input, find, clear, update) => {
   });
 
   // Find the items that match the input
+  console.log(typeFound);
 
   // If type of items found
-  if (typeFound.length > 0) {
+  if (typeFound && typeFound.length > 0) {
     // Find the category that matches the one found and save the index
     initialData.map((dataArray, index) => {
       Object.keys(dataArray[0]).map(key => {
@@ -92,7 +93,7 @@ export const mapData = (initialData, search, input, find, clear, update) => {
     });
 
     // If individual items found
-  } else if (typeFound.length === 0) {
+  } else if (typeFound && typeFound.length === 0) {
     foundItems.map(obj => {
       // Add description of item if it doesn't exist
       filterArray.length === 0

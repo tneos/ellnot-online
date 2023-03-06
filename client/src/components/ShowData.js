@@ -11,6 +11,8 @@ const ShowData = ({data}) => {
   const subMenuContext = useContext(SubMenuContext);
   const navigate = useNavigate();
 
+  console.log(data);
+
   // Initialize context
   const {initialData, clearData, getData, resetSearchBar, setInput} = itemContext;
   const {disableMobileSearchBar, disableDesktopSearchBar} = subMenuContext;
@@ -92,8 +94,11 @@ const ShowData = ({data}) => {
       category = keys.find(string => string === links[0]);
     }
   });
-
+  //data.map(el => console.log(Array.isArray(el)));
   // No data found
+  console.log(links, descriptions);
+  // (data.length === 0 || data.every(el => Array.isArray(el))) &&
+  //   descriptions.push("no items found");
   data.length === 0 && descriptions.push("no items found");
 
   const onSelect = e => {
@@ -166,7 +171,7 @@ const ShowData = ({data}) => {
     }
   };
 
-  console.log(descriptions[0]);
+  console.log(descriptions);
 
   allItems = (
     <nav className="dataResult__menu">
