@@ -166,6 +166,8 @@ const ShowData = ({data}) => {
     }
   };
 
+  console.log(descriptions[0]);
+
   allItems = (
     <nav className="dataResult__menu">
       <div
