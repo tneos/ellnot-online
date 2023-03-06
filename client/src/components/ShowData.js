@@ -11,7 +11,7 @@ const ShowData = ({data}) => {
   const subMenuContext = useContext(SubMenuContext);
   const navigate = useNavigate();
 
-  console.log(data);
+  //console.log(data);
 
   // Initialize context
   const {initialData, clearData, getData, resetSearchBar, setInput} = itemContext;
@@ -96,7 +96,7 @@ const ShowData = ({data}) => {
   });
   //data.map(el => console.log(Array.isArray(el)));
   // No data found
-  console.log(links, descriptions);
+  console.log(links, descriptions, data);
   // (data.length === 0 || data.every(el => Array.isArray(el))) &&
   //   descriptions.push("no items found");
   data.length === 0 && descriptions.push("no items found");

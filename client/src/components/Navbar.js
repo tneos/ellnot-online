@@ -145,23 +145,30 @@ function Navbar() {
     mapData(initialData, dataSearch, e.target.value, findData, clearData, updateData);
   };
 
-  // Output item or return a response if none found
-  const searchbarOutput = () => {
-    let filteredData;
-
-    if (dataSearch.every(data => data !== "undefined")) {
-      filteredData = filterOutput(dataSearch, [appData]);
-    }
-
-    return <ShowData data={filteredData} />;
-  };
-
-  console.log(token);
+  console.log(token, dataSearch);
 
   // Empty input
   const onDeleteInput = () => {
     setDeleteIcon(false);
     setInput("");
+  };
+
+  // Output item or return a response if none found
+  const searchbarOutput = () => {
+    let filteredData;
+    // console.log(dataSearch);
+
+    // if (dataSearch.every(data => data !== "undefined")) {
+    //   filteredData = filterOutput(dataSearch, [appData]);
+
+    //   return <ShowData data={filteredData} />;
+    // }
+    if (dataSearch.length > 0) {
+      filteredData = filterOutput(dataSearch, [appData]);
+      console.log(filteredData);
+
+      return <ShowData data={filteredData} />;
+    }
   };
 
   const loggedIn = (

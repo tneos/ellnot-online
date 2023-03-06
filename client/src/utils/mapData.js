@@ -126,7 +126,8 @@ export const mapData = (initialData, search, input, find, clear, update) => {
   if (!input && foundItems.length === 0 && typesFound.length === 0) {
     clear();
   }
-  if (input && foundItems.length === 0 && types.length === 0) {
+  console.log(foundItems.length, input, filterArray.length);
+  if (input && foundItems.length === 0 && filterArray.length === 0) {
     find("No items found");
   }
 };
