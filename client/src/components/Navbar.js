@@ -83,7 +83,7 @@ function Navbar() {
 
   // Increase length of search bar and deactivate sub menus
   const onSearch = () => {
-    setSearchBar();
+    dataSearch && dataSearch.length > 0 && setSearchBar();
     deactivateAll();
     setHighlightedMenu({
       menu1: false,
@@ -367,9 +367,7 @@ function Navbar() {
             : "search-bar__desktop-active not-show-mobile"
         }
       >
-        {dataSearch && dataSearch.length > 0 && (
-          <div className="dataResult not-show-mobile">{searchbarOutput()}</div>
-        )}
+        <div className="dataResult not-show-mobile">{searchbarOutput()}</div>
       </div>
     </Fragment>
   );
