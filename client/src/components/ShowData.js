@@ -94,11 +94,10 @@ const ShowData = ({data}) => {
       category = keys.find(string => string === links[0]);
     }
   });
-  //data.map(el => console.log(Array.isArray(el)));
+
   // No data found
-  console.log(links, descriptions, data);
-  // (data.length === 0 || data.every(el => Array.isArray(el))) &&
-  //   descriptions.push("no items found");
+  // console.log(links, descriptions, data);
+
   data.length === 0 && descriptions.push("no items found");
 
   const onSelect = e => {
@@ -171,7 +170,7 @@ const ShowData = ({data}) => {
     }
   };
 
-  console.log(descriptions);
+  //console.log(descriptions);
 
   allItems = (
     <nav className="dataResult__menu">
