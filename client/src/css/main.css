@@ -723,11 +723,11 @@ body {
 
 @media only screen and (max-width: 39.375em) {
   .signup-active {
-    top: 43%; } }
+    top: 62%; } }
 
 @media only screen and (max-width: 50.063em) {
   .sub-signup {
-    top: -18rem; } }
+    top: -19rem; } }
 
 .set-price {
   grid-column: 1 / -1;
@@ -810,6 +810,9 @@ body {
     display: flex;
     justify-content: space-around;
     height: 13%; }
+    @media only screen and (max-width: 39.375em) {
+      .login__list {
+        height: 10%; } }
   .login__item {
     font-size: 2rem;
     font-weight: 300;
@@ -830,6 +833,9 @@ body {
   width: 87%;
   height: 50%;
   margin: 3rem; }
+  @media only screen and (max-width: 39.375em) {
+    .login-form {
+      width: 80%; } }
   .login-form__label {
     display: block;
     margin-bottom: 2.5rem; }
@@ -873,6 +879,9 @@ body {
     display: flex;
     justify-content: space-around;
     height: 13%; }
+    @media only screen and (max-width: 39.375em) {
+      .register__list {
+        height: 10%; } }
   .register__item {
     font-size: 2rem;
     font-weight: 300;
@@ -884,7 +893,8 @@ body {
       width: 40rem; } }
   @media only screen and (max-width: 39.375em) {
     .register {
-      height: 76%; } }
+      height: 76%;
+      width: 85%; } }
 
 .not-active {
   background-color: var(--border-color); }
@@ -893,6 +903,9 @@ body {
   width: 87%;
   height: 50%;
   margin: 3rem; }
+  @media only screen and (max-width: 39.375em) {
+    .register-form {
+      width: 80%; } }
   .register-form__label {
     display: block;
     margin-bottom: 2.5rem; }
@@ -1027,9 +1040,12 @@ body {
       @media only screen and (max-width: 75em) {
         .basket .shopping__img {
           height: 30vh; } }
-      @media only screen and (max-width: 75em) {
+      @media only screen and (max-width: 56.25em) {
         .basket .shopping__img {
           height: 19vh; } }
+      @media only screen and (max-width: 39.375em) {
+        .basket .shopping__img {
+          height: 25vh; } }
     @media only screen and (max-width: 43.75em) {
       .basket .shopping {
         width: 90%; } }
@@ -1049,16 +1065,26 @@ body {
       @media only screen and (max-width: 39.375em) {
         .basket .description-size__title {
           margin-bottom: 7rem;
-          height: 2.5rem; } }
+          height: 2.5rem;
+          font-size: 0.9rem; } }
     .basket .description-size__selection-title {
       font-weight: 400;
       margin-bottom: 1rem; }
+      @media only screen and (max-width: 39.375em) {
+        .basket .description-size__selection-title {
+          font-size: 0.9rem; } }
     .basket .description-size__selection {
       height: 4rem; }
+      @media only screen and (max-width: 39.375em) {
+        .basket .description-size__selection {
+          font-size: 0.9rem; } }
     .basket .description-size__qty {
       font-size: 1.4rem;
       position: absolute;
       bottom: 5%; }
+      @media only screen and (max-width: 39.375em) {
+        .basket .description-size__qty {
+          font-size: 0.9rem; } }
   .basket .price-tag {
     margin-top: 13%; }
     @media only screen and (max-width: 50.063em) {
@@ -1066,14 +1092,14 @@ body {
         margin-top: 18%; } }
     @media only screen and (max-width: 39.375em) {
       .basket .price-tag {
-        margin-top: 24%; } }
+        margin-top: 30%; } }
     .basket .price-tag__title {
       font-size: 1.4rem;
       font-weight: 300;
       margin-bottom: 1.7rem; }
       @media only screen and (max-width: 43.75em) {
         .basket .price-tag__title {
-          font-size: 1.2rem; } }
+          font-size: 0.9rem; } }
     .basket .price-tag__price {
       font-weight: 400;
       margin-bottom: 7.7rem; }
@@ -1085,19 +1111,27 @@ body {
           font-size: 1.2rem; } }
       @media only screen and (max-width: 39.375em) {
         .basket .price-tag__price {
-          margin-bottom: 3.2rem; } }
+          margin-bottom: 3.2rem;
+          font-size: 0.9rem; } }
     .basket .price-tag__btn {
       background-color: #fff;
       width: 3rem;
       height: 3rem;
       border: none;
       position: relative; }
+      @media only screen and (max-width: 39.375em) {
+        .basket .price-tag__btn {
+          width: 2rem;
+          height: 2rem; } }
       .basket .price-tag__btn::before, .basket .price-tag__btn::after {
         content: "";
         width: 1.5rem;
         height: 1px;
         background-color: #000;
         position: absolute; }
+        @media only screen and (max-width: 39.375em) {
+          .basket .price-tag__btn::before, .basket .price-tag__btn::after {
+            width: 1rem; } }
       .basket .price-tag__btn::before {
         transform: rotate(45deg);
         top: 49%;
@@ -2659,7 +2693,10 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   z-index: 4000; }
   @media only screen and (max-width: 56.25em) {
     .social {
-      height: 4%; } }
+      height: 3%; } }
+  @media only screen and (max-width: 56.25em) {
+    .social {
+      height: 5%; } }
   .social__info, .social__icons {
     padding: 1% 0; }
     @media only screen and (max-width: 75em) {
@@ -2739,7 +2776,10 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
       top: 8%; } }
   @media only screen and (max-width: 56.25em) {
     .nav-bar {
-      top: 7%; } }
+      top: 3%; } }
+  @media only screen and (max-width: 56.25em) {
+    .nav-bar {
+      top: 5%; } }
 
 .signup {
   top: 0; }
@@ -2778,6 +2818,9 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
         width: 30%;
         text-align: center;
         padding: 2rem 0; } }
+    @media only screen and (max-width: 39.375em) {
+      .nav-list__item {
+        font-size: 0.9rem; } }
   .nav-list__link {
     text-decoration: none;
     color: #000;
@@ -2939,7 +2982,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     height: 2rem; }
     @media only screen and (max-width: 50.063em) {
       .search-bar__icon {
-        margin: 2.3rem; } }
+        margin: 1.3rem; } }
 
 .icons {
   width: 20vw;
@@ -2960,6 +3003,9 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   @media only screen and (max-width: 50.063em) {
     .icons {
       flex: 40%; } }
+  @media only screen and (max-width: 39.375em) {
+    .icons {
+      height: 5vh; } }
   .icons__figure {
     position: relative;
     padding-left: 0.4rem; }
@@ -3018,7 +3064,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
       margin: 0.3rem auto; } }
   @media only screen and (max-width: 39.375em) {
     .loggedIn {
-      font-size: 1.2rem; } }
+      font-size: 0.9rem; } }
 
 .logout-list {
   text-decoration: none;

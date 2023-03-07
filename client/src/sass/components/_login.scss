@@ -11,6 +11,10 @@
     display: flex;
     justify-content: space-around;
     height: 13%;
+
+    @media only screen and (max-width: $bp-mobile) {
+      height: 10%;
+    }
   }
 
   &__item {
@@ -38,6 +42,10 @@
   width: 87%;
   height: 50%;
   margin: 3rem;
+
+  @media only screen and (max-width: $bp-mobile) {
+    width: 80%;
+  }
 
   &__label {
     display: block;

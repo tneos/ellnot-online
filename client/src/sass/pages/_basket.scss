@@ -88,8 +88,11 @@
       @media only screen and (max-width: $bp-largest) {
         height: 30vh;
       }
-      @media only screen and (max-width: $bp-largest) {
+      @media only screen and (max-width: $bp-medium) {
         height: 19vh;
+      }
+      @media only screen and (max-width: $bp-mobile) {
+        height: 25vh;
       }
     }
 
@@ -117,19 +120,32 @@
       @media only screen and (max-width: $bp-mobile) {
         margin-bottom: 7rem;
         height: 2.5rem;
+        font-size: 0.9rem;
       }
     }
     &__selection-title {
       font-weight: 400;
       margin-bottom: 1rem;
+
+      @media only screen and (max-width: $bp-mobile) {
+        font-size: 0.9rem;
+      }
     }
     &__selection {
       height: 4rem;
+
+      @media only screen and (max-width: $bp-mobile) {
+        font-size: 0.9rem;
+      }
     }
     &__qty {
       font-size: 1.4rem;
       position: absolute;
       bottom: 5%;
+
+      @media only screen and (max-width: $bp-mobile) {
+        font-size: 0.9rem;
+      }
     }
   }
 
@@ -141,14 +157,14 @@
     }
 
     @media only screen and (max-width: $bp-mobile) {
-      margin-top: 24%;
+      margin-top: 30%;
     }
     &__title {
       font-size: 1.4rem;
       font-weight: 300;
       margin-bottom: 1.7rem;
       @media only screen and (max-width: $bp-vsmall) {
-        font-size: 1.2rem;
+        font-size: 0.9rem;
       }
     }
 
@@ -165,6 +181,7 @@
 
       @media only screen and (max-width: $bp-mobile) {
         margin-bottom: 3.2rem;
+        font-size: 0.9rem;
       }
     }
 
@@ -175,6 +192,11 @@
       border: none;
       position: relative;
 
+      @media only screen and (max-width: $bp-mobile) {
+        width: 2rem;
+        height: 2rem;
+      }
+
       &::before,
       &::after {
         content: "";
@@ -182,6 +204,10 @@
         height: 1px;
         background-color: #000;
         position: absolute;
+
+        @media only screen and (max-width: $bp-mobile) {
+          width: 1rem;
+        }
       }
 
       &::before {

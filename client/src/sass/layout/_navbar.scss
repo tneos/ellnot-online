@@ -52,7 +52,10 @@
   }
 
   @media only screen and (max-width: $bp-medium) {
-    top: 7%;
+    top: 3%;
+  }
+  @media only screen and (max-width: $bp-medium) {
+    top: 5%;
   }
 }
 
@@ -99,6 +102,10 @@
       width: 30%;
       text-align: center;
       padding: 2rem 0;
+    }
+
+    @media only screen and (max-width: $bp-mobile) {
+      font-size: 0.9rem;
     }
   }
   &__link {
@@ -311,7 +318,7 @@
     height: 2rem;
 
     @media only screen and (max-width: $bp-small) {
-      margin: 2.3rem;
+      margin: 1.3rem;
     }
   }
 }
@@ -338,6 +345,10 @@
 
   @media only screen and (max-width: $bp-small) {
     flex: 40%;
+  }
+
+  @media only screen and (max-width: $bp-mobile) {
+    height: 5vh;
   }
 
   &__figure {
@@ -409,7 +420,7 @@
   }
 
   @media only screen and (max-width: $bp-mobile) {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
   }
 }
 .logout-list {
