@@ -367,7 +367,9 @@ function Navbar() {
             : "search-bar__desktop-active not-show-mobile"
         }
       >
-        <div className="dataResult not-show-mobile">{searchbarOutput()}</div>
+        {dataSearch && dataSearch.length > 0 && (
+          <div className="dataResult not-show-mobile">{searchbarOutput()}</div>
+        )}
       </div>
     </Fragment>
   );
