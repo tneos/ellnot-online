@@ -46,7 +46,7 @@ router.put("/:id", async (req, res) => {
   let updatedUser = {};
   if (req.body !== {}) updatedUser.clientDetails = form;
   if (req.body !== {}) updatedUser.itemsBought = items;
-  console.log(updatedUser);
+
   try {
     // Update user
     updatedUser = await User.findOneAndUpdate({_id: userId}, updatedUser, {
