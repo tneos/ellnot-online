@@ -699,7 +699,8 @@ body {
   z-index: 3000; }
   @media only screen and (max-width: 56.25em) {
     .active {
-      top: 17%; } }
+      top: 8%;
+      height: 5vh; } }
   @media only screen and (max-width: 50.063em) {
     .active {
       transform: translateY(-35rem);
@@ -2761,11 +2762,15 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 .logo {
   height: 10vh;
   cursor: pointer; }
+  @media only screen and (max-width: 56.25em) {
+    .logo {
+      height: 5vh; } }
   @media only screen and (max-width: 50.063em) {
     .logo {
       order: 2;
       flex: 30%;
-      margin-left: 4rem; } }
+      margin-left: 4rem;
+      height: 5vh; } }
   @media only screen and (max-width: 39.375em) {
     .logo {
       font-size: 2rem;
@@ -2802,10 +2807,12 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
       top: 8%; } }
   @media only screen and (max-width: 56.25em) {
     .nav-bar {
-      top: 3%; } }
-  @media only screen and (max-width: 56.25em) {
+      top: 3%;
+      height: 5vh; } }
+  @media only screen and (max-width: 39.375em) {
     .nav-bar {
-      top: 5%; } }
+      top: 5%;
+      height: 13vh; } }
 
 .signup {
   top: 0; }
@@ -2824,7 +2831,8 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
       width: 40vw; } }
   @media only screen and (max-width: 56.25em) {
     .nav-list {
-      width: 39%; } }
+      width: 39%;
+      height: 5vh; } }
   @media only screen and (max-width: 50.063em) {
     .nav-list {
       order: 4;

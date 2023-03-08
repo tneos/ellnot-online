@@ -2,10 +2,15 @@
   height: 10vh;
   cursor: pointer;
 
+  @media only screen and (max-width: $bp-medium) {
+    height: 5vh;
+  }
+
   @media only screen and (max-width: $bp-small) {
     order: 2;
     flex: 30%;
     margin-left: 4rem;
+    height: 5vh;
   }
 
   @media only screen and (max-width: $bp-mobile) {
@@ -53,9 +58,11 @@
 
   @media only screen and (max-width: $bp-medium) {
     top: 3%;
+    height: 5vh;
   }
-  @media only screen and (max-width: $bp-medium) {
+  @media only screen and (max-width: $bp-mobile) {
     top: 5%;
+    height: 13vh;
   }
 }
 
@@ -80,6 +87,7 @@
 
   @media only screen and (max-width: $bp-medium) {
     width: 39%;
+    height: 5vh;
   }
 
   @media only screen and (max-width: $bp-small) {
