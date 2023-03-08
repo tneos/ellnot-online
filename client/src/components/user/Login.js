@@ -79,7 +79,7 @@ const Login = ({onClick}) => {
           <button className="login-form__forgotten">Forgotten Password?</button>
         </form>
       </section>
-      <p className="copyright">&copy; 2021 Ellnot Company</p>
+      <p className="copyright">&copy; 2023 Ellnot Company</p>
     </Fragment>
   );
 };

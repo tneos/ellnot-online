@@ -1046,7 +1046,7 @@ body {
           height: 30vh; } }
       @media only screen and (max-width: 56.25em) {
         .basket .shopping__img {
-          height: 19vh; } }
+          height: 21rem; } }
       @media only screen and (max-width: 39.375em) {
         .basket .shopping__img {
           height: 25vh; } }
@@ -2720,7 +2720,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   z-index: 4000; }
   @media only screen and (max-width: 56.25em) {
     .social {
-      height: 3%; } }
+      height: 4rem; } }
   @media only screen and (max-width: 39.375em) {
     .social {
       height: 5%; } }
