@@ -2694,7 +2694,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   @media only screen and (max-width: 56.25em) {
     .social {
       height: 3%; } }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (max-width: 39.375em) {
     .social {
       height: 5%; } }
   .social__info, .social__icons {
