@@ -29,7 +29,7 @@ function Footer() {
           </Link>
         </ul>
       </div>
-      <p className="footer__copyright">&copy; 2021 Ellnot Company</p>
+      <p className="footer__copyright">&copy; 2023 Ellnot Company</p>
     </footer>
   );
 }

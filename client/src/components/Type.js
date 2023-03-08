@@ -25,6 +25,7 @@ const Type = () => {
 
   const {likedList, appData, getData} = itemContext;
   const {user, favItems} = authContext;
+  console.log(appData);
 
   useEffect(() => {
     window.scrollTo(0, 0);
