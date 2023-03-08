@@ -11,8 +11,6 @@ const ShowData = ({data}) => {
   const subMenuContext = useContext(SubMenuContext);
   const navigate = useNavigate();
 
-  //console.log(data);
-
   // Initialize context
   const {initialData, clearData, getData, resetSearchBar, setInput} = itemContext;
   const {disableMobileSearchBar, disableDesktopSearchBar} = subMenuContext;
@@ -44,14 +42,14 @@ const ShowData = ({data}) => {
     initialData.map((array, index) => {
       if (index === 0) {
         Object.keys(array[0])
-          .slice(2, Object.keys(array[0]).length - 1)
+          .slice(2, Object.keys(array[0]).length - 2)
           .map(array => clothing.push(array));
         category1 = Object.values(array[0])[1];
       }
 
       if (index === 1) {
         Object.keys(array[0])
-          .slice(2, Object.keys(array[0]).length - 1)
+          .slice(2, Object.keys(array[0]).length - 2)
           .map(array => accessories.push(array));
         category2 = Object.values(array[0])[1];
       }
@@ -96,8 +94,6 @@ const ShowData = ({data}) => {
   });
 
   // No data found
-  // console.log(links, descriptions, data);
-
   data.length === 0 && descriptions.push("no items found");
 
   const onSelect = e => {
@@ -136,10 +132,10 @@ const ShowData = ({data}) => {
 
     // Modify string to match with list in database
     if (pick === "Summer Collection") {
-      pick = "summer-items in " + pick;
+      pick = "summer_items in " + pick;
     }
 
-    pick === "summer-items in Summer Collection"
+    pick === "summer_items in Summer Collection"
       ? (choice = summerList.find(description => (choice = description === pick.toLowerCase())))
       : (choice = descriptions.find(description => description === pick.toLowerCase()));
 
@@ -159,6 +155,7 @@ const ShowData = ({data}) => {
     if (category) {
       disableMobileSearchBar();
       setTimeout(clearData, waitBeforeShow);
+
       setTimeout(
         () => navigate(`/${links[links.length - 1].toLowerCase()}/${links[0]}`),
         waitBeforeShow
@@ -169,8 +166,6 @@ const ShowData = ({data}) => {
       setTimeout(() => navigate(`/item/${choice}`), waitBeforeShow);
     }
   };
-
-  //console.log(descriptions);
 
   allItems = (
     <nav className="dataResult__menu">
@@ -225,10 +220,8 @@ const ShowData = ({data}) => {
           />
         </ul>
       </div>
-      <div className="dataResult__option">
-        <h3 className="dataResult__title" onClick={onSelect}>
-          Summer Collection
-        </h3>
+      <div className="dataResult__option" onClick={onSelect}>
+        <h3 className="dataResult__title">Summer Collection</h3>
       </div>
     </nav>
   );

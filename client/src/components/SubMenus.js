@@ -19,6 +19,7 @@ function SubMenus() {
 
   let listArray1 = [...list1Collection];
   let listArray2 = [...list2Collection];
+
   let list1, list2;
 
   listArray1.map(list => {

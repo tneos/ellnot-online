@@ -609,7 +609,6 @@
   flex-direction: column;
   z-index: 4000;
   overflow: scroll;
-  justify-content: space-evenly;
 
   @media only screen and (max-width: $bp-small) {
     padding: 2rem 0;
@@ -619,10 +618,12 @@
     width: 80%;
     margin: 0 auto;
     display: flex;
+    margin: 2%;
 
     @media only screen and (max-width: $bp-mobile) {
       flex-direction: column;
-      width: 35vw;
+      width: 80%;
+      margin: 0 10% 35% 10%;
     }
   }
 
@@ -631,8 +632,8 @@
     width: 90%;
 
     @media only screen and (max-width: $bp-mobile) {
-      width: 100%;
-      margin-bottom: 1rem;
+      width: 80%;
+      margin: 0 10% 1rem 10%;
     }
   }
 
@@ -645,7 +646,7 @@
     font-weight: 300;
     display: table-cell;
     vertical-align: middle;
-    padding: 0.3rem 0;
+    padding: 3% 0;
 
     @media only screen and (max-width: $bp-small) {
       padding: 1.5rem 0 0 3rem;
@@ -662,7 +663,7 @@
     font-weight: 400;
     display: table-cell;
     vertical-align: middle;
-    padding: 0.3rem 0;
+    padding: 3% 0;
   }
 
   &__menu {
@@ -715,7 +716,7 @@
     vertical-align: middle;
 
     @media only screen and (max-width: $bp-mobile) {
-      font-size: 1.1rem;
+      font-size: 0.9rem;
     }
   }
 
@@ -724,7 +725,8 @@
     height: 100%;
 
     @media only screen and (max-width: $bp-mobile) {
-      width: 75%;
+      width: 80%;
+      margin: 0 10%;
     }
   }
 }

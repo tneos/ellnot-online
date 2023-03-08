@@ -84,7 +84,9 @@ function Navbar() {
   // Increase length of search bar and deactivate sub menus
   const onSearch = () => {
     // If data loaded make search bar active
-    dataSearch && dataSearch.length > 0 && setSearchBar();
+    if (dataSearch && dataSearch.length > 0) {
+      setSearchBar();
+    }
     deactivateAll();
     setHighlightedMenu({
       menu1: false,
