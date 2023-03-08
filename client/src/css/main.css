@@ -2900,7 +2900,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     transition: all 0.3s ease-in-out; }
   .search-bar__desktop-active {
     position: fixed;
-    bottom: 40%;
+    bottom: 35%;
     width: 80%;
     height: 40vh;
     border: 0.1px solid #000;
