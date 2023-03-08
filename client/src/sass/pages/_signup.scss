@@ -1,3 +1,28 @@
+.signup {
+  grid-column: 1 / -1;
+  grid-row: 1 / 9;
+
+  @media only screen and (max-width: $bp-mobile) {
+    grid-row: 1 / 12;
+  }
+}
+
+.company-logo {
+  width: 100%;
+  height: 10%;
+  display: table;
+
+  &__title {
+    font-family: "Rosarivo", serif;
+    font-size: 3.8rem;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
 .newCustomer {
   grid-row: 3 / 5;
   grid-column: 4 / 12;

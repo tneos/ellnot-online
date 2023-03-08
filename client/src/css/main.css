@@ -76,9 +76,12 @@ body {
   grid-column: 1 / -1;
   grid-row: 2 / 3;
   font-weight: 400;
-  font-size: 4.2rem;
+  font-size: 2.6rem;
   padding: 2rem;
   text-align: center; }
+  @media only screen and (max-width: 39.375em) {
+    .signup-title {
+      font-size: 2.3rem; } }
 
 .logo__title {
   display: block;
@@ -332,7 +335,7 @@ body {
         left: 15%; } }
     @media only screen and (max-width: 39.375em) {
       .box-1__title {
-        font-size: 2.7rem;
+        font-size: 2.5rem;
         left: 25%; } }
   .box-1__text {
     font-weight: 200;
@@ -441,7 +444,7 @@ body {
         left: 15%; } }
     @media only screen and (max-width: 39.375em) {
       .box-2__title {
-        font-size: 2.7rem;
+        font-size: 2.5rem;
         left: 25%; } }
   .box-2__text {
     font-weight: 200;
@@ -550,7 +553,7 @@ body {
         left: 15%; } }
     @media only screen and (max-width: 39.375em) {
       .box-3__title {
-        font-size: 2.7rem;
+        font-size: 2.5rem;
         left: 25%; } }
   .box-3__text {
     font-weight: 200;
@@ -1499,6 +1502,26 @@ body {
   align-items: center;
   justify-content: space-around; }
 
+.signup {
+  grid-column: 1 / -1;
+  grid-row: 1 / 9; }
+  @media only screen and (max-width: 39.375em) {
+    .signup {
+      grid-row: 1 / 12; } }
+
+.company-logo {
+  width: 100%;
+  height: 10%;
+  display: table; }
+  .company-logo__title {
+    font-family: "Rosarivo", serif;
+    font-size: 3.8rem;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle; }
+
 .newCustomer {
   grid-row: 3 / 5;
   grid-column: 4 / 12; }
@@ -1615,7 +1638,7 @@ body {
         width: 40%; } }
     @media only screen and (max-width: 39.375em) {
       .my-account__update {
-        width: 60%; } }
+        width: 70%; } }
   .my-account__delete {
     display: block;
     width: 30%;
@@ -1637,7 +1660,7 @@ body {
         width: 40%; } }
     @media only screen and (max-width: 39.375em) {
       .my-account__delete {
-        width: 60%; } }
+        width: 70%; } }
 
 .date-of-birth {
   width: 24%;
@@ -2412,6 +2435,9 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     border: solid 1px var(--sustainability-color);
     letter-spacing: 2px;
     text-transform: uppercase; }
+    @media only screen and (max-width: 39.375em) {
+      .confirmation__btn {
+        width: 80%; } }
   .confirmation__icon {
     background-image: url("../urls/tick.png");
     display: inline-block;
@@ -3120,7 +3146,8 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
         width: 17%; } }
     @media only screen and (max-width: 39.375em) {
       .logout-list__active {
-        width: 15%; } }
+        width: 23%;
+        right: 25%; } }
 
 .search-active {
   grid-column: 1 / -1;
