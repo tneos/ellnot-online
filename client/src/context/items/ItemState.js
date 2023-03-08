@@ -205,7 +205,9 @@ const ItemState = props => {
   };
 
   // Activate search bar
-  const setSearchBar = () => dispatch({type: SET_SEARCH_BAR});
+  const setSearchBar = data => {
+    data && data.length > 0 && dispatch({type: SET_SEARCH_BAR});
+  };
 
   // Deactivate search bar
   const resetSearchBar = () => dispatch({type: RESET_SEARCH_BAR});
