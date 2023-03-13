@@ -1,16 +1,15 @@
 .logo {
-  height: 10vh;
+  height: 6rem;
   cursor: pointer;
 
-  @media only screen and (max-width: $bp-medium) {
-    height: 5vh;
-  }
+  // @media only screen and (max-width: $bp-medium) {
+  //   height: 5vh;
+  // }
 
   @media only screen and (max-width: $bp-small) {
     order: 2;
     flex: 30%;
     margin-left: 4rem;
-    height: 5vh;
   }
 
   @media only screen and (max-width: $bp-mobile) {
@@ -45,7 +44,7 @@
 
   position: fixed;
   width: 100%;
-  top: 8%;
+  top: 5rem;
   display: flex;
   flex-wrap: wrap;
   background-color: #fff;
@@ -54,15 +53,15 @@
 
   @media only screen and (max-width: $bp-largest) {
     top: 8%;
+    height: 6rem;
+  }
+  @media only screen and (max-width: $bp-small) {
+    top: 4rem;
+    height: 12rem;
   }
 
-  @media only screen and (max-width: $bp-medium) {
-    top: 3%;
-    height: 5vh;
-  }
   @media only screen and (max-width: $bp-mobile) {
-    top: 5%;
-    height: 13vh;
+    top: 5rem;
   }
 }
 
@@ -79,7 +78,7 @@
   justify-content: space-around;
   list-style: none;
   width: 35vw;
-  height: 10vh;
+  height: 6rem;
 
   @media only screen and (max-width: $bp-largest) {
     width: 40vw;
@@ -87,14 +86,13 @@
 
   @media only screen and (max-width: $bp-medium) {
     width: 39%;
-    height: 5vh;
+    height: 6rem;
   }
 
   @media only screen and (max-width: $bp-small) {
     order: 4;
     flex: 60%;
     padding-right: 2rem;
-    height: 4vh;
   }
 
   @media only screen and (max-width: $bp-mobile) {
@@ -107,13 +105,12 @@
     cursor: pointer;
 
     @media only screen and (max-width: $bp-small) {
-      width: 30%;
       text-align: center;
       padding: 2rem 0;
     }
 
     @media only screen and (max-width: $bp-mobile) {
-      font-size: 0.9rem;
+      font-size: 0.7rem;
     }
   }
   &__link {
@@ -145,7 +142,6 @@
   @media only screen and (max-width: $bp-small) {
     order: 1;
     flex: 45%;
-    // margin-left: 4rem;
   }
   @media only screen and (max-width: $bp-mobile) {
     margin-bottom: 0;
@@ -163,7 +159,6 @@
     }
 
     @media only screen and (max-width: $bp-small) {
-      // width: 65%;
       display: none;
     }
   }
@@ -333,7 +328,7 @@
 
 .icons {
   width: 20vw;
-  height: 10vh;
+  height: 6rem;
   display: flex;
   justify-content: space-around;
   padding-top: 1.5%;
@@ -493,7 +488,8 @@
     }
     @media only screen and (max-width: $bp-mobile) {
       width: 23%;
-      right: 25%;
+      right: 44%;
+      z-index: 5000;
     }
   }
 }

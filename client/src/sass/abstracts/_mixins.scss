@@ -1,20 +1,22 @@
 @mixin active-class {
   width: 100%;
-  height: 10vh;
+  height: 5rem;
   right: 0;
   background-color: var(--submenu-color);
   position: fixed;
-  top: 18%;
+  top: 10.5rem;
   right: 0;
-  z-index: 3000;
-  //transition: all ease-out 1.4s;
+  z-index: 3001;
 
-  @media only screen and (max-width: $bp-medium) {
-    top: 8%;
-    height: 5vh;
+  @media only screen and (max-width: $bp-largest) and (min-height: 768px) {
+    top: 11.5rem;
   }
 
-  @media only screen and (max-width: $bp-small) {
+  @media only screen and (max-width: $bp-medium) {
+    top: 9rem;
+  }
+
+  @media only screen and (max-width: $bp-vsmall) and (min-height: 600px) {
     transform: translateY(-35rem);
     top: 47%;
     right: 0;
@@ -214,7 +216,7 @@
   justify-content: space-around;
   height: 100%;
 
-  @media only screen and (max-width: $bp-small) {
+  @media only screen and (max-width: $bp-vsmall) and (min-height: 600px) {
     flex-direction: column;
     flex: 100%;
     height: 100%;
@@ -233,11 +235,14 @@
   font-weight: 200;
 
   @media only screen and (max-width: $bp-medium) {
-    padding: 3% 0;
+    padding: 2.5rem 0;
   }
 
   @media only screen and (max-width: $bp-small) {
     padding-left: 4rem;
+  }
+  @media only screen and (max-width: $bp-small) and (min-height: 700px) {
+    padding-left: 5rem;
   }
 }
 
@@ -363,7 +368,7 @@
     height: 9rem;
   }
 
-  @media only screen and (max-width: $bp-small) {
+  @media only screen and (max-width: $bp-vsmall) and (min-height: 600px) {
     right: 0;
     top: 0;
     transition: all 0.3s;
