@@ -90,7 +90,7 @@
       }
 
       @media only screen and (max-width: $bp-mobile) {
-        height: 25rem;
+        height: 20rem;
       }
     }
 
@@ -155,7 +155,7 @@
     }
 
     @media only screen and (max-width: $bp-mobile) {
-      margin-top: 30%;
+      margin-top: 0;
     }
     &__title {
       font-size: 1.4rem;
@@ -163,6 +163,9 @@
       margin-bottom: 1.7rem;
       @media only screen and (max-width: $bp-vsmall) {
         font-size: 0.9rem;
+      }
+      @media only screen and (max-width: $bp-mobile) {
+        margin-bottom: 13.7rem;
       }
     }
 
@@ -178,7 +181,7 @@
       }
 
       @media only screen and (max-width: $bp-mobile) {
-        margin-bottom: 3.2rem;
+        margin-bottom: 1.2rem;
         font-size: 0.9rem;
       }
     }

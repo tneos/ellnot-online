@@ -38,6 +38,7 @@
 
   &__title {
     font-size: 2.2rem;
+    font-weight: 300;
     font-weight: 400;
     text-align: center;
     margin: 3rem 0;
@@ -47,6 +48,7 @@
     }
     @media only screen and (max-width: $bp-mobile) {
       font-size: 1.8rem;
+      font-weight: 200;
     }
   }
 
@@ -139,6 +141,11 @@
     font-weight: 300;
     text-align: center;
     margin: 2rem 0;
+
+    @media only screen and (max-width: $bp-mobile) {
+      font-size: 1.8rem;
+      font-weight: 200;
+    }
   }
 
   &__img {
@@ -159,17 +166,29 @@
 
   &__description {
     width: 50%;
+
+    @media only screen and (max-width: $bp-mobile) {
+      font-size: 0.9rem;
+    }
   }
   &__description-title {
     font-size: 1.4rem;
     font-weight: 300;
     text-align: left;
     margin: 2rem 0;
+
+    @media only screen and (max-width: $bp-mobile) {
+      margin: 0 0 2rem 0;
+    }
   }
   &__price {
     font-size: 1.2rem;
     font-weight: 300;
     margin: 4rem 0;
+
+    @media only screen and (max-width: $bp-mobile) {
+      font-size: 0.9rem;
+    }
   }
   &__details {
     display: flex;
@@ -179,6 +198,10 @@
   &__text {
     font-size: 1.2rem;
     font-weight: 400;
+
+    @media only screen and (max-width: $bp-mobile) {
+      font-size: 0.9rem;
+    }
   }
 }
 
@@ -186,6 +209,10 @@
   text-align: center;
   font-weight: 300;
   font-size: 2rem;
+
+  @media only screen and (max-width: $bp-mobile) {
+    font-size: 1.3rem;
+  }
 }
 
 .checkout-footer {
@@ -193,4 +220,13 @@
   height: 3%;
   background-color: var(--submenu-color);
   text-align: center;
+
+  &__copyright {
+    font-weight: lighter;
+    text-align: center;
+
+    @media only screen and (max-width: $bp-mobile) {
+      font-size: 1rem;
+    }
+  }
 }
