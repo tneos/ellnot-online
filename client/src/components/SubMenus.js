@@ -88,6 +88,8 @@ function SubMenus() {
       (e.target.className === "sub-nav1__link" || e.target.className === "sub-nav2__link")
     ) {
       e.target.parentNode.parentNode.parentNode.classList.remove("active");
+      e.target.parentNode.parentNode.parentNode.classList.remove("signup-active");
+      e.target.parentNode.parentNode.parentNode.classList.add("sub-signup");
     } else if (
       screenWidth > 800 &&
       (e.target.className === "sub-nav1__item" || e.target.className === "sub-nav2__item")
@@ -110,7 +112,7 @@ function SubMenus() {
 
   return (
     <Fragment>
-      <div className={active1 ? "sub-nav-1  active signup-active" : "sub-nav1 sub-signup"}>
+      <div className={active1 ? "sub-nav1  active signup-active" : "sub-nav1 sub-signup"}>
         <ul className="sub-nav1__list">
           <li className="sub-nav1__item" onMouseOver={onActive} onClick={onClick}>
             <Link
@@ -190,7 +192,7 @@ function SubMenus() {
         </ul>
       </div>
 
-      <div className={active2 ? "sub-nav-2 active signup-active" : "sub-nav2 sub-signup"}>
+      <div className={active2 ? "sub-nav2 active signup-active" : "sub-nav2 sub-signup"}>
         <ul className="sub-nav2__list">
           <li className="sub-nav2__item" onMouseOver={onActive} onClick={onClick}>
             <Link
