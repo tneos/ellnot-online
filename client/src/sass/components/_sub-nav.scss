@@ -20,6 +20,9 @@
 }
 
 .signup-active {
+  @media only screen and (max-width: $bp-largest) {
+    top: 15.5rem;
+  }
   @media only screen and (max-width: $bp-medium) and (min-height: 600px) {
     top: 15.5rem;
     height: 6rem;
@@ -45,6 +48,6 @@
 
 .sub-signup {
   @media only screen and (max-width: $bp-small) {
-    top: -19rem;
+    top: -20rem;
   }
 }

@@ -724,6 +724,10 @@ body {
       top: 43%;
       height: 40rem; } }
 
+@media only screen and (max-width: 75em) {
+  .signup-active {
+    top: 15.5rem; } }
+
 @media only screen and (max-width: 57.5em) and (min-height: 600px) {
   .signup-active {
     top: 15.5rem;
@@ -749,7 +753,7 @@ body {
 
 @media only screen and (max-width: 50.063em) {
   .sub-signup {
-    top: -19rem; } }
+    top: -20rem; } }
 
 .set-price {
   grid-column: 1 / -1;
