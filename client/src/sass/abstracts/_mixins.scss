@@ -190,6 +190,13 @@
   display: table;
   background-color: #fff;
 
+  @media only screen and (max-width: $bp-largest) {
+    height: 12rem;
+  }
+  @media only screen and (max-width: $bp-largest) {
+    height: 8rem;
+  }
+
   &__title {
     font-family: "Rosarivo", serif;
     font-size: 3.8rem;

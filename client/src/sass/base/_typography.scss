@@ -118,8 +118,12 @@
   font-weight: lighter;
   text-align: center;
 
+  @media only screen and (max-width: $bp-largest) and (min-height: $bp-small) {
+    position: absolute;
+    bottom: 5rem;
+  }
+
   @media only screen and (max-width: $bp-mobile) {
-    top: 89%;
-    left: 37%;
+    font-size: 1rem;
   }
 }

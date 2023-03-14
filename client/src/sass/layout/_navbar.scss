@@ -2,10 +2,6 @@
   height: 6rem;
   cursor: pointer;
 
-  // @media only screen and (max-width: $bp-medium) {
-  //   height: 5vh;
-  // }
-
   @media only screen and (max-width: $bp-small) {
     order: 2;
     flex: 30%;
