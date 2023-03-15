@@ -187,7 +187,7 @@ const Checkout = () => {
           </section>
         </div>
         <div className="checkout-footer">
-          <p className="checkout-footer__copyright">&copy; 2021 Ellnot Company</p>
+          <p className="checkout-footer__copyright">&copy; 2023 Ellnot Company</p>
         </div>
       </div>
     </Page>

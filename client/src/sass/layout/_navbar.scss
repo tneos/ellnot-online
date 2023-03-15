@@ -48,7 +48,7 @@
   z-index: 3000;
 
   @media only screen and (max-width: $bp-largest) {
-    top: 8%;
+    top: 4rem;
     height: 6rem;
   }
   @media only screen and (max-width: $bp-small) {
@@ -407,15 +407,16 @@
 .loggedIn {
   color: #000;
   text-decoration: none;
-  font-size: 1.4rem;
-  margin: auto;
+  font-size: 1.3rem;
+  margin: 0.8rem auto;
 
   @media only screen and (max-width: $bp-largest) {
     margin: 0.3rem auto;
   }
 
   @media only screen and (max-width: $bp-mobile) {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+    margin: 0.6rem auto;
   }
 }
 .logout-list {

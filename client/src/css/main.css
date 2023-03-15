@@ -729,11 +729,11 @@ body {
 
 @media only screen and (max-width: 75em) {
   .signup-active {
-    top: 15.5rem; } }
+    top: 9.5rem; } }
 
 @media only screen and (max-width: 57.5em) and (min-height: 600px) {
   .signup-active {
-    top: 15.5rem;
+    top: 9.5rem;
     height: 6rem; } }
 
 @media only screen and (max-width: 50.063em) {
@@ -2237,7 +2237,8 @@ body {
     height: 30rem; }
     @media only screen and (max-width: 39.375em) {
       .by-you__img {
-        width: 100%; } }
+        width: 100%;
+        height: 16rem; } }
 
 .swiper {
   width: 80rem; }
@@ -2532,7 +2533,8 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     text-transform: uppercase; }
     @media only screen and (max-width: 39.375em) {
       .confirmation__btn {
-        width: 80%; } }
+        width: 80%;
+        font-size: 0.9rem; } }
   .confirmation__icon {
     background-image: url("../urls/tick.png");
     display: inline-block;
@@ -2821,28 +2823,28 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   @media only screen and (max-width: 57.5em) {
     .social {
       height: 4rem; } }
-  .social__info, .social__icons {
-    padding: 1% 0; }
+  .social__info {
+    padding: 1.5rem 0; }
     @media only screen and (max-width: 75em) {
-      .social__info, .social__icons {
-        padding: 1.5% 0; } }
+      .social__info {
+        padding: 1.7rem 0; } }
+    @media only screen and (max-width: 57.5em) {
+      .social__info {
+        padding: 1.3rem 0; } }
+    @media only screen and (max-width: 39.375em) {
+      .social__info {
+        padding: 0.5rem 0;
+        font-size: 0.7rem; } }
+  .social__icons {
+    padding: 1rem 0; }
     @media only screen and (max-width: 50.063em) {
-      .social__info, .social__icons {
+      .social__icons {
         font-size: 2vw; } }
     @media only screen and (max-width: 39.375em) {
-      .social__info, .social__icons {
-        padding: 0.5% 0;
+      .social__icons {
         flex: 34%;
         text-align: center;
-        font-size: 2.1vw; } }
-  .social__icons {
-    padding-left: 10%; }
-    @media only screen and (max-width: 57.5em) {
-      .social__icons {
-        padding-left: 0; } }
-    @media only screen and (max-width: 39.375em) {
-      .social__icons {
-        padding: 0;
+        padding: 0 10rem;
         display: flex;
         justify-content: space-around; } }
   .social__link {
@@ -2850,11 +2852,17 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     @media only screen and (max-width: 57.5em) {
       .social__link {
         padding: 0 1.5rem; } }
+    @media only screen and (max-width: 39.375em) {
+      .social__link {
+        width: 8rem; } }
   .social__img {
     width: 2.5rem; }
     @media only screen and (max-width: 57.5em) {
       .social__img {
         width: 1.5rem; } }
+    @media only screen and (max-width: 39.375em) {
+      .social__img {
+        width: 1.2rem; } }
 
 .logo {
   height: 6rem;
@@ -2897,7 +2905,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   z-index: 3000; }
   @media only screen and (max-width: 75em) {
     .nav-bar {
-      top: 8%;
+      top: 4rem;
       height: 6rem; } }
   @media only screen and (max-width: 50.063em) {
     .nav-bar {
@@ -3179,14 +3187,15 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 .loggedIn {
   color: #000;
   text-decoration: none;
-  font-size: 1.4rem;
-  margin: auto; }
+  font-size: 1.3rem;
+  margin: 0.8rem auto; }
   @media only screen and (max-width: 75em) {
     .loggedIn {
       margin: 0.3rem auto; } }
   @media only screen and (max-width: 39.375em) {
     .loggedIn {
-      font-size: 0.9rem; } }
+      font-size: 0.8rem;
+      margin: 0.6rem auto; } }
 
 .logout-list {
   text-decoration: none;
