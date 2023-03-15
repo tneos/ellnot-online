@@ -145,8 +145,6 @@ function Navbar() {
     mapData(initialData, dataSearch, e.target.value, findData, clearData, updateData);
   };
 
-  console.log(token, dataSearch);
-
   // Empty input
   const onDeleteInput = () => {
     setDeleteIcon(false);
@@ -302,7 +300,7 @@ function Navbar() {
         </div>
 
         <div className="icons">
-          {token ? (
+          {token && dataSearch.length > 0 ? (
             loggedIn
           ) : (
             <Link to="/myaccount" onClick={onDeactivate}>
