@@ -3278,7 +3278,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   z-index: 3000; }
   @media only screen and (max-width: 39.375em) {
     .search-active {
-      top: 7%; } }
+      top: 5%; } }
 
 .active-bar {
   padding-top: 1.5%;
