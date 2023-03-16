@@ -26,7 +26,6 @@ const Checkout = () => {
   const filteredArray = [];
   let countKeys = [];
   let htmlContainer = document.createElement("div");
-  let item;
 
   htmlContainer.insertAdjacentHTML("afterbegin", basketItems);
   const basketArray = [...htmlContainer.children];
