@@ -5,5 +5,5 @@ export const likedItem = (likedArray, item) =>
       ? item.id === parseInt(el.className.slice(-1)) &&
         ".." + el.firstChild.src.slice(21) === item.img
       : item.id === parseInt(el.className.slice(-1)) &&
-        ".." + el.firstChild.src.slice(34) === item.img
+        ".." + el.firstChild.src.slice(31) === item.img
   );
