@@ -92,6 +92,8 @@ const Items = ({item, userId, likedItem}) => {
     navigate(`/item/${modDesc}`);
   };
 
+  console.log(likedItem.props.src);
+
   return (
     <div className={`item-card ${id}`} id={`item-card ${id}`}>
       {checkIfSale === "sales" ? (
