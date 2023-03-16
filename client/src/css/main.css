@@ -1506,7 +1506,7 @@ body {
     width: 18%;
     padding: 2rem 0;
     margin-left: 0.1rem; }
-    @media only screen and (max-width: 57.5em) {
+    @media only screen and (max-width: 68.75em) {
       .fav-item__price {
         font-size: 1.5rem; } }
     @media only screen and (max-width: 39.375em) {

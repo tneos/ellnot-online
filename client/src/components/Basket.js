@@ -119,6 +119,8 @@ const Basket = () => {
     deleteBasketItem(itemToDelete, user._id);
   };
 
+  console.log(basketUnique, basketItems);
+
   // Determine outnput
   let output;
   if (!isAuthenticated) {
