@@ -162,8 +162,6 @@ function Navbar() {
     }
   };
 
-  console.log(token, dataSearch);
-
   const loggedIn = (
     <Fragment>
       <div

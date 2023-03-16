@@ -63,8 +63,8 @@ const Type = () => {
       favArrayProd.push(favArray[index]);
     });
 
-  favArray.map(el => console.log(".." + el.firstChild.src.slice(21)));
-  appData && appData.length && appData.map(item => console.log(item.img));
+  // favArray.map(el => console.log(".." + el.firstChild.src.slice(21)));
+  // appData && appData.length && appData.map(item => console.log(item.img));
 
   if (appData && appData.length) {
     output = (
