@@ -164,23 +164,23 @@ function Navbar() {
 
   const loggedIn = (
     <Fragment>
-      <div
-        className="myaccount"
-        onMouseEnter={onMouseEnterHandler}
-        onMouseLeave={onMouseLeaveHandler}
-      >
+      <div className="myaccount" onMouseEnter={onMouseEnterHandler}>
         <img src="../img/avatar.png" alt="user icon" className="icons__icon" />
         <p href="#" className="loggedIn">
           {user && `Welcome ${user.firstName}`}
         </p>
-        <div href="#" className={logoutButton ? "logout-list logout-list__active" : "logout-list"}>
-          <div role="link" onClick={() => navigate("/mine")} className="logout-list__link">
-            <li className="logout-list__item">My account</li>
-          </div>
-          <li className="logout-list__item">My orders</li>
-          <div role="link" onClick={onLogout} className="logout-list__link">
-            <li className="logout-list__item">Logout</li>
-          </div>
+      </div>
+      <div
+        onMouseLeave={onMouseLeaveHandler}
+        href="#"
+        className={logoutButton ? "logout-list__active" : "logout-list"}
+      >
+        <div role="link" onClick={() => navigate("/mine")} className="logout-list__link">
+          <li className="logout-list__item">My account</li>
+        </div>
+        <li className="logout-list__item">My orders</li>
+        <div role="link" onClick={onLogout} className="logout-list__link">
+          <li className="logout-list__item">Logout</li>
         </div>
       </div>
     </Fragment>
@@ -299,7 +299,7 @@ function Navbar() {
           )}
         </div>
 
-        <div className="icons">
+        <div className="icons" onMouseLeave={onMouseLeaveHandler}>
           {token && dataSearch.length > 0 ? (
             loggedIn
           ) : (

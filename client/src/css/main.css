@@ -3177,7 +3177,9 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 
 .myaccount {
   display: flex;
-  text-decoration: none; }
+  text-decoration: none;
+  position: relative;
+  height: 70%; }
   @media only screen and (max-width: 75em) {
     .myaccount {
       width: 50%; } }
@@ -3210,11 +3212,10 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 .logout-list {
   text-decoration: none;
   position: absolute;
-  top: 40%;
+  top: 65%;
   right: 10%;
-  width: 13%;
+  width: 10%;
   height: 85%;
-  opacity: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -3223,7 +3224,9 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   border: 1px solid var(--border-color);
   border-radius: 3px;
   color: #000;
-  transition: all ease-out 0.8s; }
+  transition: all ease-in 0.2s;
+  visibility: hidden;
+  z-index: 10; }
   @media only screen and (max-width: 50.063em) {
     .logout-list {
       top: 0;
@@ -3245,12 +3248,24 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     text-decoration: none;
     color: #000; }
   .logout-list__active {
-    top: 75%;
+    text-decoration: none;
+    position: absolute;
+    right: 10%;
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-transform: uppercase;
+    text-align: center;
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+    color: #000;
+    top: 100%;
     height: 10rem;
-    background-color: #fff;
-    opacity: 1;
     transition: all ease-in-out 0.2s;
-    cursor: pointer; }
+    cursor: pointer;
+    visibility: visible;
+    z-index: 10; }
     @media only screen and (max-width: 50.063em) {
       .logout-list__active {
         top: 35%;

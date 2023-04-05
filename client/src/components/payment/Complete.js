@@ -42,7 +42,6 @@ const Complete = () => {
     setTimeout(() => {
       navigate("/");
     }, waitBeforeShow);
-    //navigate("/");
   };
 
   return (
@@ -78,7 +77,9 @@ const Complete = () => {
 
             <div className="confirmation__group">
               <h4 className="confirmation__label">Amount paid</h4>
-              <p className="confirmation__data">£ {data.session.amount_total / 100}</p>
+              <p className="confirmation__data">
+                £ {(data.session.amount_total / 100).toFixed(2)}
+              </p>
             </div>
 
             <div className="confirmation__group">
