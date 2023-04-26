@@ -72,6 +72,7 @@ const AuthState = props => {
         process.env.REACT_APP_ENV !== "production"
           ? await axios.post(`/api/email`, email, config)
           : await axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/email`, email, config);
+
       dispatch({
         type: CHECK_EMAIL,
         payload: res.data,

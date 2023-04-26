@@ -47,10 +47,10 @@ body {
   height: 100vh; }
   @media only screen and (max-width: 68.75em) {
     #root {
-      grid-template-rows: min-content 30vh repeat(2, min-content) 20vh min-content 20vh min-content 35vh min-content 35vh 35vh; } }
+      grid-template-rows: min-content 30vh repeat(2, min-content) 20vh min-content 20vh min-content 35vh min-content 35vh min-content; } }
   @media only screen and (max-width: 39.375em) {
     #root {
-      grid-template-rows: min-content 30vh repeat(2, min-content) 20vh repeat(3, min-content) 35vh min-content 35vh 75vh; } }
+      grid-template-rows: min-content 30vh repeat(2, min-content) 20vh repeat(3, min-content) 35vh min-content 35vh min-content; } }
 
 .social__info {
   font-size: 1.5rem;
@@ -814,7 +814,8 @@ body {
     @media only screen and (max-width: 39.375em) {
       .set__text {
         padding: 30% 1.2rem;
-        font-size: 3vw; } }
+        font-size: 3vw;
+        transform: translateY(3%); } }
   .set__price {
     display: block;
     padding: 2rem;
@@ -2960,7 +2961,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
         padding: 2rem 0; } }
     @media only screen and (max-width: 39.375em) {
       .nav-list__item {
-        font-size: 0.7rem; } }
+        font-size: 0.8rem; } }
   .nav-list__link {
     text-decoration: none;
     color: #000;
@@ -3512,6 +3513,9 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     flex-wrap: wrap;
     justify-content: flex-start;
     height: 30rem; }
+    @media only screen and (max-width: 39.375em) {
+      .footer__container {
+        height: 20rem; } }
   .footer__col {
     list-style: none;
     padding-top: 3rem;
@@ -3521,10 +3525,17 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     font-size: 1.3rem;
     font-weight: 400;
     padding-top: 3rem; }
+    @media only screen and (max-width: 39.375em) {
+      .footer__item {
+        font-size: 0.8rem; } }
   .footer__copyright {
     text-align: center;
     font-size: 1.3rem;
-    font-weight: lighter; }
+    font-weight: lighter;
+    padding: 1rem 0; }
+    @media only screen and (max-width: 39.375em) {
+      .footer__copyright {
+        font-size: 0.8rem; } }
   .footer__links {
     text-decoration: none;
     color: #000; }

@@ -24,6 +24,10 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     height: 30rem;
+
+    @media only screen and (max-width: $bp-mobile) {
+      height: 20rem;
+    }
   }
 
   &__col {
@@ -37,12 +41,21 @@
     font-size: 1.3rem;
     font-weight: 400;
     padding-top: 3rem;
+
+    @media only screen and (max-width: $bp-mobile) {
+      font-size: 0.8rem;
+    }
   }
 
   &__copyright {
     text-align: center;
     font-size: 1.3rem;
     font-weight: lighter;
+    padding: 1rem 0;
+
+    @media only screen and (max-width: $bp-mobile) {
+      font-size: 0.8rem;
+    }
   }
 
   &__links {

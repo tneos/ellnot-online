@@ -18,7 +18,6 @@ const Register = ({onClick}) => {
 
   const {email} = customerEmail;
   let navigate = useNavigate();
-  console.log(onClick);
 
   const onChange = e => {
     setCustomerEmail({[e.target.name]: e.target.value});
