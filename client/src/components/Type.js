@@ -112,7 +112,7 @@ const Type = () => {
     output = (
       <Page title={capitalizeFirstLetter(type)}>
         <section className="items">
-          <h3 className="items__title">
+          <h3 className="items__notification">
             Please allow some time for data to load as we're using server's free tier. Thank you
           </h3>
         </section>

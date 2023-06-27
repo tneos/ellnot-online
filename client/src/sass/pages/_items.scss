@@ -14,6 +14,17 @@
     }
   }
 
+  &__notification {
+    font-weight: 300;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 2rem;
+
+    @media only screen and (max-width: $bp-mobile) {
+      font-size: 2rem;
+    }
+  }
+
   &__container {
     display: grid;
     grid-gap: 6rem;
