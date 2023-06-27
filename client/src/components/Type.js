@@ -108,6 +108,16 @@ const Type = () => {
         </section>
       </Page>
     );
+  } else {
+    output = (
+      <Page title={capitalizeFirstLetter(type)}>
+        <section className="items">
+          <h3 className="items__title">
+            Please allow some time for data to load as we're using server's free tier. Thank you
+          </h3>
+        </section>
+      </Page>
+    );
   }
 
   return <>{output}</>;
