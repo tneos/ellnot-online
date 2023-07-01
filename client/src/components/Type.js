@@ -30,6 +30,7 @@ const Type = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
 
+    console.log(category, type);
     getData(category, type);
 
     const timer = setTimeout(() => {
@@ -37,7 +38,7 @@ const Type = () => {
     }, waitBeforeShow);
     setContent(false);
     return () => clearTimeout(timer);
-  }, [waitBeforeShow, category, type]);
+  }, [waitBeforeShow, getData, category, type]);
 
   let favArray = [];
   let favArrayProd = [];
