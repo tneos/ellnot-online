@@ -236,9 +236,9 @@ function Navbar() {
           />
           {!mobileSearchBar && searchBar && (
             <>
-              <a type="submit" className="active-bar__button">
+              <div type="submit" className="active-bar__button">
                 <img src="../img/search.png" alt="search icon" className="active-bar__icon" />
-              </a>
+              </div>
               <button className="active-bar__btn" onClick={turnOffSearch}>
                 &nbsp;
               </button>

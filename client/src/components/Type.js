@@ -25,7 +25,7 @@ const Type = () => {
 
   const {likedList, appData, getData} = itemContext;
   const {user, favItems} = authContext;
-  console.log(appData);
+  //console.log(appData);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -37,11 +37,11 @@ const Type = () => {
     }, waitBeforeShow);
     setContent(false);
     return () => clearTimeout(timer);
-  }, [waitBeforeShow, category, type]);
+  }, [waitBeforeShow, getData, category, type]);
 
   let favArray = [];
   let favArrayProd = [];
-  let likedArray = [];
+  //let likedArray = [];
   let output;
 
   let wrapper = document.createElement("div");
@@ -49,7 +49,7 @@ const Type = () => {
   wrapper.innerHTML = likedList;
   wrapper.innerHTML = favItems;
   favArray = [...wrapper.children];
-  likedArray = [...wrapper.children];
+  //likedArray = [...wrapper.children];
 
   process.env.REACT_APP_ENV === "production" &&
     appData &&
