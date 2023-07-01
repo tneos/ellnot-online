@@ -34,7 +34,7 @@ const List = ({menu, initialData}) => {
 
   // Add all data in single array
   if (initialData !== null) {
-    initialData.map(obj => {
+    initialData.forEach(obj => {
       Object.keys(obj)
         .slice(2)
         .map(array => clothing.push(array));
@@ -45,14 +45,12 @@ const List = ({menu, initialData}) => {
   clothing.map(item => clothingList.push(item.toLowerCase() + " in " + category1.toLowerCase()));
   accessories.map(item => accList.push(item.toLowerCase() + " in " + category2.toLowerCase()));
 
-  menu.map(el => {
+  menu.forEach(el => {
     category = el.split(" ");
     category1 = category[category.length - 1];
   });
 
-  menu.map(item => {
-    list.push(item);
-  });
+  menu.map(item => list.push(item));
 
   const onSelect = e => {
     pick = e.target.textContent;
@@ -90,7 +88,7 @@ const List = ({menu, initialData}) => {
     e.preventDefault();
     link = e.target.innerText;
 
-    menu.map((val, index) => {
+    menu.forEach((val, index) => {
       if (val === link) {
         const newState = {...activeMenu, menu1: [...activeMenu.menu1]};
 
@@ -104,7 +102,7 @@ const List = ({menu, initialData}) => {
     e.preventDefault();
     link = e.target.innerText;
 
-    menu.map((val, index) => {
+    menu.forEach((val, index) => {
       if (val === link) {
         const newState = {...activeMenu, menu1: [...activeMenu.menu1]};
 

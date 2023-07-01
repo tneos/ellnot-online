@@ -250,6 +250,7 @@ const Item = () => {
     } else {
       setItemString(wrapperItem.outerHTML);
     }
+    // eslint-disable-next-line
   }, [desc]);
 
   // Scan description for key value
@@ -421,7 +422,7 @@ const Item = () => {
       {element ? (
         <div className="component-container">
           <div className="image-container">
-            <img src={element.img} className="image-container__img" />
+            <img src={element.img} alt="item pic" className="image-container__img" />
           </div>
 
           <div className="details">
@@ -586,7 +587,7 @@ const Item = () => {
       ) : (
         <div className="component-container">
           <div className="image-container">
-            <img src={data.img} className="image-container__img" />
+            <img src={data.img} alt="item pic" className="image-container__img" />
           </div>
 
           <div className="details">

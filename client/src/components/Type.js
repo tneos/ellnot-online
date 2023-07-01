@@ -36,6 +36,7 @@ const Type = () => {
     }, waitBeforeShow);
     setContent(false);
     return () => clearTimeout(timer);
+    // eslint-disable-next-line
   }, [waitBeforeShow, category, type]);
 
   let favArray = [];
