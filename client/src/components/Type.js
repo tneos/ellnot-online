@@ -36,7 +36,7 @@ const Type = () => {
     }, waitBeforeShow);
     setContent(false);
     return () => clearTimeout(timer);
-  }, [waitBeforeShow, getData, category, type]);
+  }, [waitBeforeShow, category, type]);
 
   let favArray = [];
   let favArrayProd = [];
