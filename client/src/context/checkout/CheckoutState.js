@@ -53,7 +53,7 @@ const CheckoutState = props => {
               config
             );
       loadUser();
-      console.log(res.data);
+
       // Create checkout form and charge credit card
       await stripe.redirectToCheckout({
         sessionId: res.data.session.id,
@@ -93,7 +93,7 @@ const CheckoutState = props => {
         process.env.REACT_APP_ENV !== "production"
           ? await axios.patch(`/api/basket/${id}`)
           : await axios.patch(`${process.env.REACT_APP_BACKEND_URL}/api/basket/${id}`);
-      console.log(res.data.updatedUser.basket);
+
       dispatch({type: EMPTY_BASKET, payload: res.data.updatedUser.basket});
     } catch (err) {
       dispatch({type: AUTH_ERROR});
