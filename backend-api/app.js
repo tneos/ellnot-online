@@ -23,18 +23,18 @@ app.use(express.json({extended: false}));
 app.use(express.json());
 
 // Define Routes
-app.use("/api/data", require("./routes/data"));
-app.use(`/api/item`, require("./routes/item"));
-app.use("/api/under", require("./routes/under"));
-app.use("/api/users", require("./routes/users"));
-app.use("/api/auth", require("./routes/auth"));
-app.use("/api/email", require("./routes/email"));
-app.use("/api/basket", require("./routes/basket"));
-app.use("/api/size", require("./routes/size"));
-app.use("/api/wishlist", require("./routes/wishlist"));
-app.use("/api/checkout", require("./routes/checkout"));
-app.use("/api/payment_confirmation", require("./routes/confirmation"));
-app.use("/api", require("./routes/collection"));
+app.use("/api/data", require("./src/routes/data"));
+app.use(`/api/item`, require("./src/routes/item"));
+app.use("/api/under", require("./src/routes/under"));
+app.use("/api/users", require("./src/routes/users"));
+app.use("/api/auth", require("./src/routes/auth"));
+app.use("/api/email", require("./src/routes/email"));
+app.use("/api/basket", require("./src/routes/basket"));
+app.use("/api/size", require("./src/routes/size"));
+app.use("/api/wishlist", require("./src/routes/wishlist"));
+app.use("/api/checkout", require("./src/routes/checkout"));
+app.use("/api/payment_confirmation", require("./src/routes/confirmation"));
+app.use("/api", require("./src/routes/collection"));
 
 const PORT = process.env.PORT || 5000;
 
@@ -45,9 +45,9 @@ console.log(process.env.MODE);
 
 // Load React App in production
 
-// if (process.env.MODE === "production") {
-//   app.get("/*", (req, res) => res.sendFile(path.join(__dirname, "../client/build/index.html")));
-// }
+if (process.env.MODE === "production") {
+  app.get("/*", (req, res) => res.sendFile(path.join(__dirname, "../client/build/index.html")));
+}
 
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}`);
