@@ -4,8 +4,8 @@
   "description": "web-gallery",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "server": "nodemon app.js",
+    "start": "node index.js",
+    "server": "nodemon index.js",
     "client": "npm start --prefix ../client",
     "clientinstall": "npm install --prefix ../client",
     "build": "npm install --prefix ../client && npm run build --prefix ../client",
