@@ -49,14 +49,28 @@ connectDB();
 //   app.get("/*", (req, res) => res.sendFile(path.join(__dirname, "../client/build/index.html")));
 // }
 
-// Serve static assets in production
-if (process.env.NODE_ENV === "production") {
-  // Set static folder
-  app.use(express.static("client/build"));
+// // Serve static assets in production
+// if (process.env.NODE_ENV === "production") {
+//   // Set static folder
+//   app.use(express.static("client/build"));
 
-  app.get("*", (req, res) =>
-    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"))
-  );
+//   app.get("*", (req, res) =>
+//     res.sendFile(path.resolve(__dirname, "client", "build", "index.html"))
+//   );
+// }
+
+if (process.env.MODE === "production") {
+  app.use(express.static(path.join(__dirname, "build")));
+
+  app.get("*", (req, res) => {
+    // Serve index.html for the initial request
+    if (req.originalUrl === "/") {
+      res.sendFile(path.resolve(__dirname, "build", "index.html"));
+    } else {
+      // Serve static files for all other requests
+      res.sendFile(path.join(__dirname, "build", req.originalUrl));
+    }
+  });
 }
 
 app.listen(PORT, () => {
