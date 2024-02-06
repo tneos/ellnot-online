@@ -9,8 +9,7 @@
     "client": "npm start --prefix ../client",
     "clientinstall": "npm install --prefix ../client",
     "build": "npm install --prefix ../client && npm run build --prefix ../client",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "test": "NODE_ENV= jest"
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "Thomas Neos",
   "license": "ISC",
