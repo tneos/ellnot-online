@@ -41,7 +41,7 @@ const PORT = process.env.PORT || 5000;
 // Connect to Database
 connectDB();
 
-console.log(process.env.MODE);
+//console.log(process.env.MODE);
 
 // Load React App in production
 
