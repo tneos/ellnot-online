@@ -1,7 +1,6 @@
 const mongoose = require("mongoose");
 const config = require("config");
 const db = config.get("mongoURI");
-process.env.SUPPRESS_NO_CONFIG_WARNING = "y";
 
 const connectDB = async () => {
   try {
