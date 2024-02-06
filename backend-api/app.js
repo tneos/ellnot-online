@@ -45,9 +45,9 @@ console.log(process.env.MODE);
 
 // Load React App in production
 
-if (process.env.MODE === "production") {
-  app.get("/*", (req, res) => res.sendFile(path.join(__dirname, "../client/build/index.html")));
-}
+// if (process.env.MODE === "production") {
+//   app.get("/*", (req, res) => res.sendFile(path.join(__dirname, "../client/build/index.html")));
+// }
 
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}`);
