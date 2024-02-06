@@ -1,12 +1,12 @@
 const mongoose = require("mongoose");
 const config = require("config");
 const db = config.get("mongoURI");
-const path = require("path");
+process.env.SUPPRESS_NO_CONFIG_WARNING = "y";
 
 const connectDB = async () => {
   try {
     mongoose.set("strictQuery", false);
-    mongoose.connect(process.env.MONGO_URI, {
+    mongoose.connect(db, {
       useNewUrlParser: true,
     });
 
