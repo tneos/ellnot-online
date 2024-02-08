@@ -63,9 +63,6 @@ const Type = () => {
       favArrayProd.push(favArray[index]);
     });
 
-  // favArray.map(el => console.log(".." + el.firstChild.src.slice(21)));
-  // appData && appData.length && appData.map(item => console.log(item.img));
-
   if (appData && appData.length) {
     output = (
       <Page title={capitalizeFirstLetter(type)}>
@@ -113,7 +110,7 @@ const Type = () => {
       <Page title={capitalizeFirstLetter(type)}>
         <section className="items">
           <h3 className="items__notification">
-            Please allow some time for data to load as we're using server's free tier. Thank you
+            Please allow 1-2 minutes for data to load as we're using server's free tier. Thank you
           </h3>
           <LoadingSpinner />
         </section>

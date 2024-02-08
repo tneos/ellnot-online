@@ -243,7 +243,7 @@ const ShowData = ({data}) => {
       <div className="dataResult__desc-container">
         <p className="dataResult__desc">{item.description}</p>
       </div>
-      <img src={item.img} alt="item image" className="dataResult__img" />
+      <img src={item.img} alt="item" className="dataResult__img" />
     </div>
   ));
 
