@@ -32,7 +32,7 @@ const AboutUs = () => {
             </div>
             <img
               src="../../../img/about-us/about-us4.jpg"
-              alt="love Ellnot image"
+              alt="love Ellnot"
               className="fashion__img"
             />
           </section>
@@ -47,7 +47,7 @@ const AboutUs = () => {
             </div>
             <img
               src="../../../img/about-us/about-us2.jpg"
-              alt="love Ellnot image"
+              alt="love Ellnot"
               className="ellnot__img"
             />
           </section>

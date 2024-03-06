@@ -18,11 +18,11 @@ const Complete = () => {
   const {getTransactionDetails, emptyBasket} = checkoutContext;
   const {user, loadUser} = authContext;
 
-  let promise;
+  //let promise;
   const waitBeforeShow = 1000;
 
   useEffect(() => {
-    promise = getTransactionDetails(location.search).then(result => {
+    let promise = getTransactionDetails(location.search).then(result => {
       return result;
     });
 
@@ -33,7 +33,7 @@ const Complete = () => {
 
     customer();
     loadUser();
-  }, [location.search]);
+  }, [location.search, getTransactionDetails, loadUser]);
 
   let navigate = useNavigate();
 

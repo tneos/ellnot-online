@@ -54,7 +54,7 @@ const Basket = () => {
     let elementStrings = [];
 
     // Save descriptions and sized items only in array
-    basketArray.map((element, index) => {
+    basketArray.forEach((element, index) => {
       element.setAttribute("id", ids[index]);
 
       if (element.lastChild.firstChild && element.lastChild.firstChild.firstChild) {
@@ -71,7 +71,7 @@ const Basket = () => {
     });
 
     // If target element matches description of sized element change the size
-    sizedItems.map((array, index) => {
+    sizedItems.forEach((array, index) => {
       array[0] === e.target.parentElement.firstChild.innerText &&
         changeSize(
           elementStrings[index],
@@ -89,7 +89,7 @@ const Basket = () => {
     }
 
     basketItems &&
-      basketArray.map((el, index) => {
+      basketArray.forEach((el, index) => {
         // Restore id attribute in order to match database's element
         el.setAttribute("id", ids[index]);
 
@@ -181,7 +181,6 @@ const Basket = () => {
                         </>
                       ) : (
                         <>
-                          <h5 className="description-size__selection-title"></h5>
                           <div className="description-size__selection"></div>
                         </>
                       )}
