@@ -1,4 +1,4 @@
-import React, {Fragment, useContext, useState, useEffect} from "react";
+import React, {Fragment, useContext, useState} from "react";
 import {useNavigate} from "react-router-dom";
 import Page from "../wrappers/Page";
 import AuthContext from "../../context/auth/authContext";
@@ -8,7 +8,7 @@ const MyAccount = () => {
   const authContext = useContext(AuthContext);
   const alertContext = useContext(AlertContext);
 
-  const {loadUser, updateUser, deleteUser, logout, user} = authContext;
+  const {updateUser, deleteUser, logout, user} = authContext;
   const {setAlert} = alertContext;
 
   const [userData, setUserData] = useState(user);

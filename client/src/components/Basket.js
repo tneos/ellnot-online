@@ -38,8 +38,6 @@ const Basket = () => {
 
   basketArray = [...htmlContainer.children];
 
-  console.log(basketArray);
-
   const {basketUnique, countValues, ids, options, optionsUnique} = getDuplicates(basketArray);
 
   // If user logged in link to checkout element
@@ -118,8 +116,6 @@ const Basket = () => {
     // Delete item from database
     deleteBasketItem(itemToDelete, user._id);
   };
-
-  console.log(basketUnique, basketItems);
 
   // Determine outnput
   let output;

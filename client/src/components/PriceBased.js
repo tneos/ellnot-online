@@ -27,7 +27,6 @@ const PriceBased = () => {
   let output;
   const waitBeforeShow = 800;
   let favArray = [];
-  let likedArray = [];
 
   let wrapper = document.createElement("div");
 
@@ -41,12 +40,12 @@ const PriceBased = () => {
     }, waitBeforeShow);
     setContent(false);
     return () => clearTimeout(timer);
+    // eslint-disable-next-line
   }, [waitBeforeShow, price]);
 
   wrapper.innerHTML = likedList;
   wrapper.innerHTML = favItems;
   favArray = [...wrapper.children];
-  likedArray = [...wrapper.children];
 
   if (appData && appData.length) {
     output = (
