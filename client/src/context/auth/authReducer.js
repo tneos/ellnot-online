@@ -57,7 +57,6 @@ const authReducer = (state, action) => {
       return {
         ...state,
         favItems: action.payload,
-        //likedList: "",
       };
     case DELETE_BASKET_ITEM:
       localStorage.setItem("basket", action.payload);
