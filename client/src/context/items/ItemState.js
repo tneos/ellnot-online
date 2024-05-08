@@ -177,12 +177,12 @@ const ItemState = props => {
       let results;
       let arrayOfObjects = [];
 
-      res.data.found.map(obj => {
+      res.data.found.foreach(obj => {
         results = Object.values(obj);
       });
 
       // Map results and if array with objects found map through and push objects to arrayOfObjects
-      results.map(element => {
+      results.foreach(element => {
         if (typeof element === "object" && element.length > 0) {
           element.map(el => arrayOfObjects.push(el));
         } else if (typeof element === "object") {
