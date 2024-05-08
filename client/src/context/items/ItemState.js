@@ -104,10 +104,11 @@ const ItemState = props => {
   const getAllData = async () => {
     try {
       const res =
-        process.env.REACT_APP_ENV !== "production"
-          ? await axios.get(`/api/data`)
+        process.env.REACT_APP_ENV === "development"
+          ? await axios.get(`http://localhost:5000/api/data`)
           : await axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/data`);
 
+      console.log(res.data);
       dispatch({
         type: GET_ALL_DATA,
         payload: res.data.data,
@@ -125,9 +126,10 @@ const ItemState = props => {
     try {
       const res =
         process.env.REACT_APP_ENV !== "production"
-          ? await axios.get(`api/${collection}/${category}`)
+          ? await axios.get(`http://localhost:5000/api/${collection}/${category}`)
           : await axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/${collection}/${category}`);
 
+      console.log(res.data);
       let dataArr = res.data.catData;
 
       dispatch({
