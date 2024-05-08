@@ -125,7 +125,7 @@ const ItemState = props => {
     try {
       const res =
         process.env.REACT_APP_ENV !== "production"
-          ? await axios.get(`/api/${collection}/${category}`)
+          ? await axios.get(`api/${collection}/${category}`)
           : await axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/${collection}/${category}`);
 
       let dataArr = res.data.catData;
