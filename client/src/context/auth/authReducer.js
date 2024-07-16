@@ -84,12 +84,14 @@ const authReducer = (state, action) => {
     case REGISTER_SUCCESS:
     case LOGIN_SUCCESS:
       localStorage.setItem("token", action.payload.token);
+
       return {
         ...state,
         ...action.payload,
         isAuthenticated: true,
         loading: false,
       };
+
     case UPDATE_USER:
       return {
         ...state,
@@ -105,6 +107,7 @@ const authReducer = (state, action) => {
     case LOGOUT:
     case ADD_TO_BASKET_ERROR:
     case DELETE_BASKET_ITEM_ERROR:
+      console.log("this?");
       localStorage.removeItem("token");
       return {
         ...state,

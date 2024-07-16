@@ -3,14 +3,14 @@ import {Link} from "react-router-dom";
 
 // Context
 import SubMenuContext from "../context/subMenu/subMenuContext";
-import ItemContext from "../context/items/itemContext";
+// import ItemContext from "../context/items/itemContext";
 
 function SubMenus() {
   const subMenuContext = useContext(SubMenuContext);
-  const itemContext = useContext(ItemContext);
+  // const itemContext = useContext(ItemContext);
 
   const {active1, active2} = subMenuContext;
-  const {getData} = itemContext;
+  // const {getData} = itemContext;
   let screenWidth = window.innerWidth;
 
   // When submenus initially rendered all links deactivated

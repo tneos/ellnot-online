@@ -2,8 +2,8 @@ const express = require("express");
 const {db} = require("../models/Clothing");
 const router = express.Router();
 
-// @route   GET api/clothing
-// @desc    Get clothing data
+// @route   GET api/collection
+// @desc    Get category data
 // @access  Public
 router.get("/:collection/:category", async (req, res) => {
   let category = req.params.category;

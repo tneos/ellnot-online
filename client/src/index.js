@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import {createBrowserHistory} from "history";
 
@@ -120,5 +120,10 @@ const Main = () => {
     </Elements>
   );
 };
-
-ReactDOM.render(<Main />, document.getElementById("root"));
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <React.StrictMode>
+    <Main />
+  </React.StrictMode>
+);
+//ReactDOM.render(<Main />, document.getElementById("root"));

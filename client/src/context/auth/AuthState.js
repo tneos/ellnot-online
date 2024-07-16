@@ -85,27 +85,6 @@ const AuthState = props => {
     }
   };
 
-  // Load user
-  const loadUser = async () => {
-    if (localStorage.token) {
-      setAuthToken(localStorage.token);
-    }
-
-    try {
-      const res =
-        process.env.REACT_APP_ENV !== "production"
-          ? await axios.get(`/api/auth`)
-          : await axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/auth`);
-
-      dispatch({
-        type: USER_LOADED,
-        payload: res.data,
-      });
-    } catch (err) {
-      dispatch({type: AUTH_ERROR});
-    }
-  };
-
   // Add item to wishlist
   const addItem = async (item, id) => {
     const config = {
@@ -236,6 +215,27 @@ const AuthState = props => {
     }
   };
 
+  // Load user
+  const loadUser = async () => {
+    if (localStorage.token) {
+      setAuthToken(localStorage.token);
+
+      try {
+        const res =
+          process.env.REACT_APP_ENV === "development"
+            ? await axios.get(`/api/auth`)
+            : await axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/auth`);
+
+        dispatch({
+          type: USER_LOADED,
+          payload: res.data,
+        });
+      } catch (err) {
+        dispatch({type: AUTH_ERROR});
+      }
+    }
+  };
+
   // Register user
   const register = async formData => {
     const config = {
@@ -256,7 +256,6 @@ const AuthState = props => {
 
       loadUser();
     } catch (err) {
-      console.log(err);
       dispatch({
         type: REGISTER_FAIL,
         payload: err.response.data.msg,
@@ -273,7 +272,7 @@ const AuthState = props => {
 
     try {
       const res =
-        process.env.REACT_APP_ENV !== "production"
+        process.env.REACT_APP_ENV === "development"
           ? await axios.post(`/api/auth`, formData, config)
           : await axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/auth`, formData, config);
 
@@ -281,7 +280,6 @@ const AuthState = props => {
         type: LOGIN_SUCCESS,
         payload: res.data,
       });
-
       loadUser();
     } catch (err) {
       dispatch({

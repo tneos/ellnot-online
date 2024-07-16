@@ -72,8 +72,8 @@ const ShowData = ({data}) => {
   // Add all categories in keys array
   keys = clothing.concat(accessories).concat(summerCollection);
 
-  data.map(el => {
-    console.log(el);
+  data.forEach(el => {
+    //console.log(el);
     category = el;
 
     // If category found

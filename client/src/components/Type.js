@@ -29,6 +29,7 @@ const Type = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
+    console.log(category, type);
     getData(category, type);
 
     const timer = setTimeout(() => {
