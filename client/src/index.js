@@ -126,4 +126,3 @@ root.render(
     <Main />
   </React.StrictMode>
 );
-//ReactDOM.render(<Main />, document.getElementById("root"));
