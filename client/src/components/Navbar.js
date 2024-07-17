@@ -171,6 +171,7 @@ function Navbar() {
         </p>
       </div>
       <div
+        onMouseEnter={onMouseEnterHandler}
         onMouseLeave={onMouseLeaveHandler}
         href="#"
         className={logoutButton ? "logout-list__active" : "logout-list"}
