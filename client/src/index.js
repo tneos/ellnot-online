@@ -1,12 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  RouterProvider,
-  createBrowserRouter,
-} from "react-router-dom";
+import {RouterProvider, createBrowserRouter} from "react-router-dom";
 import {createBrowserHistory} from "history";
 
 // Components
@@ -45,8 +39,6 @@ import CheckoutState from "./context/checkout/CheckoutState";
 // Stripe
 import {Elements} from "@stripe/react-stripe-js";
 import {loadStripe} from "@stripe/stripe-js";
-
-const history = createBrowserHistory();
 
 if (localStorage.token) {
   setAuthToken(localStorage.token);
