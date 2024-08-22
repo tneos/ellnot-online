@@ -1,6 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  RouterProvider,
+  createBrowserRouter,
+} from "react-router-dom";
 import {createBrowserHistory} from "history";
 
 // Components
@@ -24,6 +30,7 @@ import Delivery from "./components/footer/Delivery";
 import Returns from "./components/footer/Returns";
 import Regulars from "./components/footer/Regulars";
 import AboutUs from "./components/footer/AboutUs";
+import Error from "./components/Error";
 import PrivateRoute from "./components/routing/PrivateRoute";
 
 import Item from "./components/Item";
@@ -49,6 +56,95 @@ const stripePromise = loadStripe(
   "pk_test_51KkrCgA9g8GZZeGZNPLgtBF9bfHL16cwJBBA2whsWPlOihOl2WWbJYDOSeXVddlBJJaQVRlghy5I5aIZMIYhUfXq006Xs7WWjx"
 );
 
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    errorElement: <Error />,
+    children: [
+      {
+        index: true,
+        element: <Home />,
+      },
+      {
+        path: "/mine",
+        element: (
+          <PrivateRoute>
+            <MyAccount />
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "/:category/:type",
+        element: <Type />,
+        errorElement: <Error />,
+      },
+      {
+        path: "/under/:price",
+        element: <PriceBased />,
+      },
+      {
+        path: "/delivery",
+        element: <Delivery />,
+      },
+      {
+        path: "/returns",
+        element: <Returns />,
+      },
+      {
+        path: "/students",
+        element: <Students />,
+      },
+      {
+        path: "/regulars",
+        element: <Regulars />,
+      },
+      {
+        path: "/about-us",
+        element: <AboutUs />,
+      },
+      {
+        path: "/basket",
+        element: <Basket />,
+      },
+      {
+        path: "/wishlist",
+        element: <Wishlist />,
+      },
+      {
+        path: "/item/:desc",
+        element: <Item />,
+        errorElement: <Error />,
+      },
+    ],
+  },
+  {
+    path: "/checkout",
+    element: (
+      <PrivateRoute>
+        <Checkout />
+      </PrivateRoute>
+    ),
+  },
+  {
+    path: "/myaccount",
+    element: <User />,
+  },
+  {
+    path: "/payment_confirmation",
+    element: <Complete />,
+  },
+  {
+    path: "/myaccount/signup",
+    element: (
+      <>
+        <Signup />
+        <SubMenus />
+      </>
+    ),
+  },
+]);
+
 const Main = () => {
   const options = {
     // passing the client secret obtained from the server
@@ -63,55 +159,7 @@ const Main = () => {
             <AuthState>
               <CheckoutState>
                 <Alerts />
-                <Router history={history}>
-                  <Routes>
-                    <Route path="/" element={<App />}>
-                      <Route
-                        path="/mine"
-                        element={
-                          <PrivateRoute>
-                            <MyAccount />
-                          </PrivateRoute>
-                        }
-                      />
-                      <Route path="/" element={<Home />} />
-                      <Route path="/:category/:type" element={<Type />} />
-                      <Route path="/under/:price" element={<PriceBased />} />
-                      <Route path="/delivery" element={<Delivery />} />
-                      <Route path="/returns" element={<Returns />} />
-                      <Route path="/students" element={<Students />} />
-                      <Route path="/regulars" element={<Regulars />} />
-                      <Route path="/about-us" element={<AboutUs />} />
-                      <Route path="/basket" element={<Basket />} />
-                      <Route path="/wishlist" element={<Wishlist />} />
-
-                      <Route path="/item/:desc" element={<Item />} />
-                    </Route>
-
-                    <Route
-                      path="/checkout"
-                      element={
-                        <PrivateRoute>
-                          <Checkout />
-                        </PrivateRoute>
-                      }
-                    />
-
-                    <Route path="/myaccount" exact element={<User />} />
-                    <Route path="/payment_confirmation" element={<Complete />} />
-
-                    <Route
-                      path="/myaccount/signup"
-                      exact
-                      element={
-                        <>
-                          <Signup />
-                          <SubMenus />
-                        </>
-                      }
-                    />
-                  </Routes>
-                </Router>
+                <RouterProvider router={router} />
               </CheckoutState>
             </AuthState>
           </ItemState>

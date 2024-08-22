@@ -2,6 +2,7 @@ import React, {useContext, useEffect, useState} from "react";
 import {useParams} from "react-router-dom";
 
 import Page from "./wrappers/Page";
+import Error from "./Error";
 
 import ItemContext from "../context/items/itemContext";
 import AuthContext from "../context/auth/authContext";
@@ -23,13 +24,14 @@ const Type = () => {
   // Capitilize first character of type
   const capitalizeFirstLetter = string => string.charAt(0).toUpperCase() + string.slice(1);
 
-  const {likedList, appData, getData} = itemContext;
+  const {likedList, appData, getData, error} = itemContext;
   const {user, favItems} = authContext;
   //console.log(appData);
+  console.log(error);
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    console.log(category, type);
+    console.log(category, type, appData);
     getData(category, type);
 
     const timer = setTimeout(() => {
@@ -107,17 +109,20 @@ const Type = () => {
       </Page>
     );
   } else {
-    output = (
-      <Page title={capitalizeFirstLetter(type)}>
-        <section className="items">
-          <h3 className="items__notification">
-            Please allow 1-2 minutes for data to load as we're using server's free tier. Thank you
-          </h3>
-          <LoadingSpinner />
-        </section>
-      </Page>
-    );
+    output = <Error />;
   }
+  // else {
+  //   output = (
+  //     <Page title={capitalizeFirstLetter(type)}>
+  //       <section className="items">
+  //         <h3 className="items__notification">
+  //           Please allow 1-2 minutes for data to load as we're using server's free tier. Thank you
+  //         </h3>
+  //         <LoadingSpinner />
+  //       </section>
+  //     </Page>
+  //   );
+  // }
 
   return <>{output}</>;
 };
