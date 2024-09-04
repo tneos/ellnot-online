@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import {RouterProvider, createBrowserRouter} from "react-router-dom";
-import {createBrowserHistory} from "history";
 
 // Components
 import App from "./App";
@@ -12,7 +11,6 @@ import Signup from "./components/Signup";
 import Home from "./components/Home";
 import Type from "./components/Type";
 import PriceBased from "./components/PriceBased";
-
 import Basket from "./components/Basket";
 import Complete from "./components/payment/Complete";
 import Wishlist from "./components/Wishlist";
@@ -26,7 +24,6 @@ import Regulars from "./components/footer/Regulars";
 import AboutUs from "./components/footer/AboutUs";
 import Error from "./components/Error";
 import PrivateRoute from "./components/routing/PrivateRoute";
-
 import Item from "./components/Item";
 
 // Contexts
