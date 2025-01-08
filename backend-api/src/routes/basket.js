@@ -48,7 +48,6 @@ router.post("/:id", async (req, res) => {
   const userId = req.params.id;
 
   const {item} = req.body;
-  console.log(item);
 
   let updatedUser = {};
 
