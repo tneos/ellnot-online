@@ -21,9 +21,13 @@ Ellnot is a fully functional online shop that supports user accounts, filtered p
 - Express
 - Mongo.db
 - Mongoose
--
 
-## 2. Images
+## 2. Images and Videos
+
+#### Home page
 
 ![Reference Image](/client/public/screenshots/screenshot1.png)&nbsp;
-![Reference Image](/client/public/screenshots/screenshot2.png)
+
+#### Home page video
+
+[![Home page video](/client/public/screenshots/screenshot1.png)](https://vimeo.com/869972011 "Home page video - Click to Watch!")
