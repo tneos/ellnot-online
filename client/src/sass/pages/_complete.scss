@@ -1,3 +1,5 @@
+@use "../abstracts/variables";
+
 .confirmation {
   width: 100%;
   grid-column: 1 / -1;
@@ -53,7 +55,7 @@
     letter-spacing: 2px;
     text-transform: uppercase;
 
-    @media only screen and (max-width: $bp-mobile) {
+    @media only screen and (max-width: variables.$bp-mobile) {
       width: 80%;
       font-size: 0.9rem;
     }

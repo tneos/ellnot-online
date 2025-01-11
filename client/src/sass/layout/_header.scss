@@ -1,4 +1,4 @@
-@import "../abstracts/variables";
+@use "../abstracts/variables";
 
 .social {
   grid-column: 1 / -1;
@@ -13,22 +13,22 @@
   width: 100%;
   z-index: 4000;
 
-  @media only screen and (max-width: $bp-medium) {
+  @media only screen and (max-width: variables.$bp-medium) {
     height: 4rem;
   }
 
   &__info {
     padding: 1.5rem 0;
 
-    @media only screen and (max-width: $bp-largest) {
+    @media only screen and (max-width: variables.$bp-largest) {
       padding: 1.7rem 0;
     }
 
-    @media only screen and (max-width: $bp-medium) {
+    @media only screen and (max-width: variables.$bp-medium) {
       padding: 1.3rem 0;
     }
 
-    @media only screen and (max-width: $bp-mobile) {
+    @media only screen and (max-width: variables.$bp-mobile) {
       padding: 0.5rem 0;
       font-size: 0.7rem;
     }
@@ -37,11 +37,11 @@
   &__icons {
     padding: 1rem 0;
 
-    @media only screen and (max-width: $bp-small) {
+    @media only screen and (max-width: variables.$bp-small) {
       font-size: 2vw;
     }
 
-    @media only screen and (max-width: $bp-mobile) {
+    @media only screen and (max-width: variables.$bp-mobile) {
       flex: 34%;
       text-align: center;
       padding: 0 10rem;
@@ -53,21 +53,21 @@
   &__link {
     padding: 0 2.5rem;
 
-    @media only screen and (max-width: $bp-medium) {
+    @media only screen and (max-width: variables.$bp-medium) {
       padding: 0 1.5rem;
     }
 
-    @media only screen and (max-width: $bp-mobile) {
+    @media only screen and (max-width: variables.$bp-mobile) {
       width: 8rem;
     }
   }
   &__img {
     width: 2.5rem;
 
-    @media only screen and (max-width: $bp-medium) {
+    @media only screen and (max-width: variables.$bp-medium) {
       width: 1.5rem;
     }
-    @media only screen and (max-width: $bp-mobile) {
+    @media only screen and (max-width: variables.$bp-mobile) {
       width: 1.2rem;
     }
   }

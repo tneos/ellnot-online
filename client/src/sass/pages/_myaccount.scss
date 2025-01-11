@@ -1,3 +1,6 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins" as *;
+
 .my-account {
   grid-column: 5 / 11;
   grid-row: 3 / 9;
@@ -7,7 +10,7 @@
     text-align: center;
     margin: 2rem;
 
-    @media only screen and (max-width: $bp-medium) {
+    @media only screen and (max-width: variables.$bp-medium) {
       font-size: 2.5rem;
     }
   }
@@ -17,7 +20,7 @@
     justify-content: space-between;
     margin: 1rem 0;
 
-    @media only screen and (max-width: $bp-mobile) {
+    @media only screen and (max-width: variables.$bp-mobile) {
       flex-direction: column;
     }
   }
@@ -26,7 +29,7 @@
     font-size: 1.8rem;
     font-weight: 300;
 
-    @media only screen and (max-width: $bp-mobile) {
+    @media only screen and (max-width: variables.$bp-mobile) {
       margin: 1rem;
     }
   }
@@ -35,13 +38,13 @@
     width: 24%;
     margin: 0 1rem;
 
-    @media only screen and (max-width: $bp-large) {
+    @media only screen and (max-width: variables.$bp-large) {
       width: 30%;
     }
-    @media only screen and (max-width: $bp-large) {
+    @media only screen and (max-width: variables.$bp-large) {
       width: 40%;
     }
-    @media only screen and (max-width: $bp-mobile) {
+    @media only screen and (max-width: variables.$bp-mobile) {
       width: 90%;
       height: 4rem;
     }
@@ -50,7 +53,7 @@
   &__buttons {
     display: flex;
 
-    @media only screen and (max-width: $bp-mobile) {
+    @media only screen and (max-width: variables.$bp-mobile) {
       flex-direction: column;
     }
   }
@@ -60,14 +63,14 @@
     background-color: var(--sustainability-color);
     border: 1px solid var(--sustainability-color);
 
-    @media only screen and (max-width: $bp-medium) {
+    @media only screen and (max-width: variables.$bp-medium) {
       font-size: 1.1rem;
     }
 
-    @media only screen and (max-width: $bp-small) {
+    @media only screen and (max-width: variables.$bp-small) {
       width: 40%;
     }
-    @media only screen and (max-width: $bp-mobile) {
+    @media only screen and (max-width: variables.$bp-mobile) {
       width: 70%;
     }
   }
@@ -77,13 +80,13 @@
     background-color: var(--danger-color);
     border: 1px solid var(--danger-color);
 
-    @media only screen and (max-width: $bp-medium) {
+    @media only screen and (max-width: variables.$bp-medium) {
       font-size: 1.1rem;
     }
-    @media only screen and (max-width: $bp-small) {
+    @media only screen and (max-width: variables.$bp-small) {
       width: 40%;
     }
-    @media only screen and (max-width: $bp-mobile) {
+    @media only screen and (max-width: variables.$bp-mobile) {
       width: 70%;
     }
   }
@@ -93,21 +96,21 @@
   width: 24%;
   margin: 0 0.8rem;
 
-  @media only screen and (max-width: $bp-large) {
+  @media only screen and (max-width: variables.$bp-large) {
     width: 30%;
   }
-  @media only screen and (max-width: $bp-small) {
+  @media only screen and (max-width: variables.$bp-small) {
     width: 40%;
   }
 
-  @media only screen and (max-width: $bp-mobile) {
+  @media only screen and (max-width: variables.$bp-mobile) {
     width: 90%;
   }
 
   &__input {
     width: 33%;
 
-    @media only screen and (max-width: $bp-mobile) {
+    @media only screen and (max-width: variables.$bp-mobile) {
       height: 4rem;
     }
   }

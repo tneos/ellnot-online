@@ -1,14 +1,16 @@
+@use "../abstracts/variables";
+
 .logo {
   height: 6rem;
   cursor: pointer;
 
-  @media only screen and (max-width: $bp-small) {
+  @media only screen and (max-width: variables.$bp-small) {
     order: 2;
     flex: 30%;
     margin-left: 4rem;
   }
 
-  @media only screen and (max-width: $bp-mobile) {
+  @media only screen and (max-width: variables.$bp-mobile) {
     font-size: 2rem;
     background-color: #000;
     color: #fff;
@@ -22,14 +24,14 @@
     color: #000;
     padding: 3rem 0;
 
-    @media only screen and (max-width: $bp-mobile) {
+    @media only screen and (max-width: variables.$bp-mobile) {
       color: #fff;
     }
   }
 }
 
 .logo-signup {
-  @media only screen and (max-width: $bp-mobile) {
+  @media only screen and (max-width: variables.$bp-mobile) {
     height: 52%;
   }
 }
@@ -47,13 +49,13 @@
   justify-content: space-around;
   z-index: 3000;
 
-  @media only screen and (max-width: $bp-largest) {
+  @media only screen and (max-width: variables.$bp-largest) {
     height: 6rem;
   }
-  @media only screen and (max-width: $bp-medium) {
+  @media only screen and (max-width: variables.$bp-medium) {
     top: 4rem;
   }
-  @media only screen and (max-width: $bp-small) {
+  @media only screen and (max-width: variables.$bp-small) {
     height: 12rem;
   }
 }
@@ -61,7 +63,7 @@
 .signup {
   top: 0;
 
-  @media only screen and (max-width: $bp-mobile) {
+  @media only screen and (max-width: variables.$bp-mobile) {
     height: 11%;
   }
 }
@@ -73,22 +75,22 @@
   width: 35vw;
   height: 6rem;
 
-  @media only screen and (max-width: $bp-largest) {
+  @media only screen and (max-width: variables.$bp-largest) {
     width: 40vw;
   }
 
-  @media only screen and (max-width: $bp-medium) {
+  @media only screen and (max-width: variables.$bp-medium) {
     width: 39%;
     height: 6rem;
   }
 
-  @media only screen and (max-width: $bp-small) {
+  @media only screen and (max-width: variables.$bp-small) {
     order: 4;
     flex: 60%;
     padding-right: 2rem;
   }
 
-  @media only screen and (max-width: $bp-mobile) {
+  @media only screen and (max-width: variables.$bp-mobile) {
     padding: 0;
     flex: 50%;
     margin: 0 1rem;
@@ -97,12 +99,12 @@
   &__item {
     cursor: pointer;
 
-    @media only screen and (max-width: $bp-small) {
+    @media only screen and (max-width: variables.$bp-small) {
       text-align: center;
       padding: 2rem 0;
     }
 
-    @media only screen and (max-width: $bp-mobile) {
+    @media only screen and (max-width: variables.$bp-mobile) {
       font-size: 0.8rem;
     }
   }
@@ -113,7 +115,7 @@
     display: block;
     transform: translateY(60%);
 
-    @media only screen and (max-width: $bp-largest) {
+    @media only screen and (max-width: variables.$bp-largest) {
       margin: 0 1rem;
     }
   }
@@ -128,15 +130,15 @@
   height: 10vh;
   position: relative;
 
-  @media only screen and (max-width: $bp-medium) {
+  @media only screen and (max-width: variables.$bp-medium) {
     padding-top: 2.2%;
   }
 
-  @media only screen and (max-width: $bp-small) {
+  @media only screen and (max-width: variables.$bp-small) {
     order: 1;
     flex: 45%;
   }
-  @media only screen and (max-width: $bp-mobile) {
+  @media only screen and (max-width: variables.$bp-mobile) {
     margin-bottom: 0;
   }
   &__input {
@@ -146,12 +148,12 @@
     width: 21rem;
     padding: 1rem;
 
-    @media only screen and (max-width: $bp-medium) {
+    @media only screen and (max-width: variables.$bp-medium) {
       height: 2.5rem;
       width: 17rem;
     }
 
-    @media only screen and (max-width: $bp-small) {
+    @media only screen and (max-width: variables.$bp-small) {
       display: none;
     }
   }
@@ -294,18 +296,18 @@
     border: none;
     background-color: #fff;
 
-    @media only screen and (max-width: $bp-largest) {
+    @media only screen and (max-width: variables.$bp-largest) {
       left: 71%;
     }
 
-    @media only screen and (max-width: $bp-medium) {
+    @media only screen and (max-width: variables.$bp-medium) {
       width: 10px;
       height: 10px;
       margin-top: 4px;
       left: 72%;
     }
 
-    @media only screen and (max-width: $bp-small) {
+    @media only screen and (max-width: variables.$bp-small) {
       left: 3%;
     }
   }
@@ -313,7 +315,7 @@
     width: 2rem;
     height: 2rem;
 
-    @media only screen and (max-width: $bp-small) {
+    @media only screen and (max-width: variables.$bp-small) {
       margin: 1.3rem;
     }
   }
@@ -326,24 +328,24 @@
   justify-content: space-around;
   padding-top: 1.5%;
 
-  @media only screen and (max-width: $bp-largest) {
+  @media only screen and (max-width: variables.$bp-largest) {
     width: 25vw;
   }
 
-  @media only screen and (max-width: $bp-medium) {
+  @media only screen and (max-width: variables.$bp-medium) {
     padding-top: 2.2%;
   }
 
-  @media only screen and (max-width: $bp-small) {
+  @media only screen and (max-width: variables.$bp-small) {
     order: 3;
     flex: 33%;
   }
 
-  @media only screen and (max-width: $bp-small) {
+  @media only screen and (max-width: variables.$bp-small) {
     flex: 40%;
   }
 
-  @media only screen and (max-width: $bp-mobile) {
+  @media only screen and (max-width: variables.$bp-mobile) {
     height: 5vh;
   }
 
@@ -357,7 +359,7 @@
     width: 30px;
     height: 30px;
 
-    @media only screen and (max-width: $bp-largest) {
+    @media only screen and (max-width: variables.$bp-largest) {
       width: 20px;
       height: 20px;
     }
@@ -374,7 +376,7 @@
     font-size: 1.2rem;
     width: 50%;
 
-    @media only screen and (max-width: $bp-mobile) {
+    @media only screen and (max-width: variables.$bp-mobile) {
       font-size: 1rem;
     }
   }
@@ -390,20 +392,20 @@
   position: relative;
   height: 70%;
 
-  @media only screen and (max-width: $bp-largest) {
+  @media only screen and (max-width: variables.$bp-largest) {
     width: 50%;
   }
 
-  @media only screen and (max-width: $bp-large) {
+  @media only screen and (max-width: variables.$bp-large) {
     width: 59%;
   }
-  @media only screen and (max-width: $bp-medium) {
+  @media only screen and (max-width: variables.$bp-medium) {
     width: 67%;
   }
-  @media only screen and (max-width: $bp-small) {
+  @media only screen and (max-width: variables.$bp-small) {
     width: 50%;
   }
-  @media only screen and (max-width: $bp-mobile) {
+  @media only screen and (max-width: variables.$bp-mobile) {
     width: 55%;
   }
 }
@@ -413,11 +415,11 @@
   font-size: 1.3rem;
   margin: 0.8rem auto;
 
-  @media only screen and (max-width: $bp-largest) {
+  @media only screen and (max-width: variables.$bp-largest) {
     margin: 0.3rem auto;
   }
 
-  @media only screen and (max-width: $bp-mobile) {
+  @media only screen and (max-width: variables.$bp-mobile) {
     font-size: 0.8rem;
     margin: 0.6rem auto;
   }
@@ -441,12 +443,12 @@
   visibility: hidden;
   z-index: 10;
 
-  @media only screen and (max-width: $bp-small) {
+  @media only screen and (max-width: variables.$bp-small) {
     top: 0;
     bottom: 100%;
     right: 28%;
   }
-  @media only screen and (max-width: $bp-mobile) {
+  @media only screen and (max-width: variables.$bp-mobile) {
     right: 30%;
   }
 
@@ -454,10 +456,10 @@
     list-style: none;
     font-weight: 300;
 
-    @media only screen and (max-width: $bp-small) {
+    @media only screen and (max-width: variables.$bp-small) {
       font-size: 1.2rem;
     }
-    @media only screen and (max-width: $bp-mobile) {
+    @media only screen and (max-width: variables.$bp-mobile) {
       font-size: 1rem;
     }
   }
@@ -487,15 +489,15 @@
     visibility: visible;
     z-index: 10;
 
-    @media only screen and (max-width: $bp-small) {
+    @media only screen and (max-width: variables.$bp-small) {
       top: 35%;
       right: 28%;
     }
-    @media only screen and (max-width: $bp-vsmall) {
+    @media only screen and (max-width: variables.$bp-vsmall) {
       right: 30%;
       width: 17%;
     }
-    @media only screen and (max-width: $bp-mobile) {
+    @media only screen and (max-width: variables.$bp-mobile) {
       width: 23%;
       right: 44%;
       z-index: 5000;
@@ -516,7 +518,7 @@
   justify-content: space-around;
   z-index: 3000;
 
-  @media only screen and (max-width: $bp-mobile) {
+  @media only screen and (max-width: variables.$bp-mobile) {
     top: 5%;
   }
 }
@@ -527,16 +529,16 @@
   position: relative;
   z-index: 2000;
 
-  @media only screen and (max-width: $bp-medium) {
+  @media only screen and (max-width: variables.$bp-medium) {
     padding-top: 2.2%;
   }
 
-  @media only screen and (max-width: $bp-small) {
+  @media only screen and (max-width: variables.$bp-small) {
     order: 1;
     flex: 45%;
     margin-left: 4rem;
   }
-  @media only screen and (max-width: $bp-mobile) {
+  @media only screen and (max-width: variables.$bp-mobile) {
     margin-bottom: 2rem;
   }
   &__input {
@@ -546,7 +548,7 @@
     width: 40vw;
     padding: 1rem 5rem;
 
-    @media only screen and (max-width: $bp-small) {
+    @media only screen and (max-width: variables.$bp-small) {
       width: 85%;
     }
   }
@@ -560,11 +562,11 @@
     background-color: transparent;
     top: 2rem;
 
-    @media only screen and (max-width: $bp-largest) {
+    @media only screen and (max-width: variables.$bp-largest) {
       left: 4%;
     }
 
-    @media only screen and (max-width: $bp-medium) {
+    @media only screen and (max-width: variables.$bp-medium) {
       width: 10px;
       height: 10px;
       margin-top: 3px;
@@ -588,7 +590,7 @@
     opacity: 0.4;
     background-color: transparent;
 
-    @media only screen and (max-width: $bp-small) {
+    @media only screen and (max-width: variables.$bp-small) {
       right: 19%;
     }
 
@@ -625,7 +627,7 @@
   z-index: 4000;
   overflow: scroll;
 
-  @media only screen and (max-width: $bp-small) {
+  @media only screen and (max-width: variables.$bp-small) {
     padding: 2rem 0;
   }
 
@@ -635,7 +637,7 @@
     display: flex;
     margin: 2%;
 
-    @media only screen and (max-width: $bp-mobile) {
+    @media only screen and (max-width: variables.$bp-mobile) {
       flex-direction: column;
       width: 80%;
       margin: 0 10% 35% 10%;
@@ -646,7 +648,7 @@
     display: table;
     width: 90%;
 
-    @media only screen and (max-width: $bp-mobile) {
+    @media only screen and (max-width: variables.$bp-mobile) {
       width: 80%;
       margin: 0 10% 1rem 10%;
     }
@@ -663,7 +665,7 @@
     vertical-align: middle;
     padding: 3% 0;
 
-    @media only screen and (max-width: $bp-small) {
+    @media only screen and (max-width: variables.$bp-small) {
       padding: 1.5rem 0 0 3rem;
       font-size: 1.2rem;
     }
@@ -686,7 +688,7 @@
     display: flex;
     justify-content: space-between;
 
-    @media only screen and (max-width: $bp-mobile) {
+    @media only screen and (max-width: variables.$bp-mobile) {
       display: none;
     }
   }
@@ -730,7 +732,7 @@
     display: table-cell;
     vertical-align: middle;
 
-    @media only screen and (max-width: $bp-mobile) {
+    @media only screen and (max-width: variables.$bp-mobile) {
       font-size: 0.9rem;
     }
   }
@@ -739,7 +741,7 @@
     width: 6%;
     height: 100%;
 
-    @media only screen and (max-width: $bp-mobile) {
+    @media only screen and (max-width: variables.$bp-mobile) {
       width: 80%;
       margin: 0 10%;
     }
@@ -765,19 +767,19 @@
 
 // Determine view of active navbar depending on screen
 .not-show-mobile {
-  @media only screen and (max-width: $bp-small) {
+  @media only screen and (max-width: variables.$bp-small) {
     display: none;
   }
 }
 
 .not-show-larger-screen {
-  @media only screen and (min-width: $bp-small) {
+  @media only screen and (min-width: variables.$bp-small) {
     display: none;
   }
 }
 
 .not-show-large-screen {
-  @media only screen and (min-width: $bp-medium) {
+  @media only screen and (min-width: variables.$bp-medium) {
     display: none;
   }
 }

@@ -1,3 +1,6 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins" as *;
+
 .payment {
   grid-column: 1 / -1;
   grid-row: 1 / 9;
@@ -9,7 +12,7 @@
     height: 90%;
     background-color: var(--submenu-color);
 
-    @media only screen and (max-width: $bp-medium) {
+    @media only screen and (max-width: variables.$bp-medium) {
       display: block;
       padding-top: 2rem;
     }
@@ -123,7 +126,7 @@
   background-color: #fff;
   overflow-y: scroll;
 
-  @media only screen and (max-width: $bp-medium) {
+  @media only screen and (max-width: variables.$bp-medium) {
     width: 90%;
     margin: 3rem auto;
     padding: 1rem;

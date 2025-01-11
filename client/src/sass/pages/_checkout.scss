@@ -1,9 +1,12 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins" as *;
+
 .checkout {
   grid-column: 1 / -1;
   grid-row: 1 / 9;
   background-color: var(--submenu-color);
 
-  @media only screen and (max-width: $bp-medium) {
+  @media only screen and (max-width: variables.$bp-medium) {
     display: flex;
     flex-direction: column;
   }
@@ -14,7 +17,7 @@
     width: 100%;
     height: 80%;
 
-    @media only screen and (max-width: $bp-medium) {
+    @media only screen and (max-width: variables.$bp-medium) {
       display: block;
       padding-top: 2rem;
       height: 97%;
@@ -30,7 +33,7 @@
   margin: 1rem;
   background-color: #fff;
 
-  @media only screen and (max-width: $bp-medium) {
+  @media only screen and (max-width: variables.$bp-medium) {
     width: 90%;
     margin: 0 auto;
     padding: 1rem;
@@ -43,10 +46,10 @@
     text-align: center;
     margin: 3rem 0;
 
-    @media only screen and (max-width: $bp-small) {
+    @media only screen and (max-width: variables.$bp-small) {
       font-size: 2rem;
     }
-    @media only screen and (max-width: $bp-mobile) {
+    @media only screen and (max-width: variables.$bp-mobile) {
       font-size: 1.8rem;
       font-weight: 200;
     }
@@ -55,7 +58,7 @@
   &__btn {
     @include button(#fff, #000);
 
-    @media only screen and (max-width: $bp-mobile) {
+    @media only screen and (max-width: variables.$bp-mobile) {
       width: 50%;
     }
   }
@@ -67,7 +70,7 @@
   margin: 3rem 2rem;
   justify-content: space-between;
 
-  @media only screen and (max-width: $bp-mobile) {
+  @media only screen and (max-width: variables.$bp-mobile) {
     flex-direction: column;
   }
 }
@@ -76,7 +79,7 @@
   width: 40%;
   flex-direction: column;
 
-  @media only screen and (max-width: $bp-mobile) {
+  @media only screen and (max-width: variables.$bp-mobile) {
     margin: 1rem 2rem;
   }
 
@@ -100,7 +103,7 @@
     width: 50%;
     margin: 0 1rem;
 
-    @media only screen and (max-width: $bp-mobile) {
+    @media only screen and (max-width: variables.$bp-mobile) {
       width: 90%;
       margin: 1rem 2rem;
     }
@@ -124,7 +127,7 @@ input::-webkit-inner-spin-button {
 .label {
   font-size: 1.6rem;
 
-  @media only screen and (max-width: $bp-mobile) {
+  @media only screen and (max-width: variables.$bp-mobile) {
     font-size: 1.4rem;
   }
 }
@@ -137,7 +140,7 @@ input::-webkit-inner-spin-button {
   flex-direction: column;
   overflow: scroll;
 
-  @media only screen and (max-width: $bp-medium) {
+  @media only screen and (max-width: variables.$bp-medium) {
     width: 90%;
     margin: 3rem auto;
     padding: 1rem;
@@ -149,7 +152,7 @@ input::-webkit-inner-spin-button {
     text-align: center;
     margin: 2rem 0;
 
-    @media only screen and (max-width: $bp-mobile) {
+    @media only screen and (max-width: variables.$bp-mobile) {
       font-size: 1.8rem;
       font-weight: 200;
     }
@@ -174,7 +177,7 @@ input::-webkit-inner-spin-button {
   &__description {
     width: 50%;
 
-    @media only screen and (max-width: $bp-mobile) {
+    @media only screen and (max-width: variables.$bp-mobile) {
       font-size: 0.9rem;
     }
   }
@@ -184,7 +187,7 @@ input::-webkit-inner-spin-button {
     text-align: left;
     margin: 2rem 0;
 
-    @media only screen and (max-width: $bp-mobile) {
+    @media only screen and (max-width: variables.$bp-mobile) {
       margin: 0 0 2rem 0;
     }
   }
@@ -193,7 +196,7 @@ input::-webkit-inner-spin-button {
     font-weight: 300;
     margin: 4rem 0;
 
-    @media only screen and (max-width: $bp-mobile) {
+    @media only screen and (max-width: variables.$bp-mobile) {
       font-size: 0.9rem;
     }
   }
@@ -206,7 +209,7 @@ input::-webkit-inner-spin-button {
     font-size: 1.2rem;
     font-weight: 400;
 
-    @media only screen and (max-width: $bp-mobile) {
+    @media only screen and (max-width: variables.$bp-mobile) {
       font-size: 0.9rem;
     }
   }
@@ -217,7 +220,7 @@ input::-webkit-inner-spin-button {
   font-weight: 300;
   font-size: 2rem;
 
-  @media only screen and (max-width: $bp-mobile) {
+  @media only screen and (max-width: variables.$bp-mobile) {
     font-size: 1.3rem;
   }
 }
@@ -232,7 +235,7 @@ input::-webkit-inner-spin-button {
     font-weight: lighter;
     text-align: center;
 
-    @media only screen and (max-width: $bp-mobile) {
+    @media only screen and (max-width: variables.$bp-mobile) {
       font-size: 1rem;
     }
   }

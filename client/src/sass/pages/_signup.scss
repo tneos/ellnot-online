@@ -1,8 +1,11 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins" as *;
+
 .signup {
   grid-column: 1 / -1;
   grid-row: 1 / 9;
 
-  @media only screen and (max-width: $bp-mobile) {
+  @media only screen and (max-width: variables.$bp-mobile) {
     grid-row: 1 / 12;
   }
 }
@@ -53,19 +56,19 @@
     background-color: var(--shop-color);
     border: 1px solid var(--border-color);
 
-    @media only screen and (max-width: $bp-small) {
+    @media only screen and (max-width: variables.$bp-small) {
       font-size: 1.2rem;
     }
-    @media only screen and (max-width: $bp-small) {
+    @media only screen and (max-width: variables.$bp-small) {
       font-size: 1rem;
     }
-    @media only screen and (max-width: $bp-mobile) {
+    @media only screen and (max-width: variables.$bp-mobile) {
       font-size: 0.9rem;
       width: 40%;
     }
   }
 
-  @media only screen and (max-width: $bp-mobile) {
+  @media only screen and (max-width: variables.$bp-mobile) {
     grid-column: 1 / -1;
   }
 }

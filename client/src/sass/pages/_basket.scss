@@ -1,3 +1,5 @@
+@use "../abstracts/variables";
+
 .basket {
   grid-column: 1 / -1;
   grid-row: 3 / 11;
@@ -7,12 +9,12 @@
     margin: 5rem auto;
     display: flex;
 
-    @media only screen and (max-width: $bp-vsmall) {
+    @media only screen and (max-width: variables.$bp-vsmall) {
       width: 90%;
       flex-direction: column;
     }
 
-    @media only screen and (max-width: $bp-mobile) {
+    @media only screen and (max-width: variables.$bp-mobile) {
       grid-row: 6 / 11;
     }
   }
@@ -24,11 +26,11 @@
     text-align: center;
     width: 95%;
 
-    @media only screen and (max-width: $bp-largest) {
+    @media only screen and (max-width: variables.$bp-largest) {
       font-size: 2.8rem;
     }
 
-    @media only screen and (max-width: $bp-mobile) {
+    @media only screen and (max-width: variables.$bp-mobile) {
       font-size: 2.6rem;
     }
   }
@@ -40,13 +42,13 @@
     &__cart-section {
       width: 65%;
 
-      @media only screen and (max-width: $bp-large) {
+      @media only screen and (max-width: variables.$bp-large) {
         width: 80%;
       }
-      @media only screen and (max-width: $bp-medium) {
+      @media only screen and (max-width: variables.$bp-medium) {
         width: 90%;
       }
-      @media only screen and (max-width: $bp-mobile) {
+      @media only screen and (max-width: variables.$bp-mobile) {
         width: 100%;
       }
     }
@@ -70,7 +72,7 @@
         background-color: #aba7a7;
       }
 
-      @media only screen and (max-width: $bp-large) {
+      @media only screen and (max-width: variables.$bp-large) {
         font-size: 1.8rem;
       }
     }
@@ -85,20 +87,20 @@
       width: 40%;
       height: 24rem;
 
-      @media only screen and (max-width: $bp-largest) {
+      @media only screen and (max-width: variables.$bp-largest) {
         height: 23rem;
       }
 
-      @media only screen and (max-width: $bp-mobile) {
+      @media only screen and (max-width: variables.$bp-mobile) {
         height: 20rem;
       }
     }
 
-    @media only screen and (max-width: $bp-vsmall) {
+    @media only screen and (max-width: variables.$bp-vsmall) {
       width: 90%;
     }
 
-    @media only screen and (max-width: $bp-mobile) {
+    @media only screen and (max-width: variables.$bp-mobile) {
       width: 100%;
     }
   }
@@ -111,11 +113,11 @@
       font-size: 1.4rem;
       font-weight: 300;
       margin-bottom: 4rem;
-      @media only screen and (max-width: $bp-vsmall) {
+      @media only screen and (max-width: variables.$bp-vsmall) {
         font-size: 1.2rem;
       }
 
-      @media only screen and (max-width: $bp-mobile) {
+      @media only screen and (max-width: variables.$bp-mobile) {
         margin-bottom: 7rem;
         height: 2.5rem;
         font-size: 0.9rem;
@@ -125,14 +127,14 @@
       font-weight: 400;
       margin-bottom: 1rem;
 
-      @media only screen and (max-width: $bp-mobile) {
+      @media only screen and (max-width: variables.$bp-mobile) {
         font-size: 0.9rem;
       }
     }
     &__selection {
       height: 4rem;
 
-      @media only screen and (max-width: $bp-mobile) {
+      @media only screen and (max-width: variables.$bp-mobile) {
         font-size: 0.9rem;
       }
     }
@@ -141,7 +143,7 @@
       position: absolute;
       bottom: 5%;
 
-      @media only screen and (max-width: $bp-mobile) {
+      @media only screen and (max-width: variables.$bp-mobile) {
         font-size: 0.9rem;
       }
     }
@@ -150,21 +152,21 @@
   .price-tag {
     margin-top: 8rem;
 
-    @media only screen and (max-width: $bp-small) {
+    @media only screen and (max-width: variables.$bp-small) {
       margin-top: 18%;
     }
 
-    @media only screen and (max-width: $bp-mobile) {
+    @media only screen and (max-width: variables.$bp-mobile) {
       margin-top: 0;
     }
     &__title {
       font-size: 1.4rem;
       font-weight: 300;
       margin-bottom: 1.7rem;
-      @media only screen and (max-width: $bp-vsmall) {
+      @media only screen and (max-width: variables.$bp-vsmall) {
         font-size: 0.9rem;
       }
-      @media only screen and (max-width: $bp-mobile) {
+      @media only screen and (max-width: variables.$bp-mobile) {
         margin-bottom: 13.7rem;
       }
     }
@@ -173,14 +175,14 @@
       font-weight: 400;
       margin-bottom: 7rem;
 
-      @media only screen and (max-width: $bp-small) {
+      @media only screen and (max-width: variables.$bp-small) {
         margin-bottom: 8.7rem;
       }
-      @media only screen and (max-width: $bp-vsmall) {
+      @media only screen and (max-width: variables.$bp-vsmall) {
         font-size: 1.2rem;
       }
 
-      @media only screen and (max-width: $bp-mobile) {
+      @media only screen and (max-width: variables.$bp-mobile) {
         margin-bottom: 1.2rem;
         font-size: 0.9rem;
       }
@@ -193,7 +195,7 @@
       border: none;
       position: relative;
 
-      @media only screen and (max-width: $bp-mobile) {
+      @media only screen and (max-width: variables.$bp-mobile) {
         width: 2rem;
         height: 2rem;
       }
@@ -206,7 +208,7 @@
         background-color: #000;
         position: absolute;
 
-        @media only screen and (max-width: $bp-mobile) {
+        @media only screen and (max-width: variables.$bp-mobile) {
           width: 1rem;
         }
       }
@@ -241,7 +243,7 @@
         background-color: #aba7a7;
       }
 
-      @media only screen and (max-width: $bp-large) {
+      @media only screen and (max-width: variables.$bp-large) {
         font-size: 1.8rem;
       }
     }
@@ -258,7 +260,7 @@
       text-align: center;
       margin-bottom: 2rem;
 
-      @media only screen and (max-width: $bp-large) {
+      @media only screen and (max-width: variables.$bp-large) {
         font-size: 1.6rem;
       }
     }
@@ -274,7 +276,7 @@
       height: 5rem;
       margin: 3rem 25%;
 
-      @media only screen and (max-width: $bp-medium) {
+      @media only screen and (max-width: variables.$bp-medium) {
         font-size: 1.3rem;
       }
     }
@@ -288,16 +290,16 @@
     &__icon {
       width: 3.5rem;
 
-      @media only screen and (max-width: $bp-large) {
+      @media only screen and (max-width: variables.$bp-large) {
         width: 3rem;
       }
     }
 
-    @media only screen and (max-width: $bp-vsmall) {
+    @media only screen and (max-width: variables.$bp-vsmall) {
       width: 90%;
     }
 
-    @media only screen and (max-width: $bp-mobile) {
+    @media only screen and (max-width: variables.$bp-mobile) {
       width: 100%;
     }
   }
@@ -308,7 +310,7 @@
       width: 70%;
       margin: 2rem auto 6rem;
 
-      @media only screen and (max-width: $bp-mobile) {
+      @media only screen and (max-width: variables.$bp-mobile) {
         margin: 2rem auto 0;
       }
     }
@@ -320,7 +322,7 @@
       font-weight: 400;
       letter-spacing: 4px;
 
-      @media only screen and (max-width: $bp-mobile) {
+      @media only screen and (max-width: variables.$bp-mobile) {
         font-size: 3rem;
       }
     }
@@ -333,15 +335,15 @@
       width: 100%;
       letter-spacing: 2px;
 
-      @media only screen and (max-width: $bp-medium) {
+      @media only screen and (max-width: variables.$bp-medium) {
         font-size: 1.8rem;
       }
 
-      @media only screen and (max-width: $bp-small) {
+      @media only screen and (max-width: variables.$bp-small) {
         font-size: 1.7rem;
       }
 
-      @media only screen and (max-width: $bp-mobile) {
+      @media only screen and (max-width: variables.$bp-mobile) {
         font-size: 1.3rem;
         padding: 2rem 0.3rem;
       }
@@ -358,11 +360,11 @@
       height: 5rem;
       margin: 1rem 35%;
 
-      @media only screen and (max-width: $bp-small) {
+      @media only screen and (max-width: variables.$bp-small) {
         font-size: 1.3rem;
       }
 
-      @media only screen and (max-width: $bp-mobile) {
+      @media only screen and (max-width: variables.$bp-mobile) {
         width: 50%;
         margin: 0 25%;
       }

@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
+import {createRoot} from "react-dom/client";
 import {RouterProvider, createBrowserRouter} from "react-router-dom";
 
 // Components
@@ -157,7 +157,7 @@ const Main = () => {
     </Elements>
   );
 };
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const root = createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Main />

@@ -1,3 +1,5 @@
+@use "../abstracts/variables";
+
 .footer {
   grid-column: 1 / -1;
   grid-row: 12 / 13;
@@ -25,7 +27,7 @@
     justify-content: flex-start;
     height: 30rem;
 
-    @media only screen and (max-width: $bp-mobile) {
+    @media only screen and (max-width: variables.$bp-mobile) {
       height: 20rem;
     }
   }
@@ -42,7 +44,7 @@
     font-weight: 400;
     padding-top: 3rem;
 
-    @media only screen and (max-width: $bp-mobile) {
+    @media only screen and (max-width: variables.$bp-mobile) {
       font-size: 0.8rem;
     }
   }
@@ -53,7 +55,7 @@
     font-weight: lighter;
     padding: 1rem 0;
 
-    @media only screen and (max-width: $bp-mobile) {
+    @media only screen and (max-width: variables.$bp-mobile) {
       font-size: 0.8rem;
     }
   }

@@ -1,3 +1,5 @@
+@use "../abstracts/variables";
+
 .fav-section {
   grid-column: 1 / -1;
   grid-row: 4 / 11;
@@ -9,13 +11,13 @@
     text-align: center;
     padding: 3rem;
 
-    @media only screen and (max-width: $bp-vsmall) {
+    @media only screen and (max-width: variables.$bp-vsmall) {
       font-size: 3rem;
       padding: 2rem;
     }
   }
 
-  @media only screen and (max-width: $bp-mobile) {
+  @media only screen and (max-width: variables.$bp-mobile) {
     grid-row: 6 / 11;
   }
 }
@@ -28,7 +30,7 @@
   right: 5%;
   text-decoration: underline;
 
-  @media only screen and (max-width: $bp-mobile) {
+  @media only screen and (max-width: variables.$bp-mobile) {
     top: 9.8%;
   }
 }
@@ -40,11 +42,11 @@
   grid-auto-flow: row;
   margin: 1rem;
 
-  @media only screen and (max-width: $bp-medium) {
+  @media only screen and (max-width: variables.$bp-medium) {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  @media only screen and (max-width: $bp-vsmall) {
+  @media only screen and (max-width: variables.$bp-vsmall) {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -69,7 +71,7 @@
     background-color: var(--header-color);
     opacity: 0.4;
 
-    @media only screen and (max-width: $bp-mobile) {
+    @media only screen and (max-width: variables.$bp-mobile) {
       width: 2rem;
       height: 2rem;
     }
@@ -84,7 +86,7 @@
       display: inline-block;
       position: absolute;
 
-      @media only screen and (max-width: $bp-mobile) {
+      @media only screen and (max-width: variables.$bp-mobile) {
         width: 2rem;
       }
     }
@@ -94,7 +96,7 @@
       top: 49%;
       right: 10%;
 
-      @media only screen and (max-width: $bp-mobile) {
+      @media only screen and (max-width: variables.$bp-mobile) {
         top: 51%;
         right: 1%;
       }
@@ -105,7 +107,7 @@
       top: 49%;
       right: 10%;
 
-      @media only screen and (max-width: $bp-mobile) {
+      @media only screen and (max-width: variables.$bp-mobile) {
         top: 48%;
         right: 4%;
       }
@@ -117,7 +119,7 @@
     justify-content: space-between;
     height: 6rem;
 
-    @media only screen and (max-width: $bp-mobile) {
+    @media only screen and (max-width: variables.$bp-mobile) {
       height: 8rem;
     }
   }
@@ -131,7 +133,7 @@
     padding: 2rem 0;
     margin-left: 0.1rem;
 
-    @media only screen and (max-width: $bp-mobile) {
+    @media only screen and (max-width: variables.$bp-mobile) {
       font-size: 1.1rem;
     }
   }
@@ -145,10 +147,10 @@
     padding: 2rem 0;
     margin-left: 0.1rem;
 
-    @media only screen and (max-width: $bp-large) {
+    @media only screen and (max-width: variables.$bp-large) {
       font-size: 1.5rem;
     }
-    @media only screen and (max-width: $bp-mobile) {
+    @media only screen and (max-width: variables.$bp-mobile) {
       font-size: 1.1rem;
     }
   }

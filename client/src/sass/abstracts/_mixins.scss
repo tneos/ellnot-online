@@ -1,3 +1,5 @@
+@use "./variables";
+
 @mixin active-class {
   width: 100%;
   height: 5rem;
@@ -8,15 +10,15 @@
   right: 0;
   z-index: 3001;
 
-  @media only screen and (max-width: $bp-largest) and (min-height: 768px) {
+  @media only screen and (max-width: variables.$bp-largest) and (min-height: 768px) {
     top: 11.5rem;
   }
 
-  @media only screen and (max-width: $bp-medium) {
+  @media only screen and (max-width: variables.$bp-medium) {
     top: 9rem;
   }
 
-  @media only screen and (max-width: $bp-vsmall) and (min-height: 600px) {
+  @media only screen and (max-width: variables.$bp-vsmall) and (min-height: 600px) {
     transform: translateY(-35rem);
     top: 47%;
     right: 0;
@@ -24,12 +26,12 @@
     transition: all ease-out 0.3s;
   }
 
-  @media only screen and (max-width: $bp-vsmall) {
+  @media only screen and (max-width: variables.$bp-vsmall) {
     top: 52%;
     height: 50vh;
   }
 
-  @media only screen and (max-width: $bp-mobile) {
+  @media only screen and (max-width: variables.$bp-mobile) {
     top: 43%;
     height: 40rem;
   }
@@ -45,19 +47,19 @@
   height: 40rem;
   position: relative;
 
-  @media only screen and (max-width: $bp-large) {
+  @media only screen and (max-width: variables.$bp-large) {
     height: 35rem;
   }
 
-  @media only screen and (max-width: $bp-small) {
+  @media only screen and (max-width: variables.$bp-small) {
     height: 32rem;
   }
 
-  @media only screen and (max-width: $bp-vsmall) {
+  @media only screen and (max-width: variables.$bp-vsmall) {
     width: 32%;
   }
 
-  @media only screen and (max-width: $bp-mobile) {
+  @media only screen and (max-width: variables.$bp-mobile) {
     width: 90%;
     height: 80vh;
     margin: 1rem auto;
@@ -72,24 +74,24 @@
     left: 35%;
     padding: 1rem 0;
 
-    @media only screen and (max-width: $bp-largest) {
+    @media only screen and (max-width: variables.$bp-largest) {
       left: 28%;
       padding: 2rem 0;
       font-size: 2.1rem;
     }
 
-    @media only screen and (max-width: $bp-medium) {
+    @media only screen and (max-width: variables.$bp-medium) {
       font-size: 1.9rem;
       left: 20%;
       padding: 2rem 0;
     }
 
-    @media only screen and (max-width: $bp-small) {
+    @media only screen and (max-width: variables.$bp-small) {
       font-size: 1.7rem;
       left: 15%;
     }
 
-    @media only screen and (max-width: $bp-mobile) {
+    @media only screen and (max-width: variables.$bp-mobile) {
       font-size: 2.5rem;
       left: 25%;
     }
@@ -105,24 +107,24 @@
     display: block;
     padding: 1rem 0;
 
-    @media only screen and (max-width: $bp-largest) {
+    @media only screen and (max-width: variables.$bp-largest) {
       font-size: 1.3rem;
       left: 28%;
       top: 12%;
     }
 
-    @media only screen and (max-width: $bp-medium) {
+    @media only screen and (max-width: variables.$bp-medium) {
       font-size: 1.1rem;
       left: 20%;
       top: 10%;
     }
 
-    @media only screen and (max-width: $bp-small) {
+    @media only screen and (max-width: variables.$bp-small) {
       font-size: 0.9rem;
       left: 15%;
     }
 
-    @media only screen and (max-width: $bp-mobile) {
+    @media only screen and (max-width: variables.$bp-mobile) {
       font-size: 1.6rem;
       left: 25%;
     }
@@ -135,7 +137,7 @@
     text-decoration: underline;
     padding: 0.8rem 0;
 
-    @media only screen and (max-width: $bp-largest) {
+    @media only screen and (max-width: variables.$bp-largest) {
       padding: 1.9rem 0;
     }
   }
@@ -149,7 +151,7 @@
     background: url($url);
     background-size: cover;
 
-    @media only screen and (max-width: $bp-largest) {
+    @media only screen and (max-width: variables.$bp-largest) {
       width: 85%;
       background-size: 85% 100%;
       background-repeat: no-repeat;
@@ -157,15 +159,15 @@
       height: 63%;
     }
 
-    @media only screen and (max-width: $bp-medium) {
+    @media only screen and (max-width: variables.$bp-medium) {
       width: 95%;
       height: 70%;
     }
-    @media only screen and (max-width: $bp-small) {
+    @media only screen and (max-width: variables.$bp-small) {
       width: 100%;
     }
 
-    @media only screen and (max-width: $bp-small) {
+    @media only screen and (max-width: variables.$bp-small) {
       background-size: 75% 100%;
     }
   }
@@ -190,10 +192,10 @@
   display: table;
   background-color: #fff;
 
-  @media only screen and (max-width: $bp-largest) {
+  @media only screen and (max-width: variables.$bp-largest) {
     height: 12rem;
   }
-  @media only screen and (max-width: $bp-largest) {
+  @media only screen and (max-width: variables.$bp-largest) {
     height: 8rem;
   }
 
@@ -213,7 +215,7 @@
   color: #000;
   line-height: 2px;
 
-  @media only screen and (max-width: $bp-small) {
+  @media only screen and (max-width: variables.$bp-small) {
     text-align: left;
   }
 }
@@ -223,7 +225,7 @@
   justify-content: space-around;
   height: 100%;
 
-  @media only screen and (max-width: $bp-vsmall) and (min-height: 600px) {
+  @media only screen and (max-width: variables.$bp-vsmall) and (min-height: 600px) {
     flex-direction: column;
     flex: 100%;
     height: 100%;
@@ -241,14 +243,14 @@
   border-bottom: 0;
   font-weight: 200;
 
-  @media only screen and (max-width: $bp-medium) {
+  @media only screen and (max-width: variables.$bp-medium) {
     padding: 2.5rem 0;
   }
 
-  @media only screen and (max-width: $bp-small) {
+  @media only screen and (max-width: variables.$bp-small) {
     padding-left: 4rem;
   }
-  @media only screen and (max-width: $bp-small) and (min-height: 700px) {
+  @media only screen and (max-width: variables.$bp-small) and (min-height: 700px) {
     padding-left: 5rem;
   }
 }
@@ -269,24 +271,24 @@
   );
   height: 80%;
 
-  @media only screen and (max-width: $bp-large) {
+  @media only screen and (max-width: variables.$bp-large) {
     width: 18%;
   }
 
-  @media only screen and (max-width: $bp-medium) {
+  @media only screen and (max-width: variables.$bp-medium) {
     height: 16rem;
   }
 
-  @media only screen and (max-width: $bp-small) {
+  @media only screen and (max-width: variables.$bp-small) {
     height: 14rem;
   }
 
-  @media only screen and (max-width: $bp-vsmall) {
+  @media only screen and (max-width: variables.$bp-vsmall) {
     width: 20%;
     height: 13rem;
   }
 
-  @media only screen and (max-width: $bp-mobile) {
+  @media only screen and (max-width: variables.$bp-mobile) {
     height: 23%;
     width: 60%;
     margin: 0 auto;
@@ -298,18 +300,18 @@
   grid-column: 1 / -1;
   display: flex;
 
-  @media only screen and (max-width: $bp-small) {
+  @media only screen and (max-width: variables.$bp-small) {
     display: block;
     width: 80%;
     margin: 0 auto;
   }
-  @media only screen and (max-width: $bp-mobile) {
+  @media only screen and (max-width: variables.$bp-mobile) {
     margin: 8rem auto;
   }
   &__image {
     width: 50%;
 
-    @media only screen and (max-width: $bp-small) {
+    @media only screen and (max-width: variables.$bp-small) {
       width: 100%;
     }
   }
@@ -318,7 +320,7 @@
     background-color: $background-color;
     padding: 0 5%;
 
-    @media only screen and (max-width: $bp-small) {
+    @media only screen and (max-width: variables.$bp-small) {
       width: 100%;
       height: 61.4vh;
       display: flex;
@@ -340,7 +342,7 @@
     font-size: 2.8rem;
     margin-top: 5%;
 
-    @media only screen and (max-width: $bp-small) {
+    @media only screen and (max-width: variables.$bp-small) {
       margin: 0;
     }
   }
@@ -357,7 +359,7 @@
   }
 
   &__offer {
-    font-family: $font-students;
+    font-family: variables.$font-students;
   }
 }
 
@@ -371,11 +373,11 @@
   //transition: all 1.4s;
   z-index: 3000;
 
-  @media only screen and (max-width: $bp-medium) {
+  @media only screen and (max-width: variables.$bp-medium) {
     height: 9rem;
   }
 
-  @media only screen and (max-width: $bp-vsmall) and (min-height: 600px) {
+  @media only screen and (max-width: variables.$bp-vsmall) and (min-height: 600px) {
     right: 0;
     top: 0;
     transition: all 0.3s;

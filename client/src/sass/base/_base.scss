@@ -1,3 +1,5 @@
+@use "../abstracts/variables";
+
 :root {
   --header-color: #bfbfbf;
   --basket-color: #34dee9;
@@ -40,7 +42,7 @@ html {
 }
 
 body {
-  font-family: $font-primary;
+  font-family: variables.$font-primary;
   font-weight: 400;
   font-size: 16px;
 }
@@ -55,13 +57,13 @@ body {
     minmax(1.6rem, 1fr);
   height: 100vh;
 
-  @media only screen and (max-width: $bp-large) {
+  @media only screen and (max-width: variables.$bp-large) {
     grid-template-rows:
       min-content 30vh repeat(2, min-content) 20vh min-content 20vh min-content
       35vh min-content 35vh min-content;
   }
 
-  @media only screen and (max-width: $bp-mobile) {
+  @media only screen and (max-width: variables.$bp-mobile) {
     grid-template-rows:
       min-content 30vh repeat(2, min-content) 20vh repeat(3, min-content)
       35vh min-content 35vh min-content;

@@ -6,24 +6,24 @@
     "@stripe/react-stripe-js": "^1.7.0",
     "@stripe/stripe-js": "^1.26.0",
     "@testing-library/jest-dom": "^5.16.1",
-    "@testing-library/react": "^12.1.2",
+    "@testing-library/react": "^16.1.0",
     "@testing-library/user-event": "^13.5.0",
     "@version/react-router-v3": "^1.0.0",
-    "axios": "^0.25.0",
+    "axios": "^1.7.9",
     "history": "^5.3.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router": "^6.8.1",
     "react-router-dom": "^6.2.1",
-    "react-scripts": "5.0.0",
+    "react-scripts": "^3.0.1",
     "react-transition-group": "^4.4.2",
     "swiper": "^8.0.6",
     "uuid": "^8.3.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "compile:sass": "node-sass src/sass/main.scss src/css/main.css -w",
-    "start": "react-scripts start",
+    "compile:sass": "sass src/sass/main.scss src/css/main.css -w",
+    "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -32,7 +32,11 @@
     "extends": [
       "react-app",
       "react-app/jest"
-    ]
+    ],
+    "rules": {
+      "react/jsx-uses-react": "off",
+      "react/react-in-jsx-scope": "off"
+    }
   },
   "browserslist": {
     "production": [
@@ -46,8 +50,8 @@
       "last 1 safari version"
     ]
   },
+  "proxy": "http://localhost:5000",
   "devDependencies": {
-    "node-sass": "^7.0.1"
-  },
-  "proxy": "http://localhost:5000"
+    "sass": "^1.83.1"
+  }
 }

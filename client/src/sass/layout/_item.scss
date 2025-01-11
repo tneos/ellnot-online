@@ -1,16 +1,18 @@
+@use "../abstracts/variables";
+
 .component-container {
   grid-row: 3 / 7;
   grid-column: 1 / -1;
   display: flex;
 
-  @media only screen and (max-width: $bp-small) {
+  @media only screen and (max-width: variables.$bp-small) {
     flex-direction: column;
   }
 }
 .image-container {
   width: 50%;
 
-  @media only screen and (max-width: $bp-small) {
+  @media only screen and (max-width: variables.$bp-small) {
     width: 90%;
     margin: 0 auto 6rem;
   }
@@ -20,7 +22,7 @@
     display: block;
     margin: 0 auto;
 
-    @media only screen and (max-width: $bp-vsmall) {
+    @media only screen and (max-width: variables.$bp-vsmall) {
       width: 80%;
     }
   }
@@ -29,7 +31,7 @@
 .details {
   width: 50%;
 
-  @media only screen and (max-width: $bp-small) {
+  @media only screen and (max-width: variables.$bp-small) {
     width: 90%;
     margin: 0 auto;
   }
@@ -40,11 +42,11 @@
     justify-content: space-between;
     margin-bottom: 10%;
 
-    @media only screen and (max-width: $bp-small) {
+    @media only screen and (max-width: variables.$bp-small) {
       margin: auto;
     }
 
-    @media only screen and (max-width: $bp-small) {
+    @media only screen and (max-width: variables.$bp-small) {
       width: 80%;
     }
   }
@@ -53,7 +55,7 @@
     font-size: 1.8rem;
     margin-bottom: 10%;
 
-    @media only screen and (max-width: $bp-mobile) {
+    @media only screen and (max-width: variables.$bp-mobile) {
       font-size: 1.5rem;
     }
   }
@@ -66,16 +68,16 @@
   &__price {
     margin-bottom: 10%;
 
-    @media only screen and (max-width: $bp-small) {
+    @media only screen and (max-width: variables.$bp-small) {
       margin: 0 auto 10%;
       width: 60%;
     }
 
-    @media only screen and (max-width: $bp-small) {
+    @media only screen and (max-width: variables.$bp-small) {
       width: 80%;
     }
 
-    @media only screen and (max-width: $bp-mobile) {
+    @media only screen and (max-width: variables.$bp-mobile) {
       font-size: 1.5rem;
     }
   }
@@ -87,12 +89,12 @@
     list-style-type: none;
     margin-bottom: 10%;
 
-    @media only screen and (max-width: $bp-small) {
+    @media only screen and (max-width: variables.$bp-small) {
       margin: 0 auto 10%;
       width: 70%;
     }
 
-    @media only screen and (max-width: $bp-mobile) {
+    @media only screen and (max-width: variables.$bp-mobile) {
       display: table;
     }
   }
@@ -102,7 +104,7 @@
     height: 3rem;
     text-align: center;
 
-    @media only screen and (max-width: $bp-mobile) {
+    @media only screen and (max-width: variables.$bp-mobile) {
       font-size: 1.3rem;
       display: table-cell;
       vertical-align: middle;
@@ -117,7 +119,7 @@
     background-color: var(--button-color);
     margin-top: 3rem;
 
-    @media only screen and (max-width: $bp-small) {
+    @media only screen and (max-width: variables.$bp-small) {
       margin-left: 20%;
     }
   }

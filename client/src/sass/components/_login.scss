@@ -1,12 +1,14 @@
+@use "../abstracts/variables";
+
 .login {
   width: 55rem;
-  height: 65%;
+  height: 41%;
   margin: auto;
   background-color: #fff;
   border-radius: 5px;
   border: 1px solid var(--border-color);
 
-  @media only screen and (max-width: $bp-largest) and (min-height: $bp-small) {
+  @media only screen and (max-width: variables.$bp-largest) and (min-height: variables.$bp-small) {
     height: 50rem;
     position: absolute;
     top: 15rem;
@@ -18,7 +20,7 @@
     justify-content: space-around;
     height: 13%;
 
-    @media only screen and (max-width: $bp-largest) {
+    @media only screen and (max-width: variables.$bp-largest) {
       height: 10%;
     }
   }
@@ -30,13 +32,13 @@
     text-align: center;
     padding: 3%;
 
-    @media only screen and (max-width: $bp-mobile) {
+    @media only screen and (max-width: variables.$bp-mobile) {
       font-size: 1.7rem;
       padding: 4%;
     }
   }
 
-  @media only screen and (max-width: $bp-vsmall) {
+  @media only screen and (max-width: variables.$bp-vsmall) {
     width: 85%;
     height: 50rem;
   }
@@ -51,7 +53,7 @@
   height: 50%;
   margin: 3rem;
 
-  @media only screen and (max-width: $bp-mobile) {
+  @media only screen and (max-width: variables.$bp-mobile) {
     width: 80%;
   }
 
@@ -59,7 +61,7 @@
     display: block;
     margin-bottom: 2.5rem;
 
-    @media only screen and (max-width: $bp-mobile) {
+    @media only screen and (max-width: variables.$bp-mobile) {
       font-size: 1.3rem;
     }
   }
@@ -72,7 +74,7 @@
     border: 1px solid var(--border-color);
     border-radius: 5px;
 
-    @media only screen and (max-width: $bp-mobile) {
+    @media only screen and (max-width: variables.$bp-mobile) {
       height: 4rem;
     }
   }
@@ -89,7 +91,7 @@
     text-transform: uppercase;
     margin-bottom: 1.5rem;
 
-    @media only screen and (max-width: $bp-mobile) {
+    @media only screen and (max-width: variables.$bp-mobile) {
       font-size: 1rem;
     }
   }
@@ -104,7 +106,7 @@
     margin: 0 auto;
     width: 100%;
 
-    @media only screen and (max-width: $bp-mobile) {
+    @media only screen and (max-width: variables.$bp-mobile) {
       font-size: 1rem;
     }
   }

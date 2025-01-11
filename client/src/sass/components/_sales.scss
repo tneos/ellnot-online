@@ -1,8 +1,10 @@
+@use "../abstracts/variables";
+
 .sales {
   grid-row: 4 / 5;
   grid-column: 2 / 14;
 
-  @media only screen and (max-width: $bp-medium) {
+  @media only screen and (max-width: variables.$bp-medium) {
     grid-column: 1 / -1;
   }
 
@@ -14,7 +16,7 @@
     margin: 0 auto;
     border-radius: 5px;
 
-    @media only screen and (max-width: $bp-vsmall) {
+    @media only screen and (max-width: variables.$bp-vsmall) {
       display: flex;
       flex-direction: column;
     }
@@ -24,11 +26,11 @@
     flex: 0 0 40%;
     margin: 2rem 4rem;
 
-    @media only screen and (max-width: $bp-medium) {
+    @media only screen and (max-width: variables.$bp-medium) {
       margin: 3rem;
     }
 
-    @media only screen and (max-width: $bp-vsmall) {
+    @media only screen and (max-width: variables.$bp-vsmall) {
       margin: 1.5rem 3rem;
     }
   }
@@ -37,7 +39,7 @@
   &__all {
     color: #fff;
 
-    @media only screen and (max-width: $bp-vsmall) {
+    @media only screen and (max-width: variables.$bp-vsmall) {
       text-align: center;
     }
   }
@@ -51,7 +53,7 @@
     letter-spacing: 1px;
     line-height: 120%;
 
-    @media only screen and (max-width: $bp-largest) {
+    @media only screen and (max-width: variables.$bp-largest) {
       font-size: 2.8rem;
     }
   }
@@ -60,11 +62,11 @@
     font-weight: 350;
     line-height: 300%;
 
-    @media only screen and (max-width: $bp-medium) {
+    @media only screen and (max-width: variables.$bp-medium) {
       font-size: 1.8rem;
     }
 
-    @media only screen and (max-width: $bp-small) {
+    @media only screen and (max-width: variables.$bp-small) {
       font-size: 1.7rem;
     }
   }
@@ -75,7 +77,7 @@
     letter-spacing: 2px;
     text-underline-offset: 5px;
 
-    @media only screen and (max-width: $bp-medium) {
+    @media only screen and (max-width: variables.$bp-medium) {
       font-size: 1rem;
     }
   }
@@ -86,11 +88,11 @@
     justify-content: space-between;
     padding: 1rem;
 
-    @media only screen and (max-width: $bp-largest) {
+    @media only screen and (max-width: variables.$bp-largest) {
       flex: 0 0 50%;
     }
 
-    @media only screen and (max-width: $bp-vsmall) {
+    @media only screen and (max-width: variables.$bp-vsmall) {
       flex: 100%;
       padding: 1.5rem;
     }
@@ -104,7 +106,7 @@
     border-radius: 50%;
     margin: auto;
 
-    @media only screen and (max-width: $bp-medium) {
+    @media only screen and (max-width: variables.$bp-medium) {
       height: 9rem;
       width: 9rem;
     }

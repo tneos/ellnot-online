@@ -1,3 +1,6 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts//variables";
+
 .sub-nav1,
 .sub-nav2,
 .sub-nav3 {
@@ -20,34 +23,34 @@
 }
 
 .signup-active {
-  @media only screen and (max-width: $bp-largest) {
+  @media only screen and (max-width: variables.$bp-largest) {
     top: 9.5rem;
   }
-  @media only screen and (max-width: $bp-medium) and (min-height: 600px) {
+  @media only screen and (max-width: variables.$bp-medium) and (min-height: 600px) {
     top: 9.5rem;
     height: 6rem;
   }
-  @media only screen and (max-width: $bp-small) {
+  @media only screen and (max-width: variables.$bp-small) {
     top: 16rem;
     z-index: 4000;
   }
 
-  @media only screen and (max-width: $bp-vsmall) and (min-height: 600px) {
+  @media only screen and (max-width: variables.$bp-vsmall) and (min-height: 600px) {
     height: 45rem;
   }
 
-  @media only screen and (max-width: $bp-vsmall) {
+  @media only screen and (max-width: variables.$bp-vsmall) {
     height: 6rem;
   }
 
-  @media only screen and (max-width: $bp-mobile) {
+  @media only screen and (max-width: variables.$bp-mobile) {
     top: 49.5rem;
     height: 45rem;
   }
 }
 
 .sub-signup {
-  @media only screen and (max-width: $bp-small) {
+  @media only screen and (max-width: variables.$bp-small) {
     top: -25rem;
   }
 }

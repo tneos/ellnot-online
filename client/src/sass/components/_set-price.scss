@@ -1,3 +1,6 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins" as *;
+
 .set-price {
   grid-column: 1 / -1;
   grid-row: 10 / 11;
@@ -5,7 +8,7 @@
   display: flex;
   justify-content: space-around;
 
-  @media only screen and (max-width: $bp-mobile) {
+  @media only screen and (max-width: variables.$bp-mobile) {
     flex-direction: column;
     justify-content: space-between;
     grid-column: 4/ 11;
@@ -27,20 +30,20 @@
     font-size: 2rem;
     transform: translateY(-5%);
 
-    @media only screen and (max-width: $bp-medium) {
+    @media only screen and (max-width: variables.$bp-medium) {
       font-size: 1.8rem;
       padding: 35% 2rem;
     }
 
-    @media only screen and (max-width: $bp-small) {
+    @media only screen and (max-width: variables.$bp-small) {
       padding: 32% 2rem;
     }
 
-    @media only screen and (max-width: $bp-vsmall) {
+    @media only screen and (max-width: variables.$bp-vsmall) {
       padding: 29% 2rem;
     }
 
-    @media only screen and (max-width: $bp-mobile) {
+    @media only screen and (max-width: variables.$bp-mobile) {
       padding: 30% 1.2rem;
       font-size: 3vw;
       transform: translateY(3%);
@@ -52,11 +55,11 @@
     padding: 2rem;
     font-size: 3rem;
 
-    @media only screen and (max-width: $bp-medium) {
+    @media only screen and (max-width: variables.$bp-medium) {
       font-size: 1.8rem;
     }
 
-    @media only screen and (max-width: $bp-mobile) {
+    @media only screen and (max-width: variables.$bp-mobile) {
       font-size: 3vw;
       padding: 1rem;
     }
