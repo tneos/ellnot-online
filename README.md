@@ -119,3 +119,61 @@ To run this project, you will need to add the following environment variables to
 `REACT_APP_BACKEND_URL`
 
 `REACT_APP_ENV`
+
+<!-- Run Locally -->
+
+### :running: Run Locally
+
+![](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
+
+Clone the project into desired folder
+
+```bash
+  git clone https://github.com/tneos/ellnot-online.git
+```
+
+move into project directory
+
+```bash
+  cd ellnot-online
+```
+
+change directory
+
+```bash
+  cd client
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+chang directory
+
+```bash
+  cd ..
+```
+
+change directory
+
+```bash
+  cd backend-api
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run dev
+```
+
+<hr />
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
