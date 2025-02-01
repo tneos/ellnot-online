@@ -36,7 +36,7 @@ Ellnot is a fully functional online shop that supports user accounts, filtered p
 - Main page, navigation bar, search bar and options for filtered data included
 
 <div align="center">
-<a href="https://ellnot-shop.onrender.com/"><img  src='./client/public/demo/main-page.gif alt='image'/></a>
+<a href="https://ellnot-shop.onrender.com/"><img  src='./client/public/demo/main-page.gif' alt='image'/></a>
 </div>
 
 <br />
