@@ -29,7 +29,7 @@ export const getObject = (data, description) => {
       .map(array => clothingCat.push(array));
     clothingKeys = Object.keys(clothing[0]).slice(2, Object.keys(clothing[0]).length - 1);
 
-    category2 = Object.values(shoesAccessories[0])[1].toLowerCase();
+    let category2 = Object.values(shoesAccessories[0])[1].toLowerCase();
     Object.values(shoesAccessories[0])
       .slice(2, Object.values(shoesAccessories[0]).length - 1)
       .map(array => shoesAccessoriesCat.push(array));

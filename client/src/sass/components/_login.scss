@@ -2,13 +2,13 @@
 
 .login {
   width: 55rem;
-  height: 41%;
+  height: 40vw;
   margin: auto;
   background-color: #fff;
   border-radius: 5px;
   border: 1px solid var(--border-color);
 
-  @media only screen and (max-width: variables.$bp-largest) and (min-height: variables.$bp-small) {
+  @media only screen and (max-width: variables.$bp-largest) and (min-height: variables.$bp-mobile-sm) {
     height: 50rem;
     position: absolute;
     top: 15rem;

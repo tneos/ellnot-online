@@ -17,7 +17,6 @@ import {
 } from "../types";
 
 const itemReducer = (state, action) => {
-  console.log(action);
   switch (action.type) {
     case SET_SEARCH_BAR:
       return {

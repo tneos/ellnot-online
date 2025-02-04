@@ -60,13 +60,13 @@ export const getDuplicates = array => {
   Object.keys(count).forEach(key => {
     countKeys.push(key.split(",")[0]);
   });
-  Object.values(count).map(value => {
+  Object.values(count).forEach(value => {
     countValues.forEach(value);
   });
 
   // Display unique values
   uniqueArray.forEach(item => {
-    array.map((el, index, array) => {
+    array.forEach((el, index, array) => {
       // Save ids in order to use them on the component
       array[index].getAttribute("id") && ids.push(array[index].getAttribute("id"));
       array[index].removeAttribute("id");

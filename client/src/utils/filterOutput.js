@@ -3,7 +3,7 @@ export const filterOutput = (output, data) => {
   let splittedOutput;
   let keysArrays = [];
 
-  output.map(array => {
+  output.forEach(array => {
     Array.isArray(array) &&
       Array.isArray(data) &&
       array.length === data.length &&
@@ -12,7 +12,7 @@ export const filterOutput = (output, data) => {
       });
   });
 
-  data.map(arr => {
+  data.forEach(arr => {
     arr && keysArrays.push(Object.keys(arr));
   });
 
@@ -20,13 +20,13 @@ export const filterOutput = (output, data) => {
 
   if (typeof uniq === "object") return uniq;
   else {
-    uniq.map(item => {
+    uniq.forEach(item => {
       typeof item === "string"
         ? (splittedOutput = item.toLowerCase().split(" "))
         : (splittedOutput = item.description.toLowerCase().split(" "));
     });
 
-    keysArrays.map(keys => {
+    keysArrays.forEach(keys => {
       keys.map(key => {
         if (key === splittedOutput[0]) {
           uniq = uniq.slice(-1);
