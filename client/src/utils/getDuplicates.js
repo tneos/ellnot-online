@@ -18,7 +18,7 @@ export const getDuplicates = array => {
   let uniqueContainer = document.createElement("div");
 
   // Array of size values
-  array.map((el, index) => {
+  array.forEach((el, index) => {
     array[index].lastChild.hasChildNodes() &&
       array[index].lastChild.firstChild.hasChildNodes() &&
       (optionsArray = [...array[index].lastChild.firstChild]);
@@ -33,7 +33,7 @@ export const getDuplicates = array => {
   });
 
   // Save descriptions and sizes of basket items in array
-  array.map(element => {
+  array.forEach(element => {
     if (element.lastChild.firstChild) {
       allItems.push([
         element.firstChild.nextSibling.nextSibling.firstChild.innerText,
@@ -57,15 +57,15 @@ export const getDuplicates = array => {
   });
 
   // Manipulate duplicates object
-  Object.keys(count).map(key => {
+  Object.keys(count).forEach(key => {
     countKeys.push(key.split(",")[0]);
   });
   Object.values(count).map(value => {
-    countValues.push(value);
+    countValues.forEach(value);
   });
 
   // Display unique values
-  uniqueArray.map(item => {
+  uniqueArray.forEach(item => {
     array.map((el, index, array) => {
       // Save ids in order to use them on the component
       array[index].getAttribute("id") && ids.push(array[index].getAttribute("id"));
@@ -88,7 +88,7 @@ export const getDuplicates = array => {
   }
 
   // Array of unique size values
-  basketUnique.map(el => {
+  basketUnique.forEach(el => {
     if (el.lastChild.hasChildNodes() && el.lastChild.firstChild.hasChildNodes()) {
       uniqueSizes = [...el.lastChild.firstChild];
       uniqueSizes[0].value = el.lastChild.firstChild.value;

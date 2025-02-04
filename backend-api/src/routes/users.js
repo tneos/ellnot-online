@@ -11,7 +11,7 @@ const auth = require("../middleware/auth");
 // Signup user
 // @route   POST api/users
 // @desc    Auth user & get token
-// @access  Public
+
 router.post(
   "/",
   [
@@ -77,7 +77,6 @@ router.post(
 );
 
 // @route   UPDATE api/users
-// @desc    Update user
 // @access  Private
 router.put("/", async (req, res) => {
   const {firstName, lastName, email, day, month, year} = req.body;
@@ -103,7 +102,6 @@ router.put("/", async (req, res) => {
 });
 
 // @route   DELETE api/users
-// @desc    Delete user
 // @access  Private
 router.delete("/", async (req, res) => {
   const {email} = req.body;

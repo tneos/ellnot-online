@@ -39,7 +39,7 @@ const ShowData = ({data}) => {
 
   // Add all data in single array
   if (initialData.length > 0) {
-    initialData.map((array, index) => {
+    initialData.forEach((array, index) => {
       if (index === 0) {
         Object.keys(array[0])
           .slice(2, Object.keys(array[0]).length - 2)
@@ -86,7 +86,7 @@ const ShowData = ({data}) => {
     }
 
     // manipulate key
-    keys.map(({}, index, array) => {
+    keys.forEach((_, index, array) => {
       array[index] === "summer_items" && array.splice(index, 1, "summer-items");
     });
     if (links) {

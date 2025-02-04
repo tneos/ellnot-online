@@ -9,7 +9,7 @@ function Header() {
         <a
           href="https://www.facebook.com"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           className="social__link"
         >
           <img className="social__img" src="/img/facebook.png" alt="facebook logo" />
@@ -17,7 +17,7 @@ function Header() {
         <a
           href="https://www.twitter.com"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           className="social__link"
         >
           <img className="social__img" src="../img/twitter.png" alt="twitter logo" />
@@ -25,7 +25,7 @@ function Header() {
         <a
           href="https://www.instagram.com"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           className="social__link"
         >
           <img className="social__img" src="../img/instagram.png" alt="instagram logo" />
@@ -33,7 +33,7 @@ function Header() {
         <a
           href="https://www.youtube.com"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           className="social__link"
         >
           <img className="social__img" src="../img/youtube.png" alt="youtube logo" />

@@ -29,6 +29,15 @@ Ellnot is a fully functional online shop that supports user accounts, filtered p
 
 ## :star2: About the Project
 
+<!--Purpose-->
+
+### Purpose
+
+After following a software development coding Bootcamp in Edinburgh (ITPT), Ellnot meant to be my final project and ended up
+being more demanding that I anticipated as I decided to use React on the front-end for the first time.
+Being the designer and using Figma in order to create a number of prototypes was time consuming but it proved to be beneficial as I moved on
+the development phase. The idea was to try and implement as many features possible, but the one that I found particularly challenging was creating a functional search bar.
+
 <!-- Screenshots -->
 
 ### :camera: Screenshots
