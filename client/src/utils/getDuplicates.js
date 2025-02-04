@@ -60,8 +60,9 @@ export const getDuplicates = array => {
   Object.keys(count).forEach(key => {
     countKeys.push(key.split(",")[0]);
   });
+
   Object.values(count).forEach(value => {
-    countValues.forEach(value);
+    countValues.push(value);
   });
 
   // Display unique values
