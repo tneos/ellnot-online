@@ -37,6 +37,8 @@ After following a software development coding Bootcamp in Edinburgh (ITPT), Elln
 
 Being the designer and using Figma in order to create a number of prototypes was time consuming but it proved to be beneficial as I moved on to the development phase. The idea was to try and implement as many features possible, but the one that I found particularly challenging was creating a functional search bar.
 
+Some other features that I had to use for the first time was Stripe for the checkout component, user authentication and aggregation operations in the MongoDB Node.js driver in order to filter out my database.
+
 <!-- Screenshots -->
 
 ### :camera: Screenshots
