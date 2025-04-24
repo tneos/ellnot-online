@@ -128,6 +128,7 @@ To run this project, you will need to add the following environment variables to
 `REACT_APP_BACKEND_URL`
 
 `REACT_APP_ENV`\
+
 And the following environmental variables to your .env file of your backend-api folder
 
 `PASSWORD`
