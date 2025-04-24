@@ -117,6 +117,8 @@ Some other features that I had to use for the first time was Stripe for the chec
 ### :bangbang: Prerequisites
 
 - Install Node JS in your computer <a href='https://nodejs.org/en/'>HERE</a>
+- Signup for an Atlas account on Mongo.db <a href='https://www.mongodb.com/'>HERE</a>
+- Signup for a Stripe account <a href='https://stripe.com/'>HERE</a>
 
 <!-- Env Variables -->
 
@@ -127,7 +129,7 @@ To run this project, you will need to add the following environment variables to
 
 `REACT_APP_BACKEND_URL`
 
-`REACT_APP_ENV`\
+`REACT_APP_ENV`
 
 And the following environmental variables to your .env file of your backend-api folder
 
