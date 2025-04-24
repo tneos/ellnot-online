@@ -122,13 +122,29 @@ Some other features that I had to use for the first time was Stripe for the chec
 
 ### :key: Environment Variables
 
-To run this project, you will need to add the following environment variables to your .env file
-
+To run this project, you will need to add the following environment variables to your .env file of your client folder
 `REACT_APP_CLIENT_URL`
 
 `REACT_APP_BACKEND_URL`
 
 `REACT_APP_ENV`
+And the following environmental variables to your .env file of your backend-api folder
+
+`PASSWORD`
+
+`STRIPE_SECRET_KEY`
+
+`PUBLISHABLE_KEY`
+
+`MODE`
+
+`TOKEN`
+
+`PORT`
+
+`MONGO_URI`
+
+`SUPPRESS_NO_CONFIG_WARNING`
 
 <!-- Run Locally -->
 
