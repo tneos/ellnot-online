@@ -1,23 +1,16 @@
 const express = require("express");
 const router = express.Router();
 
-const {check, validationResult} = require("express-validator");
-const bcrypt = require("bcryptjs");
-const jwt = require("jsonwebtoken");
-const config = require("config");
 const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 
 const User = require("../models/User");
-const auth = require("../middleware/auth");
 
 // @route   PUT api/checkout
 // @desc    Save client details and make payment
 // @access  Private
-
 router.put("/:id", async (req, res) => {
   const userId = req.params.id;
   const {form, items, total} = req.body;
-
   let totalFixed = parseInt(total * 100);
 
   // Create checkout session
@@ -44,8 +37,9 @@ router.put("/:id", async (req, res) => {
 
   // Build updated user
   let updatedUser = {};
-  if (req.body !== {}) updatedUser.clientDetails = form;
-  if (req.body !== {}) updatedUser.itemsBought = items;
+
+  updatedUser.clientDetails = form;
+  updatedUser.itemsBought = items;
 
   try {
     // Update user
@@ -73,18 +67,13 @@ router.post("/:id", async (req, res) => {
 
   // Build updated user
   let updatedUser = {};
-  if (req.body !== {}) updatedUser.itemsBought = items;
+
+  updatedUser.itemsBought = items;
 
   try {
     // Update user
     updatedUser = await User.findOneAndUpdate({_id: userId}, updatedUser, {
       new: true,
-    });
-
-    const paymentIntent = await stripe.paymentIntents.create({
-      currency: "EUR",
-      amount: 1999,
-      automatic_payment_methods: {enabled: true},
     });
 
     // Session as a response

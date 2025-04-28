@@ -135,13 +135,8 @@ const router = createBrowserRouter([
 ]);
 
 const Main = () => {
-  const options = {
-    // passing the client secret obtained from the server
-    clientSecret: "pi_3Ko4f6A9g8GZZeGZ1HQFtpLV_secret_4YXkBYsuBK1YWFyfZxMBKTS8g",
-  };
-
   return (
-    <Elements stripe={stripePromise} options={options}>
+    <Elements stripe={stripePromise}>
       <SubMenuState>
         <AlertState>
           <ItemState>

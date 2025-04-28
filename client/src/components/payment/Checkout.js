@@ -23,7 +23,8 @@ const Checkout = () => {
 
   // Variables
   const {_id} = user;
-  const filteredArray = [];
+  const checkoutArray = [];
+  //const basketItems = [];
   let countKeys = [];
   let htmlContainer = document.createElement("div");
 
@@ -31,6 +32,7 @@ const Checkout = () => {
   const basketArray = [...htmlContainer.children];
 
   const {basketUnique, countValues, optionsUnique} = getDuplicates(basketArray);
+  console.log(basketUnique, basketArray);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -45,7 +47,7 @@ const Checkout = () => {
       window.scrollTo(0, 0);
     } else {
       let total = getTotal(basketItems, basketArray).toFixed(2);
-      buyProducts(form, filteredArray, _id, total);
+      buyProducts(form, checkoutArray, _id, total);
     }
   };
 
