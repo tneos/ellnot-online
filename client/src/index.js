@@ -41,9 +41,8 @@ if (localStorage.token) {
   setAuthToken(localStorage.token);
 }
 
-const stripePromise = loadStripe(
-  "pk_test_51KkrCgA9g8GZZeGZNPLgtBF9bfHL16cwJBBA2whsWPlOihOl2WWbJYDOSeXVddlBJJaQVRlghy5I5aIZMIYhUfXq006Xs7WWjx"
-);
+const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_PUB_KEY);
+console.log(process.env.REACT_APP_STRIPE_PUB_KEY);
 
 const router = createBrowserRouter([
   {
