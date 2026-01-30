@@ -26,14 +26,12 @@ const Type = () => {
 
   const {likedList, appData, getData, error} = itemContext;
   const {user, favItems} = authContext;
-  //console.log(appData);
-  console.log(error);
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    console.log(category, type, appData);
+    // Invoke get type of data function
     getData(category, type);
-
+    // Delay loading
     const timer = setTimeout(() => {
       setContent(true);
     }, waitBeforeShow);
@@ -102,7 +100,7 @@ const Type = () => {
                     )
                   }
                 />
-              )
+              ),
             )}
           </div>
         </section>
@@ -111,18 +109,6 @@ const Type = () => {
   } else {
     output = <Error />;
   }
-  // else {
-  //   output = (
-  //     <Page title={capitalizeFirstLetter(type)}>
-  //       <section className="items">
-  //         <h3 className="items__notification">
-  //           Please allow 1-2 minutes for data to load as we're using server's free tier. Thank you
-  //         </h3>
-  //         <LoadingSpinner />
-  //       </section>
-  //     </Page>
-  //   );
-  // }
 
   return <>{output}</>;
 };

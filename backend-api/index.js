@@ -16,11 +16,8 @@ app.use(cors(corsOptions));
 // read variables and save them as environment variables
 dotenv.config({path: "./.env"});
 
-// Init Middleware
+// Init Middleware -- data from req object added
 app.use(express.json({extended: false}));
-
-// data from req object is added to it(middleware)
-app.use(express.json());
 
 // Define Routes
 app.use("/api/data", require("./src/routes/data"));

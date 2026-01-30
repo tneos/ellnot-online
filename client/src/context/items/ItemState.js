@@ -108,7 +108,6 @@ const ItemState = props => {
           ? await axios.get(`api/data`)
           : await axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/data`);
 
-      console.log(res.data);
       dispatch({
         type: GET_ALL_DATA,
         payload: res.data.data,
@@ -130,7 +129,6 @@ const ItemState = props => {
           : await axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/${collection}/${category}`);
 
       let dataArr = res.data.catData;
-      console.log(res);
 
       dataArr.length > 0 &&
         dispatch({

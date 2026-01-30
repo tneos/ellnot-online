@@ -14,7 +14,7 @@ const Item = () => {
   const authContext = useContext(AuthContext);
   const alertContext = useContext(AlertContext);
   const itemContext = useContext(ItemContext);
-
+  // Initial state for selected size(array of values)
   const [selected, setSelected] = useState([false, false, false, false, false, false, false]);
   const [itemToBuy, setItemToBuy] = useState([]);
   const [itemString, setItemString] = useState("");
@@ -52,7 +52,7 @@ const Item = () => {
   // Get item description from query
   let {desc} = useParams();
 
-  // // Get all data from local storage
+  // Get all data from local storage
   let data = window.localStorage.getItem("item");
 
   data = JSON.parse(data);
@@ -83,7 +83,7 @@ const Item = () => {
       .map(array => shoesAccessoriesCat.push(array));
     shoesAccessoriesKeys = Object.keys(shoesAccessories[0]).slice(
       2,
-      Object.keys(shoesAccessories[0]).length - 1
+      Object.keys(shoesAccessories[0]).length - 1,
     );
 
     category2 = category2.split("-");
@@ -96,7 +96,7 @@ const Item = () => {
       .map(array => summerCollectionCat.push(array));
     summerCollectionKeys = Object.keys(summerCollection[0]).slice(
       2,
-      Object.keys(summerCollection[0]).length - 1
+      Object.keys(summerCollection[0]).length - 1,
     );
   }
 
@@ -223,6 +223,7 @@ const Item = () => {
       selectEl.innerHTML = `<option name="Select size" value="select_size">Select size</option><option name="Size 6" value="6">Size 6</option><option name="Size 8" value="8">Size 8</option><option name="Size 10" value="10">Size 10</option><option name="Size 12" value="12">Size 12</option><option name="Size 14" value="14">Size 14</option><option name="Size 16" value="16">Size 16</option><option name="Size 18" value="18">Size 18</option>`;
       wrapperItem.appendChild(selectDiv);
       selectDiv.appendChild(selectEl);
+      console.log(wrapperItem);
       setItemString(wrapperItem.outerHTML);
     } else if (type === "boots" || type === "heels") {
       let selectEl = document.createElement("select");
@@ -232,6 +233,7 @@ const Item = () => {
       selectEl.innerHTML = `<option name="Select size" value="select_size">Select size</option><option name="Size 3" value="3">Size 3</option><option name="Size 4" value="4">Size 4</option><option name="Size 5" value="5">Size 5</option><option name="Size 6" value="6">Size 6</option><option name="Size 7" value="7">Size 7</option><option name="Size 8" value="8">Size 8</option><option name="Size 9" value="9">Size 9</option>`;
       wrapperItem.appendChild(selectDiv);
       selectDiv.appendChild(selectEl);
+
       setItemString(wrapperItem.outerHTML);
     } else if (
       type === "cardigans" ||
@@ -311,6 +313,8 @@ const Item = () => {
       return updated;
     });
   };
+
+  console.log(wrapperItem.outerHTML);
 
   const onBuy = () => {
     // Get the element and add random id
@@ -488,8 +492,8 @@ const Item = () => {
                   type === "bikini"
                     ? "XXS"
                     : type === "heels" || type === "boots"
-                    ? 3
-                    : 6}
+                      ? 3
+                      : 6}
                 </li>
 
                 <li
@@ -503,8 +507,8 @@ const Item = () => {
                   type === "bikini"
                     ? "XS"
                     : type === "heels" || type === "boots"
-                    ? 4
-                    : 8}
+                      ? 4
+                      : 8}
                 </li>
                 <li
                   className={selected[2] ? "details__size selected" : "details__size"}
@@ -517,8 +521,8 @@ const Item = () => {
                   type === "bikini"
                     ? "S"
                     : type === "heels" || type === "boots"
-                    ? 5
-                    : 10}
+                      ? 5
+                      : 10}
                 </li>
                 <li
                   className={selected[3] ? "details__size selected" : "details__size"}
@@ -531,8 +535,8 @@ const Item = () => {
                   type === "bikini"
                     ? "M"
                     : type === "heels" || type === "boots"
-                    ? 6
-                    : 12}
+                      ? 6
+                      : 12}
                 </li>
                 <li
                   className={selected[4] ? "details__size selected" : "details__size"}
@@ -545,8 +549,8 @@ const Item = () => {
                   type === "bikini"
                     ? "L"
                     : type === "heels" || type === "boots"
-                    ? 7
-                    : 14}
+                      ? 7
+                      : 14}
                 </li>
                 <li
                   className={selected[5] ? "details__size selected" : "details__size"}
@@ -559,8 +563,8 @@ const Item = () => {
                   type === "bikini"
                     ? "XL"
                     : type === "heels" || type === "boots"
-                    ? 8
-                    : 16}
+                      ? 8
+                      : 16}
                 </li>
                 <li
                   className={selected[6] ? "details__size selected" : "details__size"}
@@ -573,8 +577,8 @@ const Item = () => {
                   type === "bikini"
                     ? "XXL"
                     : type === "heels" || type === "boots"
-                    ? 9
-                    : 18}
+                      ? 9
+                      : 18}
                 </li>
               </ul>
             )}
