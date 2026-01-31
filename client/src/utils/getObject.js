@@ -4,15 +4,6 @@ export const getObject = (data, description) => {
   let summerCollectionCat = [];
 
   let clothElement, shoesAccElement, summerElement, element, elDesc;
-  //clothIndex,
-  //shoesAccIndex,
-  //summerIndex,
-  //category1,
-  //category2,
-  //category3,
-  //clothingKeys;
-  //shoesAccessoriesKeys;
-  //summerCollectionKeys;
 
   let clothing, shoesAccessories, summerCollection;
 

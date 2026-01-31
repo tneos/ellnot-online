@@ -142,7 +142,7 @@ const Item = () => {
   typeof clothElement === "object" && (element = clothElement);
   typeof shoesAccElement === "object" && (element = shoesAccElement);
   typeof summerElement === "object" && (element = summerElement);
-
+  console.log(element);
   // Get the type of element -- if data not fetched get item from local storage
   element ? (elementArray = element.img.split("/")) : (elementArray = data.img.split("/"));
   element ? (itemDesc = element.description) : (itemDesc = data.description);
@@ -223,8 +223,6 @@ const Item = () => {
       selectEl.innerHTML = `<option name="Select size" value="select_size">Select size</option><option name="Size 6" value="6">Size 6</option><option name="Size 8" value="8">Size 8</option><option name="Size 10" value="10">Size 10</option><option name="Size 12" value="12">Size 12</option><option name="Size 14" value="14">Size 14</option><option name="Size 16" value="16">Size 16</option><option name="Size 18" value="18">Size 18</option>`;
       wrapperItem.appendChild(selectDiv);
       selectDiv.appendChild(selectEl);
-      console.log(wrapperItem);
-      setItemString(wrapperItem.outerHTML);
     } else if (type === "boots" || type === "heels") {
       let selectEl = document.createElement("select");
 
@@ -233,8 +231,6 @@ const Item = () => {
       selectEl.innerHTML = `<option name="Select size" value="select_size">Select size</option><option name="Size 3" value="3">Size 3</option><option name="Size 4" value="4">Size 4</option><option name="Size 5" value="5">Size 5</option><option name="Size 6" value="6">Size 6</option><option name="Size 7" value="7">Size 7</option><option name="Size 8" value="8">Size 8</option><option name="Size 9" value="9">Size 9</option>`;
       wrapperItem.appendChild(selectDiv);
       selectDiv.appendChild(selectEl);
-
-      setItemString(wrapperItem.outerHTML);
     } else if (
       type === "cardigans" ||
       type === "cardigan" ||
@@ -248,10 +244,9 @@ const Item = () => {
       selectEl.innerHTML = `<option name="Select size" value="select_size">Select size</option><option name="Size XXS" value="xxs">Size XXS</option><option name="Size XS" value="xs">Size XS</option><option name="Size S" value="s">Size S</option><option name="Size M" value="m">Size M</option><option name="Size L" value="l">Size L</option><option name="Size XL" value="xl">Size XL</option><option name="Size XXL" value="xxl">Size XXL</option>`;
       wrapperItem.appendChild(selectDiv);
       selectDiv.appendChild(selectEl);
-      setItemString(wrapperItem.outerHTML);
-    } else {
-      setItemString(wrapperItem.outerHTML);
     }
+
+    setItemString(wrapperItem.outerHTML);
     // eslint-disable-next-line
   }, [desc]);
 

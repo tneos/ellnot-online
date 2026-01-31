@@ -66,12 +66,12 @@ const ShowData = ({data}) => {
   clothing.map(item => clothingList.push(item.toLowerCase() + " in " + category1.toLowerCase()));
   accessories.map(item => accList.push(item.toLowerCase() + " in " + category2.toLowerCase()));
   summerCollection.map(item =>
-    summerList.push(item.toLowerCase() + " in " + category3.toLowerCase())
+    summerList.push(item.toLowerCase() + " in " + category3.toLowerCase()),
   );
 
   // Add all categories in keys array
   keys = clothing.concat(accessories).concat(summerCollection);
-
+  console.log(data);
   data.forEach(el => {
     category = el;
 
@@ -158,7 +158,7 @@ const ShowData = ({data}) => {
 
       setTimeout(
         () => navigate(`/${links[links.length - 1].toLowerCase()}/${links[0]}`),
-        waitBeforeShow
+        waitBeforeShow,
       );
     } else {
       disableMobileSearchBar();
