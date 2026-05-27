@@ -70,11 +70,12 @@ const Basket = () => {
 
     // If target element matches description of sized element change the size
     sizedItems.forEach((array, index) => {
+      console.log(e.target.parentElement.children[2].firstChild.value);
       array[0] === e.target.parentElement.firstChild.innerText &&
         changeSize(
           elementStrings[index],
           e.target.parentElement.children[2].firstChild.value,
-          user._id
+          user._id,
         );
     });
   };
@@ -100,7 +101,7 @@ const Basket = () => {
         ) {
           replacedItem = el.outerHTML.replace(
             `name="Select size" value="` + options[index][0].value + `"`,
-            `name="Select size" value="select_size"`
+            `name="Select size" value="select_size"`,
           );
 
           itemToDelete = replacedItem + "," + options[index][0].value;
@@ -189,7 +190,7 @@ const Basket = () => {
                       <p className="price-tag__price">
                         £
                         {parseFloat(
-                          el.children[2].children[1].innerText.split("£")[1] * countValues[index]
+                          el.children[2].children[1].innerText.split("£")[1] * countValues[index],
                         ).toFixed(2)}
                       </p>
                       <button className="price-tag__btn" onClick={onDeleteBasketItem}></button>

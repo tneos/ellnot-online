@@ -7,14 +7,14 @@ const ClothingSchema = new Schema({
     required: true,
   },
   collectionId: Number,
-  jeans: Array,
-  tops: Array,
-  dresses: Array,
-  lingerie: Array,
-  skirts: Array,
-  shorts: Array,
-  cardigans: Array,
-  sales: Array,
+  jeans: [Object],
+  tops: [Object],
+  dresses: [Object],
+  lingerie: [Object],
+  skirts: [Object],
+  shorts: [Object],
+  cardigans: [Object],
+  sales: [Object],
 });
 
 module.exports = mongoose.model("Clothing", ClothingSchema, "clothing");

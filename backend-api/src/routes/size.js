@@ -10,6 +10,7 @@ router.put("/:id", async (req, res) => {
   const userId = req.params.id;
 
   const {item, size} = req.body;
+  console.log(userId, size);
 
   let updatedUser = {};
 
@@ -17,10 +18,12 @@ router.put("/:id", async (req, res) => {
     // Update user
     updatedUser = await User.findOneAndUpdate(
       {
-        _id: userId,
+        clientDetails: {
+          id: userId,
+        },
         basket: {
           $elemMatch: {
-            0: {
+            "$.[0]": {
               $eq: item,
             },
           },
@@ -33,9 +36,9 @@ router.put("/:id", async (req, res) => {
       },
       {
         new: true,
-      }
+      },
     );
-
+    console.log(updatedUser);
     res.json({
       status: "success",
       updatedUser,

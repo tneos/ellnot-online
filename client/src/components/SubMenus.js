@@ -22,10 +22,10 @@ function SubMenus() {
 
   let list1, list2;
 
-  listArray1.map(list => {
+  listArray1.forEach(list => {
     list1 = list;
   });
-  listArray2.map(list => {
+  listArray2.forEach(list => {
     list2 = list;
   });
 
@@ -62,7 +62,8 @@ function SubMenus() {
   const onClick = e => {
     e.preventDefault();
 
-    let list, id;
+    let id;
+    let list;
 
     // Check if list item or <a> element clicked
     e.target.id ? (id = e.target.id) : (id = e.target.firstChild.id);

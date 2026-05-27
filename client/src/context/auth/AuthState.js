@@ -100,7 +100,7 @@ const AuthState = props => {
           : await axios.put(
               `${process.env.REACT_APP_BACKEND_URL}/api/wishlist/${id}`,
               item,
-              config
+              config,
             );
 
       dispatch({type: ADD_ITEM, payload: res.data.updatedUser.itemsLiked});
@@ -144,8 +144,10 @@ const AuthState = props => {
           : await axios.put(
               `${process.env.REACT_APP_BACKEND_URL}/api/size/${id}`,
               {item, size},
-              config
+              config,
             );
+
+      console.log(res.data);
 
       dispatch({type: CHANGE_SIZE, payload: res.data.updatedUser.basket});
     } catch (err) {
@@ -168,7 +170,7 @@ const AuthState = props => {
           : await axios.post(
               `${process.env.REACT_APP_BACKEND_URL}/api/wishlist/${id}`,
               {item},
-              config
+              config,
             );
 
       dispatch({type: DELETE_SELECTED, payload: res.data.updatedUser.itemsLiked});
@@ -206,7 +208,7 @@ const AuthState = props => {
           : await axios.post(
               `${process.env.REACT_APP_BACKEND_URL}/api/basket/${id}`,
               {item},
-              config
+              config,
             );
 
       dispatch({type: DELETE_BASKET_ITEM, payload: res.data.updatedUser.basket});
@@ -219,7 +221,7 @@ const AuthState = props => {
   const loadUser = async () => {
     if (localStorage.token) {
       setAuthToken(localStorage.token);
-
+      console.log(process.env.REACT_APP_BACKEND_URL);
       try {
         const res =
           process.env.REACT_APP_ENV === "development"

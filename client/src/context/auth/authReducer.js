@@ -22,6 +22,7 @@ import {
 } from "../types";
 
 const authReducer = (state, action) => {
+  console.log(action.payload);
   switch (action.type) {
     case USER_LOADED:
       return {
@@ -45,7 +46,7 @@ const authReducer = (state, action) => {
     case CHANGE_SIZE:
       return {
         ...state,
-        basketItems: action.payload,
+        basketItems: action.payload.basket,
       };
     case DELETE_SELECTED:
       localStorage.setItem("wishlist", action.payload);

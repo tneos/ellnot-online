@@ -3,5 +3,5 @@ export const formatDate = date => {
   newDate.setTime(date * 1000);
   let dateString = newDate.toLocaleString().split(",");
 
-  return dateString[0], dateString[1];
+  return [dateString[0], dateString[1]];
 };

@@ -48,7 +48,7 @@ export const mapData = (initialData, search, input, find, clear, update) => {
 
           typeof el === "object" &&
             (found = el.filter(obj =>
-              obj.description.toLowerCase().includes(input.toLowerCase())
+              obj.description.toLowerCase().includes(input.toLowerCase()),
             ));
 
           found.length > 0 && (foundItems = found);
@@ -77,7 +77,7 @@ export const mapData = (initialData, search, input, find, clear, update) => {
       item =>
         input &&
         item.includes(input.toLowerCase()) &&
-        (filter = item + " in " + category[catIndex])
+        (filter = item + " in " + category[catIndex]),
     );
 
     typeof filter === "string" && (filterString = filter);

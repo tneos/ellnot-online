@@ -42,7 +42,6 @@ if (localStorage.token) {
 }
 
 const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_PUB_KEY);
-console.log(process.env.REACT_APP_STRIPE_PUB_KEY);
 
 const router = createBrowserRouter([
   {
@@ -157,5 +156,5 @@ const root = createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Main />
-  </React.StrictMode>
+  </React.StrictMode>,
 );

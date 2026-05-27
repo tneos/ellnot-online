@@ -10,7 +10,7 @@ const Summer_Collection = require("../models/Summer_Collection");
 // @access  Public
 router.get("/", async (req, res) => {
   try {
-    // Get clothing data
+    // Get all data
     let clothingData = await Clothing.find({});
     let shoes_accessoriesData = await Shoes_Accessories.find({});
     let summer_collectionData = await Summer_Collection.find({});

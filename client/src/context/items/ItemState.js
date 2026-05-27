@@ -112,6 +112,8 @@ const ItemState = props => {
         type: GET_ALL_DATA,
         payload: res.data.data,
       });
+
+      console.log(res);
     } catch (err) {
       dispatch({
         type: DATA_ERROR,
@@ -150,7 +152,7 @@ const ItemState = props => {
         process.env.REACT_APP_ENV !== "production"
           ? await axios.get(`/api/item/${collection}/${category}/${id}`)
           : await axios.get(
-              `${process.env.REACT_APP_BACKEND_URL}/api/item/${collection}/${category}/${id}`
+              `${process.env.REACT_APP_BACKEND_URL}/api/item/${collection}/${category}/${id}`,
             );
 
       localStorage.setItem("item", JSON.stringify(res.data.result[0]));
@@ -188,7 +190,7 @@ const ItemState = props => {
           element.map(el => arrayOfObjects.push(el));
         } else if (typeof element === "object") {
           Object.values(element).map(
-            array => array.length > 0 && array.map(obj => arrayOfObjects.push(obj))
+            array => array.length > 0 && array.map(obj => arrayOfObjects.push(obj)),
           );
         }
       });

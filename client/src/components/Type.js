@@ -24,7 +24,7 @@ const Type = () => {
   // Capitilize first character of type
   const capitalizeFirstLetter = string => string.charAt(0).toUpperCase() + string.slice(1);
 
-  const {likedList, appData, getData, error} = itemContext;
+  const {likedList, appData, getData} = itemContext;
   const {user, favItems} = authContext;
 
   useEffect(() => {

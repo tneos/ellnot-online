@@ -1,13 +1,12 @@
 const fs = require("fs"); // Read json file
 const dotenv = require("dotenv"); // ENV variables in order to connect to DB
-const connectDB = require("../../../config/db");
+const connectDB = require("../../../backend-api/config/db");
 const mongoose = require("mongoose");
 const Clothing = require("../../../models/Clothing");
 const Shoes_Accesories = require("../../../models/Shoes_Accessories");
 const Summer_Collection = require("../../../models/Summer_Collection");
-const User = require("../../../models/User");
 
-dotenv.config({path: "./config.env"});
+dotenv.config({path: "../../../backend-api/.env"});
 
 // Connect to Database
 connectDB();
@@ -15,10 +14,10 @@ connectDB();
 // Read JSON file
 const clothing = JSON.parse(fs.readFileSync(`${__dirname}/clothing.json`, "utf-8"));
 const shoes_accessories = JSON.parse(
-  fs.readFileSync(`${__dirname}/shoes_accessories.json`, "utf-8")
+  fs.readFileSync(`${__dirname}/shoes_accessories.json`, "utf-8"),
 );
 const summer_collection = JSON.parse(
-  fs.readFileSync(`${__dirname}/summer_collection.json`, "utf-8")
+  fs.readFileSync(`${__dirname}/summer_collection.json`, "utf-8"),
 );
 
 // IMPORT DATA INTO DB

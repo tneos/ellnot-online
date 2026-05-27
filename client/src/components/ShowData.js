@@ -36,25 +36,24 @@ const ShowData = ({data}) => {
   let summerCollection = [];
   let keys = [];
   let typeOfItems, individualItem, allItems, noItems;
+  let objId, collectionIndex;
 
   // Add all data in single array
   if (initialData.length > 0) {
+    console.log(initialData);
     initialData.forEach((array, index) => {
+      console.log(Object.keys(array[0]), index);
       if (index === 0) {
         Object.keys(array[0])
           .slice(2, Object.keys(array[0]).length - 2)
           .map(array => clothing.push(array));
         category1 = Object.values(array[0])[1];
-      }
-
-      if (index === 1) {
+      } else if (index === 1) {
         Object.keys(array[0])
           .slice(2, Object.keys(array[0]).length - 2)
           .map(array => accessories.push(array));
         category2 = Object.values(array[0])[1];
-      }
-
-      if (index === 2) {
+      } else if (index === 2) {
         Object.keys(array[0])
           .slice(2, Object.keys(array[0]).length - 1)
           .map(array => summerCollection.push(array));
@@ -114,15 +113,15 @@ const ShowData = ({data}) => {
       let objId, collectionIndex;
       let collection, categories, keys;
 
-      initialData.map(arr => {
-        arr.map(obj => {
+      initialData.forEach(arr => {
+        arr.forEach(obj => {
           collection = Object.values(obj)[1];
           keys = Object.keys(obj).slice(2);
           categories = Object.values(obj).slice(2, Object.values(obj).length - 1);
 
-          categories.map((array, index) => {
+          categories.forEach((array, index) => {
             typeof array === "object" &&
-              array.map(obj => {
+              array.forEach(obj => {
                 description === obj.description && (objId = obj.id) && (collectionIndex = index);
               });
           });

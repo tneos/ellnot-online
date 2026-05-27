@@ -7,9 +7,7 @@ export const filterOutput = (output, data) => {
     Array.isArray(array) &&
       Array.isArray(data) &&
       array.length === data.length &&
-      array.every((val, index) => {
-        if (val === data[index]) return array;
-      });
+      array.every((val, index) => val === data[index]);
   });
 
   data.forEach(arr => {
@@ -27,7 +25,7 @@ export const filterOutput = (output, data) => {
     });
 
     keysArrays.forEach(keys => {
-      keys.map(key => {
+      keys.forEach(key => {
         if (key === splittedOutput[0]) {
           uniq = uniq.slice(-1);
         }
