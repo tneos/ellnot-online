@@ -105,15 +105,13 @@ const ItemState = props => {
     try {
       const res =
         process.env.REACT_APP_ENV === "development"
-          ? await axios.get(`api/data`)
+          ? await axios.get(`/api/data`)
           : await axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/data`);
 
       dispatch({
         type: GET_ALL_DATA,
         payload: res.data.data,
       });
-
-      console.log(res);
     } catch (err) {
       dispatch({
         type: DATA_ERROR,
