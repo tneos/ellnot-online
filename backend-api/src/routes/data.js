@@ -17,7 +17,6 @@ router.get("/", async (req, res) => {
 
     let data = [];
     data.push(clothingData, shoes_accessoriesData, summer_collectionData);
-    console.log("All data", data);
 
     res.json({
       status: "success",
